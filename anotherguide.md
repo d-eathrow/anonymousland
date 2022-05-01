@@ -6,7 +6,7 @@ description: Just... a guide...
 <div style="text-align:center;">
 
 <h1>Another Guide</h1>
-<p><i>“"You never appriciate your anonymity until you don't have it anymore"</i></p>
+<p><i>“You never appriciate your anonymity until you don't have it anymore"</i></p>
 <br>
 <l> <a href="https://github.com/AnonyPla-ng/thgtoa">Please consider supporting this guide.</a></l>
   <br>
@@ -34,6 +34,8 @@ description: Just... a guide...
 
 The Guide
 ---------
+
+*Note: This is a work in progress!*
 
 Well... I never thought i'd be making a guide so, here we go.... I guess....  
 Let's define a few important things here:
@@ -113,7 +115,6 @@ Along your journey, you'll need to have the proper resources at hand to deal wit
 
 ##### Organizations
 - [EFF](https://eff.org)
-- []
 
 #### Getting Ready to "clean up"
 
