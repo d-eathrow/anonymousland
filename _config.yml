@@ -19,9 +19,17 @@ avatar: off              # Show avatar (on | off)
 highlighter_theme: monokai  # Theme of the syntax_highlighter [base16 |
                             # colorful | github | gruvbox | molokai |
                             # monokai | pastie | thankful_eyes | tulip ]
-toolbar_priority:        # Order of the items in the toolbar (except for blog and home)
+        # Order of the items in the toolbar (except for blog and home)
+toolbar_priority:
+  - Guides
+  - dropdown1
+  - dropdown2
+  - blog
+
 # Collections
 collections:
+  guide:
+    output: true
   dropdown:
     output: true
   items:

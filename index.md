@@ -29,6 +29,8 @@ description: A fun happy place.
   <br>
 
   <p><b>Coming Soon:</b></p>  
+  <l><a href="./tools.html">Tools</a></l>
+  <l> - </l>
   <l><a href="">Mastadon Instance</a></l>      
   <l> - </l>
   <l> <a href="">RSS Feed</a></l>
