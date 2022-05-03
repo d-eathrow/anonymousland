@@ -85,6 +85,8 @@ This guide requires you to understand various important concepts in order to tru
 *   Understanding the principles of thread modeling <!--(PUT LINK HERE) -->
 *   Understanding how the internet functions
 
+<br>
+
 #### __Proper Mindset__
 
 Having the proper mindset when starting a process like this, is critical for success. You must be both willing and determined.
@@ -109,6 +111,8 @@ Here is a general thought process...
 *   Your life will change drastically.
 *   Do not be lazy
 
+<br>
+
 #### __Setting Goals__
 
 We need to understand what we are trying to accomplish.
@@ -116,6 +120,8 @@ We need to understand what we are trying to accomplish.
 Think - what are you trying to do?
 
 You need to properly identify a *threat model*, an *adversary* along with performing a self-analysis. You need to understand your own flaws.
+
+<br>
 
 #### __Creating your threat model__
 
@@ -146,6 +152,8 @@ Listed below are some useful resources for getting started.
 - [Techlore Threat Modeling](https://tube.cthd.icu/watch?v=DHZRhboZhfI)
 - [EFF Threat Modeling](https://ssd.eff.org/en/module/your-security-plan)
 
+<br>
+
 #### __Knowing Resources__
 
 Along your journey, you'll need to have the proper resources at hand to deal with any sort of situation you will be facing. Get yourself accustomed to these resources to better understand various conceptions and prepare yourself.
@@ -162,6 +170,8 @@ Along your journey, you'll need to have the proper resources at hand to deal wit
 
 - [Tor Project](https://torproject.org)
 
+<br>
+
 #### __Getting Ready to "clean up"__
 
 What is _"cleaning up"?_
@@ -176,21 +186,33 @@ As for finding services you may have forgotten, look through your entire email a
 
 There are some services which exist that can help expedite this process, though be aware of the risks involved in doing this. 
 
+<br>
+
 #### __Setting your foundation__
 
 Our foundation will be the core of our setup. Everything done here will impact the level of security, privacy and anonymity that we have.
+
+<br>
 
 ##### Choosing an Operating System
 
 Choosing our operating system is one of the most important pieces for this setup. This guide will be focused around [QubesOS](https://qubes-os.org), but any type of linux/unix OS should be suitable as long as it is properly configured & hardened for our needs.
 
-###### QubesOS
+<br>
+
+##### QubesOS
 
 For our setup with Qubes, we are going to be heavily utilizing virtualization. Ensure your PC has enough RAM. Make sure you verify the ISO and such. During installation, ensure to encrypt the disk along with a secure password as an insecure one could easily comprise the entire system. Ensure that Whonix will be installed along with updates over TOR. After installation, ensure everything is updated. Let's startup by creating some basic VMs. To start, clone ``vault`` and create ``pgp-keys`` and ``ssh-keys`` to store our keys securely. Both should have __no internet access__. We will need to properly setup [split-pgp](https://qubes-os.org/doc/split-gpg) and split-ssh.
 
 As for networking, if you have a VPN service such as ProtonVPN, you are able to utilize ``qtunnel`` and setup multiple VPNs. For each of our VPN VMs, we will need a ``sys-firewall``. If you wanted a dedicated ``sys-dns``, you would be able to do this as well. Make sure to read the proper documentation on how to achieve this.
 
 ``sys-net`` -> ``sys-firewall`` -> ``sys-vpn`` -> ``sys-firewall-vpn``
+
+<br>
+
+###### Other 
+
+<br>
 
 ##### Creating our aliases
 

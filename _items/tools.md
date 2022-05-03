@@ -71,7 +71,11 @@ _Disclaimer: This is for education / research._
 - [Aegis](https://github.com/beemdevelopment/Aegis) (Mobile)
 - [andOTP](https://github.com/andOTP/andOTP) (Mobile)
 
+<br>
+
 #### __Books__
+
+<br>
 
 #### __Browser__
 
@@ -80,27 +84,35 @@ _Disclaimer: This is for education / research._
 - [Vanadium](https://vanadium.app) (Mobile)
 - [Bromite](https://bromite.org) (Mobile)
 
+<br>
+
 ##### Browser Extensions
 
 - [ClearURL](https://github.com/ClearURLs/Addon)
-
-<img class="app" src="https://www.privacytools.io/img/apps/ublock-origin.svg">
 - [UBlock Origin](https://github.com/gorhill/uBlock)
 - [NoScript](https://github.com/hackademix/noscript)
 - [LocalCDN](https://codeberg.org/nobody/LocalCDN)
 - [CanvasBlocker](https://github.com/kkapsner/CanvasBlocker)
 - [Libredirect](https://github.com/libredirect/libredirect)
 
+<br>
+
 #### __Crypto__
+
+<br>
 
 #### Currencies
 
 - [Monero](https://getmonero.org) <!--Add Tor site-->
 - [ZCash](https://z.cash)
 
+<br>
+
 #### Wallets
 
 - [Exodus](https://exodus.com)
+
+<br>
 
 #### __Developer Tools__
 
@@ -108,14 +120,18 @@ _Disclaimer: This is for education / research._
 - [Supabase](https://supabase.io)
 - [VSCodium](https://vscodium.com)
 
+<br>
+
 #### __DNS__
 
-
+<br>
 
 #### __Domain Registrar__
 
 - [Njalla](https://njal.la) <!--Add Tor site-->
 - [1984](https://1984hsoting.com)
+
+<br>
 
 #### __Encryption__
 
@@ -123,74 +139,116 @@ _Disclaimer: This is for education / research._
 - [Syncthing](https://syncthing.net)
 - [Photok](https://github.com/leonlatsch/Photok) (Mobile)
 
+<br>
+
 #### __Frontends & Social Media__
+
+<br>
 
 #### Redirect
 
 - [LibRedirect](https://github.com/libredirect/libredirect)
 - [UntrackMe](https://framagit.org/tom79/nitterizeme) (Mobile)
 
+<br>
+
 #### Medium
+
+<br>
 
 ##### Frontends
 
 - [Scribe](https://sr.ht/~edwardloveall/scribe/)
 
+<br>
+
 #### Reddit
+
+<br>
 
 ##### Alternatives
 
 - [Aether](https://getaether.net)
 
+<br>
+
 ##### Clients
 
 - [Slide](https://github.com/ccrama/Slide) (Mobile)
+
+<br>
 
 ##### Frontends
 
 - [Libreddit](https://libredd.it)
 
+<br>
+
 #### Twitter
+
+<br>
 
 ##### Alternatives
 
 - [Mastadon](https://joinmastadon.org)
 
+<br>
+
 ##### Frontends
 
 - [Nitter](https://github.com/zedeus/nitter)
 
+<br>
+
 #### Wikipedia
+
+<br>
 
 ##### Alternatives
 
 - [Wikiless](https://wikiless.org)
 
+<br>
+
 #### Frontends
 
 - []
 
+<br>
+
 #### YouTube
+
+<br>
 
 ##### Alternatives
 
 - [Peertube](https://joinpeertube.org)
 - [Odysee](https://odysee.com)
 
+<br>
+
 ##### Clients
 
 - [NewPipe](https://netpipe.net) (Mobile)
+
+<br>
 
 ##### Frontends
 
 - [Invidious](https://invidious.io)
 - [ViewTube](https://github.com/viewtube/viewtube-vue)
 
+<br>
+
 #### __Mail Providers__
 
 - [ProtonMail](https://protonmail.com) <button type="button" class="btn btn-xs btn-info"><a href="https://mail.protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/">TOR</a></button>
 
+<br>
+
 #### __Messengers__
+
+<br>
 
 ##### Decentralized
 
@@ -198,35 +256,43 @@ _Disclaimer: This is for education / research._
 - [XMPP](https://xmpp.org)
 - [Session](https://getsession.org)
 
+<br>
+
 #### Centralized
 
 - [Signal](https://signal.org)
  - [Molly](https://github.com/mollyim/mollyim-android) (Mobile)
 
+<br>
+
 #### P2P
 
 - [Briar](https://briarproject.org) (Mobile)
+
+<br>
 
 #### __Operating System__
 
 - [Tails](https://tails.boum.org)
 - [Whonix](https://whonixproject.org) <button type="button" class="btn btn-xs btn-info"><a href="http://www.dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/">TOR</a></button>
 - [QubesOS](https://qubes-os.org) <button type="button" class="btn btn-xs btn-info"><a href="http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/">TOR</a></button>
-
-
-
-
 - [GrapheneOS](https://grapheneos.org) (Mobile)
+
+<br>
 
 #### __Password Managers__
 
 - [KeePassXC](https://keepassxc.org)
+
+<br>
 
 #### __Search Engine__
 
 - [DuckDuckGo](https://duckduckgo.com) <button type="button" class="btn btn-xs btn-info"><a href="https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/">TOR</a></button>
 - [SearX](https://searx.me)
 - [Brave Search](https://search.brave.com)
+
+<br>
 
 #### __Upcoming__
 
