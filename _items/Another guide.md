@@ -1,7 +1,7 @@
 ---
 layout: page
 description: Just... a guide 
-title: <div style="text-align:center;"> Another Guide :/ </div>
+title: Another Guide :/
 ---
 
 <div style="text-align:center;">
@@ -202,11 +202,160 @@ Choosing our operating system is one of the most important pieces for this setup
 
 ##### QubesOS
 
-For our setup with Qubes, we are going to be heavily utilizing virtualization. Ensure your PC has enough RAM. Make sure you verify the ISO and such. During installation, ensure to encrypt the disk along with a secure password as an insecure one could easily comprise the entire system. Ensure that Whonix will be installed along with updates over TOR. After installation, ensure everything is updated. Let's startup by creating some basic VMs. To start, clone ``vault`` and create ``pgp-keys`` and ``ssh-keys`` to store our keys securely. Both should have __no internet access__. We will need to properly setup [split-pgp](https://qubes-os.org/doc/split-gpg) and split-ssh.
+<div class="alert alert-info" role="alert">
+  <strong>Note:</strong> Your PC may not have enough RAM for this setup, modify it based upon your needs.
+</div>
+
+For our setup with Qubes, we are going to be heavily utilizing virtualization. Ensure your PC has enough RAM. Make sure you verify the ISO and such. During installation, ensure to encrypt the disk along with a secure password as an insecure one could easily comprise the entire system. Ensure that Whonix will be installed along with updates over TOR. After installation, ensure everything is updated. 
+
+<br>
+
+##### "Splitting"
+
+Let's startup by creating some basic VMs. To start, clone ``vault`` and create ``pgp-keys`` and ``ssh-keys`` to store our keys securely. Both should have __no internet access__. We will need to properly setup [split-pgp](https://qubes-os.org/doc/split-gpg) and [split-ssh](https://kushaldas/in/posts/using-split-ssh-in-qubesos-4-0.html). Using the "split" method, we are able to create an additional [split-browser](https://github.com/rustybird/qubes-split-browser) and a [split-dm-crypt](https://github.com/rustybird/qubes-split-dm-crypt).
+
+<br>
+
+##### Qube Template
 
 As for networking, if you have a VPN service such as ProtonVPN, you are able to utilize ``qtunnel`` and setup multiple VPNs. For each of our VPN VMs, we will need a ``sys-firewall``. If you wanted a dedicated ``sys-dns``, you would be able to do this as well. Make sure to read the proper documentation on how to achieve this.
 
 ``sys-net`` -> ``sys-firewall`` -> ``sys-vpn`` -> ``sys-firewall-vpn``
+
+We will now create additional VMs for our use.
+
+- ``sys-net`` -> ``sys-firewall`` -> ``sys-firewall-email-personal`` -> ``personal-email`` - By placing the firewall here, this allows us to only whitelist internet traffic from specifically our email provider.
+
+- ``sys-net`` -> ``sys-firewall`` -> ``sys-firewall-IN-vpn-us-1`` -> ``sys-vpn-us-1`` -> ``sys-firewall-vpn-us-1`` - This again gives us the ability to whitelist traffic from only the ``sys-vpn-us-1``.
+
+More:
+
+- ``personal-web`` - Web Traffic
+- ``personal-email`` - Email
+- ``personal-dvm`` - Disposable
+- ``personal-random`` - Random Web
+- ``personal-social`` - Social Activity
+- ``sys-personal-vpn`` - VPN for only ``personal``
+- ``sys-firewall-personal`` - Firewall for only ``personal``
+- ``personal-vault`` - Vault VM for only ``personal``
+
+This can be used for a wide variety of activities, not just specifically "personal". Your setup should take heavy use of the ``sys-firewall`` VM. We can utilize the firewall to help maintain compartmentalization among our system. The firewall can be useful for preventing data leaks & sniffing along with enforcing VPN policies.
+
+<br>
+
+##### Additional Setup
+
+You are never truly done configuring and setting up Qubes. There will always be more and more to configure. This section goes through some of these additional configurations.
+
+###### U2F-Proxy
+
+
+Like the variety of tools offered by QubesOS, [u2f-proxy](https://qubes-os.org/doc/u2f-proxy) is no exception. This is an amazing tool that we will use for multi-factor authentication. This allows you to "compartmentalize the browser in one qube and the USB stack in another so that they are always kept separate from each other".
+
+The Qubes documentation shows the following for installation:
+
+
+dom0:
+```
+sudo qubes-dom0-update qubes-u2f-dom0
+```
+
+Now, execute this command for all the Qubes you will utilize u2f.
+
+```
+qvm-service --enable QUBE_NAME qubes-u2f-proxy
+```
+
+To install on our templates, use the following:
+
+Fedora: 
+```
+sudo dnf install qubes-u2f
+```
+
+Debian:
+```
+sudo apt install qubes-u2f
+```
+
+Finally, you must restart your Qubes. It's suggested you read the [u2f-proxy](https://qubes-os.org/doc/u2f-proxy) documentation.
+
+<br>
+
+###### YubiKey
+
+Using a YubiKey can help mitigate certain attacks such as password "snooping", along with increasing security. Read the [official documentation](https://qubes-os.org/doc/yubikey).
+
+Installation for template VMs:
+
+Fedora:
+```
+sudo dnf install ykpers yubikey-personalization-gui
+```
+
+Debian:
+```
+sudo apt-get install yubikey-personalization yubikey-personalization-gui
+```
+
+The GUI on for Debian can be run via the ``yubikey-personalization-gui`` command.
+
+- Choose ``configuration slot2``.
+- Select ``HMAC-SHA1 mode: fixed 64 bit input``.
+- Ensure to backup the ``Secret Key (20 bytes hex)``.
+
+
+Now the following is required for dom0:
+```
+sudo qubes-dom0-update qubes-yubikey-dom0
+```
+
+If we had changed the name of ``sys-usb`` or are using something other than that, we would need to edit ``/etc/qubes/yk-keys/yk-vm'' in dom0.
+
+- Paste the ``Secret Key (20 bytes hex)`` into ``/etc/qubes/yk-keys/yk-secret-key.hex`` in dom0.
+
+- Paste your hashed password into ``/etc/qubes/yk-keys/yk-login-pass-hashed.hex`` in dom0.
+
+To get your hashed password:
+
+```
+read -r password
+```
+
+```
+echo -n "$password" | openssl dgst -sha1
+```
+
+
+Edit ``/etc/pam.d/login`` in dom0 and add:
+
+```
+auth include yubikey
+```
+
+Now, edit ``/etc/pam.d/xscreensaver`` to include:
+
+```
+auth include yubikey
+```
+
+<br>
+
+###### GUI-VM
+
+This is for advanced users. Read the [official documentation](https://qubes-os.org/guivm-configuration).
+
+
+  
+
+###### Utilizing TOR
+
+TOR can be an extremely useful tool. Combined with QubesOS, our limit is the sky.
+
+<br>
+
+###### Additional utilization
+
 
 <br>
 
