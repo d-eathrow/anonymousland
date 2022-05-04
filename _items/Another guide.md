@@ -106,9 +106,11 @@ Here is a general thought process...
 (things to keep in mind)*   Reveal as little about yourself and origin as possible.
   
 *   Remember - you can be identified by more ways than you can imagine.
-  
+
 *   Do not trust anyone.
+
 *   Your life will change drastically.
+
 *   Do not be lazy
 
 <br>
@@ -169,6 +171,7 @@ Along your journey, you'll need to have the proper resources at hand to deal wit
 ##### More:
 
 - [Tor Project](https://torproject.org)
+- [EFF](https://eff.org)
 
 <br>
 
@@ -190,13 +193,13 @@ There are some services which exist that can help expedite this process, though 
 
 #### __Setting your foundation__
 
-Our foundation will be the core of our setup. Everything done here will impact the level of security, privacy and anonymity that we have.
+Our foundation will be the core of our setup. Everything done here will impact the level of security, privacy and anonymity that we have. This section will be long, but is important.
 
 <br>
 
 ##### Choosing an Operating System
 
-Choosing our operating system is one of the most important pieces for this setup. This guide will be focused around [QubesOS](https://qubes-os.org), but any type of linux/unix OS should be suitable as long as it is properly configured & hardened for our needs.
+Choosing our operating system is one of the most important pieces for this setup. This section will be focused around [QubesOS](https://qubes-os.org), but any type of linux/unix OS should be suitable as long as it is properly configured & hardened for our needs.
 
 <br>
 
@@ -212,17 +215,20 @@ For our setup with Qubes, we are going to be heavily utilizing virtualization. E
 
 ##### "Splitting"
 
-Let's startup by creating some basic VMs. To start, clone ``vault`` and create ``pgp-keys`` and ``ssh-keys`` to store our keys securely. Both should have __no internet access__. We will need to properly setup [split-pgp](https://qubes-os.org/doc/split-gpg) and [split-ssh](https://kushaldas/in/posts/using-split-ssh-in-qubesos-4-0.html). Using the "split" method, we are able to create an additional [split-browser](https://github.com/rustybird/qubes-split-browser) and a [split-dm-crypt](https://github.com/rustybird/qubes-split-dm-crypt).
+Let's startup by creating some basic qubes. To start, clone ``vault`` and create ``pgp-keys`` and ``ssh-keys`` to store our keys securely. Both should have __no internet access__. We will need to properly setup [split-pgp](https://qubes-os.org/doc/split-gpg) and [split-ssh](https://kushaldas/in/posts/using-split-ssh-in-qubesos-4-0.html). Using the "split" method, we are able to create an additional [split-browser](https://github.com/rustybird/qubes-split-browser) and a [split-dm-crypt](https://github.com/rustybird/qubes-split-dm-crypt).
 
 <br>
 
-##### Qube Template
+##### Qube Basic Setup
 
-As for networking, if you have a VPN service such as ProtonVPN, you are able to utilize ``qtunnel`` and setup multiple VPNs. For each of our VPN VMs, we will need a ``sys-firewall``. If you wanted a dedicated ``sys-dns``, you would be able to do this as well. Make sure to read the proper documentation on how to achieve this.
+As for networking, if you have a VPN service such as ProtonVPN, you are able to utilize ``qtunnel`` and setup multiple VPNs. For each of our VPN qubes, we will need a ``sys-firewall``. If you wanted a dedicated ``sys-dns``, there are several guides on this:
+
+- [qubes-dns](https://github.com/3hhh/qubes-dns)
+- [Pihole  qube](https://github.com/92VV3M42d3v8/PiHole)
 
 ``sys-net`` -> ``sys-firewall`` -> ``sys-vpn`` -> ``sys-firewall-vpn``
 
-We will now create additional VMs for our use.
+We will now create additional qubes for our use.
 
 - ``sys-net`` -> ``sys-firewall`` -> ``sys-firewall-email-personal`` -> ``personal-email`` - By placing the firewall here, this allows us to only whitelist internet traffic from specifically our email provider.
 
@@ -243,17 +249,44 @@ This can be used for a wide variety of activities, not just specifically "person
 
 <br>
 
+##### Template Setup
+
+You should not install all of your applications on a single template qube, instead you should have different templates for each purpose. This is done as a security measure along with helping us with proper compartmentalization. It's best to use minimal templates as most applications will likely not get used, but if you need more applications you can simply install them in a new template. Ensure to read the [official documentation](https://qubes-os.org/doc/templates/minimal) for minimal templates.
+
+The official minimal templates are avaliable:
+- Fedora
+- Debian
+- CentOS
+- Gentoo
+
+For installing templates:
+dom0:
+```
+sudo qubes-dom0-update qubes-template-<DISTRO_NAME>-<RELEASE_NUMBER>-minimal
+```
+
+Suggested packages to install on the minimal template:
+
+```
+qubes-core-agent-paswordless-root
+qubes-core-agent-dom0-updates
+qubes-usb-proxy
+qubes-gpg-split
+```
+
+<br>
+
 ##### Additional Setup
 
 You are never truly done configuring and setting up Qubes. There will always be more and more to configure. This section goes through some of these additional configurations.
 
-###### U2F-Proxy
+<br>
 
+###### U2F-Proxy
 
 Like the variety of tools offered by QubesOS, [u2f-proxy](https://qubes-os.org/doc/u2f-proxy) is no exception. This is an amazing tool that we will use for multi-factor authentication. This allows you to "compartmentalize the browser in one qube and the USB stack in another so that they are always kept separate from each other".
 
 The Qubes documentation shows the following for installation:
-
 
 dom0:
 ```
@@ -286,7 +319,7 @@ Finally, you must restart your Qubes. It's suggested you read the [u2f-proxy](ht
 
 Using a YubiKey can help mitigate certain attacks such as password "snooping", along with increasing security. Read the [official documentation](https://qubes-os.org/doc/yubikey).
 
-Installation for template VMs:
+Installation for template qubes:
 
 Fedora:
 ```
@@ -326,7 +359,6 @@ read -r password
 echo -n "$password" | openssl dgst -sha1
 ```
 
-
 Edit ``/etc/pam.d/login`` in dom0 and add:
 
 ```
@@ -345,21 +377,13 @@ auth include yubikey
 
 This is for advanced users. Read the [official documentation](https://qubes-os.org/guivm-configuration).
 
-
-  
-
-###### Utilizing TOR
-
-TOR can be an extremely useful tool. Combined with QubesOS, our limit is the sky.
-
 <br>
 
-###### Additional utilization
+###### Backups
 
+Creating proper backups securely is critical for any setup, especially this one here. You must understand the different backup techniques and solutions avaliable. For high security, it is recommended that we backup the system locally, meaning that we do not store our backups on the cloud. We should start to look at possible backup solutions. The built-in ``qvm-backup`` will work amazing for this. It provides security & authentication, which are both crucial to a proper backup solution. Ensure to read the [official documentation](https://github.com/qubes-os.org/doc/how-to-back-up-restore-and-migrate). 
 
-<br>
-
-###### Other 
+It's suggested you have a high-speed SSD or M.2 for this procedure. There are "special" options described as "rugged", which has additional layer of armor and is generally waterproof. Ensure this drive is also high-capacity. In some cases, it may make sense to have an additional drive incase of failure or other malfunction. Going into redundancy, you also have the ability to setup a local RAID on your network. This would provide increased redundancy, though it can *potentially* decrease security, as having another system on the network, proper hardening, etc. but is unlikely to cause any harm. You could setup a local nextcloud instance or another type of local network storage and utilize [wyng](https://github.com/tasket/wyng-backup).
 
 <br>
 
@@ -371,3 +395,19 @@ Upon creating our aliases we will have several different approaches:
 
 1. Each username, email, and other will be completely random
 2. Each alias will have its own email, username, etc.
+
+If you are using QubesOS, we are able to utilize compartmentalization heavily in this instance. We will start off by creating multiple qubes for our setup.
+
+- ``alias-web``
+- ``alias-email``
+- ``alias-untrusted``
+- ``alias-messenger``
+- ``alias-tor``
+- ``alias-vault``
+- ``alias-wallet``
+- ``sys-firewall-alias``
+- ``sys-vpn-alias``
+
+By doing this for each alias, you have now setup an amazing solution for compartmentalization. This only works if you utilize each qube for the specified task. Ensure that nothing will leave the qube. Ensure that all the ``alias`` qubes are properly routed via VPN or TOR to ensure proper setup. For a more advanced setup, you are able to utilize Whonix qubes. For each of our email addresses, we are able to setup email aliases using AnonAddy and SimpleLogin.
+
+Each of our aliases is going to need some sort of "story". We are not putting this story out to tell per say, but simply knowing basic information about our new alias would be important. Information including age, country, special food, and activities. We just need to make note of them, not giving any of this information away. It's crucial to blend in, therefore some of this information may be used in conversation. Remember, each alias we create is different, therefore there should be absolutely no connection between any of them. For each alias, you will need to "reset" your memory in a way. You must be able to organize information you know from all of your aliases. Grudges, friendships and other must not travel over, this is how you fail.
