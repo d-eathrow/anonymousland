@@ -19,18 +19,10 @@ description: A fun happy place.
   <br>
   <br>
   
-  <l><a href="/">Home</a></l>
-  <l> | </l>
-  <l> <a href="./blog.html">Blogs</a></l>
-  <l> | </l>
-  <l> <a href="./anotherguide.html">Another Guide :/</a></l>
-
   <br>
   <br>
 
   <p><b>Coming Soon:</b></p>  
-  <l><a href="./tools.html">Tools</a></l>
-  <l> - </l>
   <l><a href="">Mastadon Instance</a></l>      
   <l> - </l>
   <l> <a href="">RSS Feed</a></l>
@@ -61,4 +53,4 @@ Let's... all just be... together maybe?
 
 ##### Monero:
 
-``4B4kUhGXkMhic8W9NXVMTsi8cLidFAuyW3p5cWd9jG3tTT9ADCPHcrYZ8hkvA8s8TNTmSDohb9CeqJZFGqKddR8qDF1okZp``
+```4B4kUhGXkMhic8W9NXVMTsi8cLidFAuyW3p5cWd9jG3tTT9ADCPHcrYZ8hkvA8s8TNTmSDohb9CeqJZFGqKddR8qDF1okZp```
