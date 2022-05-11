@@ -1,5 +1,5 @@
 ---
 layout: blog-index
 title: Blog
-description: test
+description: The site blog
 ---
