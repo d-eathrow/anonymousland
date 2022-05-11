@@ -41,6 +41,7 @@ _Disclaimer: This is for education / research._
 \>> [Getting Ready to "clean up"](#getting-ready-to-"clean-up") <br> 
 <!--\>> [Setting Your Foundation](#setting-your-foundation) <br>-->
 \>> [QubesOS](#qubesos) <br>
+\>> [GrapheneOS](#grapheneos) <br>
 \>> [Creating our Aliases](#creating-our-aliases) <br>
 \>> [Hardening](#hardening) <br>
 #### __Important Concepts__
@@ -160,21 +161,11 @@ There are some services which exist that can help expedite this process, though 
 
 <br>
 
-<!--#### __Setting your foundation__
+### Setting Foundation
 
-Our foundation will be the core of our setup. Everything done here will impact the level of security, privacy and anonymity that we have. This section will be long, but is important. To get started, you should setup several things:
+The next several sections are going to go over setting and creating our "foundation". Our foundation will be the core of our setup. Everything done here will impact the level of security, privacy and anonymity that we have. This section will be long, but is important.
 
-- GPG Key(s)
-- Encrypted email
-
-<br>-->
-
-<!-- ##### Choosing an Operating System
-
-Choosing our operating system is one of the most important pieces for this setup. This section will be focused around [QubesOS](https://qubes-os.org), but any type of linux/unix OS should be suitable as long as it is properly configured & hardened for our needs. 
-
-<br> -->
-
+Choosing our operating system is one of the most important pieces for this setup. This section will be focused around [QubesOS](https://qubes-os.org).
 #### __QubesOS__
 
 <div class="alert alert-info" role="alert">
