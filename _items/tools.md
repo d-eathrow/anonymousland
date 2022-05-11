@@ -1,7 +1,7 @@
 ---
 layout: default
 description: Tools to use for your benefit
-title: <div style="text-align:center;"> Tools </div>
+title: Tools
 ---
 
 <div style="text-align:center;">
@@ -12,42 +12,11 @@ title: <div style="text-align:center;"> Tools </div>
   <strong>Heads up!</strong> This is still a work in progress!
 </div>
 
-<!--<h1>Tools.</h1>
-
-<br>
-<l> <a href="https://github.com/AnonyPla-ng/thgtoa">Please consider supporting this guide.</a></l>
-  <br>
-  <br>
-  <l><a href="/">Home</a></l>
-  <l> | </l>
-  <l> <a href="./blog.html">Blogs</a></l>
-  <l> | </l>
-  <l> <a href="./anotherguide.html">Another Guide :/</a></l>
-  <br>
-  <br>
-  <p><b>Coming Soon:</b></p>  
-  <l><a href="./tools.html">Tools</a></l>
-  <l> - <> </l>
-  <l><a href="">Mastadon Instance</a></l>      
-  <l> - </l>
-  <l> <a href="">RSS Feed</a></l>
-  <l> - </l>
-  <l> <a href="">Forum</a></l>
-  <li></li>
-  <l> <a href="">About</a></l>
-  <l> - </l>
-  <l> <a href="">Contact</a></l>
-  <l> - </l>
-  <l> <a href="">Donate</a></l>
-  </div>
-  -->
-
 ### Getting Started
 
 _Disclaimer: This is for education / research._
 
 ##### Table of contents:
-
 
 \>> [2FA](#2fa) <br>
 \>> [Books](#books) <br>
@@ -261,7 +230,7 @@ _Disclaimer: This is for education / research._
 #### Centralized
 
 - [Signal](https://signal.org)
- - [Molly](https://github.com/mollyim/mollyim-android) (Mobile)
+  - [Molly](https://github.com/mollyim/mollyim-android) (Mobile)
 
 <br>
 
