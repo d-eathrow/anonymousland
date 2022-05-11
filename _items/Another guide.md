@@ -8,39 +8,6 @@ title: Another Guide :/
 <p><i>“You never appreciate your anonymity until you don't have it anymore"</i></p>
 </div>
 
-<!--
-<div style="text-align:center;">
-
- <h1>Another Guide</h1>
-<p><i>“You never appreciate your anonymity until you don't have it anymore"</i></p>
-<br>
-<l> <a href="https://github.com/AnonyPla-ng/thgtoa">Please consider supporting this guide.</a></l>
-  <br>
-  <br>
-  <l><a href="/">Home</a></l>
-  <l> | </l>
-  <l> <a href="./blog.html">Blogs</a></l>
-  <l> | </l>
-  <l> <a href="./anotherguide.html">Another Guide :/</a></l>
-  <br>
-  <br>
-  <p><b>Coming Soon:</b></p> 
-  <l><a href="./tools.html">Tools</a></l>
-  <l> - </l>
-  <l><a href="">Mastadon Instance</a></l>      
-  <l> - </l>
-  <l> <a href="">RSS Feed</a></l>
-  <l> - </l>
-  <l> <a href="">Forum</a></l>
-  <li></li>
-  <l> <a href="">About</a></l>
-  <l> - </l>
-  <l> <a href="">Contact</a></l>
-  <l> - </l>
-  <l> <a href="">Donate</a></l>
-  </div>
--->
-
 The Guide
 ---------
 
@@ -72,8 +39,10 @@ _Disclaimer: This is for education / research._
 \>> [Creating Your Threat model](#creating-your-threat-model) <br> 
 \>> [Knowing Resources](#knowing-resources) <br> 
 \>> [Getting Ready to "clean up"](#getting-ready-to-"clean-up") <br> 
-\>> [Setting Your Foundation](#setting-your-foundation) <br>
-
+<!--\>> [Setting Your Foundation](#setting-your-foundation) <br>-->
+\>> [QubesOS](#qubesos) <br>
+\>> [Creating our Aliases](#creating-our-aliases) <br>
+\>> [Hardening](#hardening) <br>
 #### __Important Concepts__
 
 This guide requires you to understand various important concepts in order to truly be anonymous - The following below is to be ASSUMED.
@@ -191,19 +160,22 @@ There are some services which exist that can help expedite this process, though 
 
 <br>
 
-#### __Setting your foundation__
+<!--#### __Setting your foundation__
 
-Our foundation will be the core of our setup. Everything done here will impact the level of security, privacy and anonymity that we have. This section will be long, but is important.
+Our foundation will be the core of our setup. Everything done here will impact the level of security, privacy and anonymity that we have. This section will be long, but is important. To get started, you should setup several things:
 
-<br>
+- GPG Key(s)
+- Encrypted email
 
-##### Choosing an Operating System
+<br>-->
 
-Choosing our operating system is one of the most important pieces for this setup. This section will be focused around [QubesOS](https://qubes-os.org), but any type of linux/unix OS should be suitable as long as it is properly configured & hardened for our needs.
+<!-- ##### Choosing an Operating System
 
-<br>
+Choosing our operating system is one of the most important pieces for this setup. This section will be focused around [QubesOS](https://qubes-os.org), but any type of linux/unix OS should be suitable as long as it is properly configured & hardened for our needs. 
 
-##### QubesOS
+<br> -->
+
+#### __QubesOS__
 
 <div class="alert alert-info" role="alert">
   <strong>Note:</strong> Your PC may not have enough RAM for this setup, modify it based upon your needs.
@@ -211,11 +183,17 @@ Choosing our operating system is one of the most important pieces for this setup
 
 For our setup with Qubes, we are going to be heavily utilizing virtualization. Ensure your PC has enough RAM. Make sure you verify the ISO and such. During installation, ensure to encrypt the disk along with a secure password as an insecure one could easily comprise the entire system. Ensure that Whonix will be installed along with updates over TOR. After installation, ensure everything is updated. 
 
+We can utilize updates over TOR to help prevent an adversary from knowing that we are using Qubes. This can be extremely beneficial as our adversary wouldn't know a "specific" way to target us.
 <br>
 
 ##### "Splitting"
 
 Let's startup by creating some basic qubes. To start, clone ``vault`` and create ``pgp-keys`` and ``ssh-keys`` to store our keys securely. Both should have __no internet access__. We will need to properly setup [split-pgp](https://qubes-os.org/doc/split-gpg) and [split-ssh](https://kushaldas/in/posts/using-split-ssh-in-qubesos-4-0.html). Using the "split" method, we are able to create an additional [split-browser](https://github.com/rustybird/qubes-split-browser) and a [split-dm-crypt](https://github.com/rustybird/qubes-split-dm-crypt).
+
+More thoughts:
+
+- Split-Browser
+- Split-Print
 
 <br>
 
@@ -387,7 +365,24 @@ It's suggested you have a high-speed SSD or M.2 for this procedure. There are "s
 
 <br>
 
-##### Creating our aliases
+#### __GrapheneOS__
+
+[GrapheneOS](https://grapheneos.com) is an amazing mobile operating system. This OS has been developed to provide security along with privacy. The only limitations is that it requires an OEM unlocked Google Pixel device. These devices have been known for their security, so putting them together is an amazing pair.
+
+<!-- Stuff here -->
+
+After installing, there is plenty of things we can start to do. We will be utilizing the built-in profiles along with the "work profile". We will need to install [F-droid](https://f-droid.org). 
+
+<!-- Maybe guid here, also reword above -->
+
+
+<br>
+
+#### Creating our aliases
+
+<div class="alert alert-info" role="alert">
+  <strong>Note:</strong> This is a continuation of the [QubeOS setup](#qubesos).
+</div>
 
 For setting our foundation, we are going to be creating a variety of aliases and each of these aliases are going to each need an "arsenal". For step 1 we are going to need a password manager.
 
@@ -411,3 +406,30 @@ If you are using QubesOS, we are able to utilize compartmentalization heavily in
 By doing this for each alias, you have now setup an amazing solution for compartmentalization. This only works if you utilize each qube for the specified task. Ensure that nothing will leave the qube. Ensure that all the ``alias`` qubes are properly routed via VPN or TOR to ensure proper setup. For a more advanced setup, you are able to utilize Whonix qubes. For each of our email addresses, we are able to setup email aliases using AnonAddy and SimpleLogin.
 
 Each of our aliases is going to need some sort of "story". We are not putting this story out to tell per say, but simply knowing basic information about our new alias would be important. Information including age, country, special food, and activities. We just need to make note of them, not giving any of this information away. It's crucial to blend in, therefore some of this information may be used in conversation. Remember, each alias we create is different, therefore there should be absolutely no connection between any of them. For each alias, you will need to "reset" your memory in a way. You must be able to organize information you know from all of your aliases. Grudges, friendships and other must not travel over, this is how you fail.
+
+<br>
+
+<!--#### Secure Hardware
+
+There's no point in trying to setup a secure system if the hardware itself cannot be trusted. Anything can be pre-loaded with malicious code designed to compromise security, especially how mass-production has been increasing over time, meaning they just need to compromise a device on the production line.
+
+##### Basics
+
+Here is a list of "everyday"-type carry / use.
+
+- USB Data Blocker - This USB device has the data pins removed from it, this sits from your USB female to your USB male, acting as a "middle man". It's impossible for data to travel between. Useful for public USB ports or untrusted devices.
+
+- Faraday Pouch - This will block all electromagnetic fields, which can ensure that absolutely no signal is traveling out of your devices. It completely air-gaps the device.
+
+<br>-->
+
+#### Hardening
+
+Now that we've setup a solid foundation, it is now time for hardening. Hardening will be simple securing our pre-existing setup. You can never be too careful. Let's make some general notes here before we begin.
+
+- Mobile phones are extremely difficult to manage properly
+- You must think of all possible scenarios
+- Do your own research
+
+Let's first start off with hardening our setup we've created above.
+
