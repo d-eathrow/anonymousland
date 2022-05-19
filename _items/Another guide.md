@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default1
 description: Just... a guide 
 title: Another Guide :/
 ---

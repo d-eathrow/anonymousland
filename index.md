@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default1
 title: Anonymous Land
 description: A fun happy place.
 ---
