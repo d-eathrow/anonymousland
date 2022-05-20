@@ -1,8 +1,7 @@
-#theme: jekyll-theme-potato-hacker
 repository: d-eathrow/anonymousland
 theme_repository: "https://github.com/luxedo/jekyll-theme-potato-hacker"
 theme_base: "dark"
-#theme_switch: on 
+theme_switch: off
 blog: on
 avatar: off
 highlighter_theme: monokai  # Theme of the syntax_highlighter [base16 |
