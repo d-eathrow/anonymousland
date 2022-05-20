@@ -10,18 +10,16 @@ description: A fun happy place.
 <h2>(We’re all anonymous here)</h2>
 <p><i>“You can keep as quiet as you like, but one of these days somebody is going to find you.” </i></p>
 
+<br>
+<br>
+
 </div>
-<body style="text-align:center" >
-
-
-<l> <a href="https://github.com/AnonyPla-ng/thgtoa">Please consider supporting this guide.</a></l>
-  
+<body style="text-align:center">
+<l> <a href="https://codeberg.org/deathrow/anonymousland">Please Contribute!</a></l>
   <br>
   <br>
-  
   <br>
   <br>
-
   <p><b>Coming Soon:</b></p>  
   <l><a href="">Mastadon Instance</a></l>      
   <l> - </l>

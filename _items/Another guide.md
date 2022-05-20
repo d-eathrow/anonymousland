@@ -8,6 +8,9 @@ title: Another Guide :/
 <p><i>“You never appreciate your anonymity until you don't have it anymore"</i></p>
 </div>
 
+<br>
+<br>
+
 The Guide
 ---------
 
@@ -44,6 +47,7 @@ _Disclaimer: This is for education / research._
 \>> [GrapheneOS](#grapheneos) <br>
 \>> [Creating our Aliases](#creating-our-aliases) <br>
 \>> [Hardening](#hardening) <br>
+
 #### __Important Concepts__
 
 This guide requires you to understand various important concepts in order to truly be anonymous - The following below is to be ASSUMED.

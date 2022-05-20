@@ -8,6 +8,9 @@ title: Tools
 <p><i>“If you stay here, you become lost. And no one can find you."</i></p>
 </div>
 
+<br>
+<br>
+
 <div class="alert alert-info" role="alert">
   <strong>Heads up!</strong> This is still a work in progress!
 </div>
@@ -48,7 +51,7 @@ _Disclaimer: This is for education / research._
 
 #### __Browser__
 
-- [TOR Browser](https://torproject.org) <!--Add Tor site-->
+- [TOR Browser](https://torproject.org) <button type="button" class="btn btn-xs btn-info"><a href="http://2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion/">TOR</a></button>
 - [Firefox](https://mozilla.org)
 - [Vanadium](https://vanadium.app) (Mobile)
 - [Bromite](https://bromite.org) (Mobile)
@@ -72,7 +75,7 @@ _Disclaimer: This is for education / research._
 
 #### Currencies
 
-- [Monero](https://getmonero.org) <!--Add Tor site-->
+- [Monero](https://getmonero.org) <button type="button" class="btn btn-xs btn-info"><a href="http://monerotoruzizulg5ttgat2emf4d6fbmiea25detrmmy7erypseyteyd.onion/">TOR</a></button>
 - [ZCash](https://z.cash)
 
 <br>
@@ -83,7 +86,7 @@ _Disclaimer: This is for education / research._
 
 <br>
 
-#### __Developer Tools__
+#### __Developer Tools__  
 
 - [hCaptcha](https://hcaptcha.com)
 - [Supabase](https://supabase.io)
@@ -97,8 +100,8 @@ _Disclaimer: This is for education / research._
 
 #### __Domain Registrar__
 
-- [Njalla](https://njal.la) <!--Add Tor site-->
-- [1984](https://1984hsoting.com)
+- [Njalla](https://njal.la) <button type="button" class="btn btn-xs btn-info"><a href="http://njallalafimoej5i4eg7vlnqjvmb6zhdh27qxcatdn647jtwwwui3nad.onion/">TOR</a></button>
+- [1984](https://1984hosting.com)
 
 <br>
 
@@ -257,7 +260,7 @@ _Disclaimer: This is for education / research._
 
 #### __Search Engine__
 
-- [DuckDuckGo](https://duckduckgo.com) <button type="button" class="btn btn-xs btn-info"><a href="https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/">TOR</a></button>
+- [DuckDuckGo](https://duckduckgo.com) <button type="button" class="btn btn-xs btn-info"><a href="https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/">TOR</a></button>  <button type="button" class="btn btn-xs btn-warning"><a href="https://help.duckduckgo.com/duckduckgo-help-pages/community/open-source/"Closed-Source</a></button>
 - [SearX](https://searx.me)
 - [Brave Search](https://search.brave.com)
 
