@@ -1,32 +1,18 @@
-# Useful links
-#github_username: "<github_username>"
-#facebook_username: "<facebook_username>"
-#twitter_username: "<twitter_username>"
-#linkedin_id: "<linkedin_id>"
-
-# Theme
-theme: jekyll-theme-potato-hacker                 # Uncomment this
-# remote_theme: luxedo/jekyll-theme-potato-hacker   # Or this
+theme: jekyll-theme-potato-hacker
+repository: d-eathrow/anonymousland
 theme_repository: "https://github.com/luxedo/jekyll-theme-potato-hacker"
-theme_base: "dark"       # Theme palette (light | dark)
-#theme_switch: on         # Show color switch (on | off)
-
-# Extra settings
-blog: on                 # Show blog tag and post list (on | off)
-avatar: off              # Show avatar (on | off)
-#avatar_image: "assets/img/avatar.jpg"
-#avatar_description: "My name is Popotato and I'm a HACKER."
+theme_base: "dark"
+#theme_switch: on 
+blog: on
+avatar: off
 highlighter_theme: monokai  # Theme of the syntax_highlighter [base16 |
                             # colorful | github | gruvbox | molokai |
                             # monokai | pastie | thankful_eyes | tulip ]
-        # Order of the items in the toolbar (except for blog and home)
 toolbar_priority:
   - Guides
   - dropdown1
   - dropdown2
   - blog
-
-# Collections
 collections:
   guide:
     output: true
