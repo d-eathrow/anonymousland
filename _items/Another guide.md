@@ -1,7 +1,7 @@
 ---
 layout: default1
 description: Just... a guide 
-title: Another Guide :/
+title: Another Guide
 ---
 
 <div style="text-align:center;">
@@ -13,10 +13,9 @@ title: Another Guide :/
 
 The Guide
 ---------
+*Note: Work in progress*
 
-<div class="alert alert-info" role="alert">
-  <strong>Note:</strong> This is still a work in progress!
-</div>
+<br>
 
 Well... I never thought i'd be making a guide so, here we go.... I guess....  
 Let's define a few important things here:
@@ -42,7 +41,7 @@ _Disclaimer: This is for education / research._
 \>> [Creating Your Threat model](#creating-your-threat-model) <br> 
 \>> [Knowing Resources](#knowing-resources) <br> 
 \>> [Getting Ready to "clean up"](#getting-ready-to-"clean-up") <br> 
-<!--\>> [Setting Your Foundation](#setting-your-foundation) <br>-->
+\>> [Setting Your Foundation](#setting-your-foundation) <br>
 \>> [QubesOS](#qubesos) <br>
 \>> [GrapheneOS](#grapheneos) <br>
 \>> [Creating our Aliases](#creating-our-aliases) <br>
@@ -52,12 +51,20 @@ _Disclaimer: This is for education / research._
 
 This guide requires you to understand various important concepts in order to truly be anonymous - The following below is to be ASSUMED.
 
-*   Understanding of TOR and Its threats<!--(put link here) -->
-*   Understanding benefits and downfalls of a VPN <!--(PUT LINK HERE) -->
+*   Understanding of TOR and its threats<!--(put link here) -->
+*   Understanding benefits and negatives of a VPN <!--(PUT LINK HERE) -->
 *   Understanding important privacy concepts <!--(PUT LINK HERE) -->
 *   Understanding important security concepts <!--(PUT LINK HERE or make a section) -->
-*   Understanding the principles of thread modeling <!--(PUT LINK HERE) -->
+*   [Understanding the principles of thread modeling](https://invidious.esmailelbob.xyz/watch?v=DHZRhboZhfI)
 *   Understanding how the internet functions
+
+General Ideas:
+
+- Using a VPN will *NOT* make you anonymous
+- Just because you are using TOR does *NOT* mean you  are safe
+- An adversary with enough time and resources will eventually find you
+- The best way to hide is to not use the internet
+- The land of compromises
 
 <br>
 
