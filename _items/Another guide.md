@@ -177,16 +177,67 @@ There are some services which exist that can help expedite this process, though 
 The next several sections are going to go over setting and creating our "foundation". Our foundation will be the core of our setup. Everything done here will impact the level of security, privacy and anonymity that we have. This section will be long, but is important.
 
 Choosing our operating system is one of the most important pieces for this setup. This section will be focused around [QubesOS](https://qubes-os.org).
+
+<br>
+
 #### __QubesOS__
 
-<div class="alert alert-info" role="alert">
+<!--<div class="alert alert-info" role="alert">
   <strong>Note:</strong> Your PC may not have enough RAM for this setup, modify it based upon your needs.
-</div>
+</div>-->
 
-For our setup with Qubes, we are going to be heavily utilizing virtualization. Ensure your PC has enough RAM. Make sure you verify the ISO and such. During installation, ensure to encrypt the disk along with a secure password as an insecure one could easily comprise the entire system. Ensure that Whonix will be installed along with updates over TOR. After installation, ensure everything is updated. 
+<!--For our setup with Qubes, we are going to be heavily utilizing virtualization. Ensure your PC has enough RAM. Make sure you verify the ISO and such. During installation, ensure to encrypt the disk along with a secure password as an insecure one could easily comprise the entire system. Ensure that Whonix will be installed along with updates over TOR. After installation, ensure everything is updated. 
 
-We can utilize updates over TOR to help prevent an adversary from knowing that we are using Qubes. This can be extremely beneficial as our adversary wouldn't know a "specific" way to target us.
+We can utilize updates over TOR to help prevent an adversary from knowing that we are using Qubes. This can be extremely beneficial as our adversary wouldn't know a "specific" way to target us.-->
+
+
+What is QubesOS? Simply put, QubesOS is a "reasonably secure operating system" and it will be the basis of our secure setup. It uses a method known as "security by compartmentalization". Simply put, most aspects of the OS are split into Qubes which can be thought of as virtual machines, meaning that if something gets compromised, the rest of the system can be safely used. Due to the way QubesOS is built, requirements will be heavy. Recommend at *least* 16GB of RAM with plenty of storage. The official requirements can be found [here](https://www.qubes-os.org/doc/system-requirements/).
+
+Why should we use QubesOS?
+
+- It is commonly regarded as one of the most secure operating systems
+- Provides amazing potential for creativity
+- Still can be considered trusted even if a section is compromised
+- Can heavily utilize TOR, proxies and VPNs
+
+Things needed for setup & installation:
+
+- [GnuPG](https://gnupg.org/download/index.html)
+- At least an 8GB flash drive
+- [Rufus](https://rufus.ie), [BalenaEtcher](https://www.balena.io/etcher/), or ``dd``
+
+![](../assets/Another_guide/img/Qubes-Title.png)
+
+To first start off, [download](https://qubes-os.org/downloads/) the official ISO along with the digests.
+
+![](../assets/Another_guide/img/Qubes-1.png)
+
+To verify the ISO, run the command: <br>
+```md5sum -c Qubes-RX-x86_64.iso.DIGESTS``` <br>
+ which should output ``Qubes-RX-x86_64.iso: OK``. If not, it can mean either the download is corrupt or compromised.
+
+![](../assets/Another_guide/img/Qubes-2.png)
+
+To verifiy with GPG, run the following command: <br>
+```gpg2 -v --verify Qubes-RX-x86_64.iso.asc Qubes-RX-x86_64.iso``` 
+
+The output should read ``Good signature from "Qubes OS Release X Signing Key"``
+
+![](../assets/Another_guide/img/Qubes-3.png)
+
+After verifying the integrity of the ISO, you are now able to use your desired flashing software. Ensure your flash drive is plugged in, and select it along with the ISO. Your flash drive will be erased. For Rufus users, select DD mode on format.
+
 <br>
+
+##### Installation
+
+After booting to your installation medium click the "verify" option. Afterwords, theres a few things we need to do. 
+
+- Set a *strong* encryption password. This is super important! Make it strong
+- Ensure __root__ is disabled
+- Set a strong user account password
+
+After you go through this, select "Begin Installation" and wait until it asks you to reboot. Now you are ready for the final configuration. Ensure you have all the Whonix options selected. If you are using a desktop **do not** select the ``sys-usb`` option. This will render your mouse and keyboard useless. Use ``sys-usb`` on a laptop! For increased anonymity it is recommended to chose updates over TOR. We also want our default qubes along with the default system qubes.
 
 ##### "Splitting"
 
@@ -198,6 +249,36 @@ More thoughts:
 - Split-Print
 
 <br>
+
+##### Template Setup
+
+Templates are going to be the foundation of any QubesOS install. As such, it should also be carefully configured.
+
+You should not install all of your applications on a single template qube, instead you should have different templates for each purpose. This is done as a security measure along with helping us with proper compartmentalization. It's best to use minimal templates as most applications will likely not get used, but if you need more applications you can simply install them in a new template. Ensure to read the [official documentation](https://qubes-os.org/doc/templates/minimal) for minimal templates.
+
+The official minimal templates are avaliable:
+- Fedora
+- Debian
+- CentOS
+- Gentoo
+
+For installing templates:
+dom0:
+```
+sudo qubes-dom0-update qubes-template-<DISTRO_NAME>-<RELEASE_NUMBER>-minimal
+```
+
+Suggested packages to install on the minimal template:
+
+```
+qubes-core-agent-paswordless-root
+qubes-core-agent-dom0-updates
+qubes-usb-proxy
+qubes-gpg-split
+```
+
+<br>
+
 
 ##### Qube Basic Setup
 
@@ -229,32 +310,6 @@ This can be used for a wide variety of activities, not just specifically "person
 
 <br>
 
-##### Template Setup
-
-You should not install all of your applications on a single template qube, instead you should have different templates for each purpose. This is done as a security measure along with helping us with proper compartmentalization. It's best to use minimal templates as most applications will likely not get used, but if you need more applications you can simply install them in a new template. Ensure to read the [official documentation](https://qubes-os.org/doc/templates/minimal) for minimal templates.
-
-The official minimal templates are avaliable:
-- Fedora
-- Debian
-- CentOS
-- Gentoo
-
-For installing templates:
-dom0:
-```
-sudo qubes-dom0-update qubes-template-<DISTRO_NAME>-<RELEASE_NUMBER>-minimal
-```
-
-Suggested packages to install on the minimal template:
-
-```
-qubes-core-agent-paswordless-root
-qubes-core-agent-dom0-updates
-qubes-usb-proxy
-qubes-gpg-split
-```
-
-<br>
 
 ##### Additional Setup
 
@@ -361,9 +416,9 @@ This is for advanced users. Read the [official documentation](https://qubes-os.o
 
 ###### Backups
 
-Creating proper backups securely is critical for any setup, especially this one here. You must understand the different backup techniques and solutions avaliable. For high security, it is recommended that we backup the system locally, meaning that we do not store our backups on the cloud. We should start to look at possible backup solutions. The built-in ``qvm-backup`` will work amazing for this. It provides security & authentication, which are both crucial to a proper backup solution. Ensure to read the [official documentation](https://github.com/qubes-os.org/doc/how-to-back-up-restore-and-migrate). 
+Creating proper backups securely is critical for any setup, especially this one here. You must understand the different backup techniques and solutions available. For high security, it is recommended that we backup the system locally, meaning that we do not store our backups on the cloud. We should start to look at possible backup solutions. The built-in ``qvm-backup`` will work amazing for this. It provides security & authentication, which are both crucial to a proper backup solution. Ensure to read the [official documentation](https://github.com/qubes-os.org/doc/how-to-back-up-restore-and-migrate). 
 
-It's suggested you have a high-speed SSD or M.2 for this procedure. There are "special" options described as "rugged", which has additional layer of armor and is generally waterproof. Ensure this drive is also high-capacity. In some cases, it may make sense to have an additional drive incase of failure or other malfunction. Going into redundancy, you also have the ability to setup a local RAID on your network. This would provide increased redundancy, though it can *potentially* decrease security, as having another system on the network, proper hardening, etc. but is unlikely to cause any harm. You could setup a local nextcloud instance or another type of local network storage and utilize [wyng](https://github.com/tasket/wyng-backup).
+It's suggested you have a high-speed SSD or M.2 for this procedure. There are "special" options described as "rugged", which has additional layer of armor and is generally waterproof. Ensure this drive is also high-capacity. In some cases, it may make sense to have an additional drive incase of failure or other malfunction. Going into redundancy, you also have the ability to setup a local RAID on your network. This would provide increased redundancy, though it can *potentially* decrease security, as having another system on the network, proper hardening, etc. but is unlikely to cause any harm. You could setup a local NextCloud instance or another type of local network storage and utilize [wyng](https://github.com/tasket/wyng-backup).
 
 <br>
 
