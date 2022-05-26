@@ -225,7 +225,7 @@ _Disclaimer: This is for education / research._
 
 #### __Email Providers__
 
-- [ProtonMail](https://protonmail.com) <button type="button" class="btn btn-xs btn-info"><a href="https://mail.protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/">TOR</a></button>
+- [Proton](https://proton.me) <button type="button" class="btn btn-xs btn-info"><a href="https://mail.protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/">TOR</a></button>
 
 #### Aliases
 
