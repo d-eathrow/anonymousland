@@ -48,7 +48,3 @@ Honestly, I don't know either. I just want to... feel in place. I always enjoyed
 Let's just be happy
 
 Let's... all just be... together maybe?
-
-##### Monero:
-
-```4B4kUhGXkMhic8W9NXVMTsi8cLidFAuyW3p5cWd9jG3tTT9ADCPHcrYZ8hkvA8s8TNTmSDohb9CeqJZFGqKddR8qDF1okZp```
