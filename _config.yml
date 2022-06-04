@@ -12,10 +12,11 @@ toolbar_priority:
   - dropdown1
   - dropdown2
   - blog
+  
 collections:
   .well-known:
     output: true
-    permalink: /m/:matrix/server/
+    permalink: /:collection/:path/
   guide:
     output: true
   dropdown:
