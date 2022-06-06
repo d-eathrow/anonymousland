@@ -145,28 +145,27 @@ Frontends act as a proxy between you and the service without tracking or reveali
 
 #### Frontends
 
-Medium - [Scribe](https://sr.ht/~edwardloveall/scribe/)
-Reddit - [Libreddit](https://libredd.it)
-Twitter - [Nitter](https://github.com/zedeus/nitter)
-Wikipedia - [Wikiless](https://codeberg.org/orenom/Wikiless)
-YouTube - [Invidious](https://invidious.io)
+Medium - [Scribe](https://sr.ht/~edwardloveall/scribe/) <br>
+Reddit - [Libreddit](https://libredd.it) <br>
+Twitter - [Nitter](https://github.com/zedeus/nitter) <br>
+Wikipedia - [Wikiless](https://codeberg.org/orenom/Wikiless) <br>
+YouTube - [Invidious](https://invidious.io) <br>
 
 <br>
 
 #### Alternatives
 
-Reddit - [Aether](https://getaether.net)
-Twitter - [Mastadon](https://joinmastadon.org)
-YouTube - [Peertube](https://joinpeertube.org)
-YouTube - [Odysee](https://odysee.com)
+Reddit - [Aether](https://getaether.net) <br>
+Twitter - [Mastadon](https://joinmastadon.org) <br>
+YouTube - [Peertube](https://joinpeertube.org) <br>
+YouTube - [Odysee](https://odysee.com) <br>
 
 <br>
 
 #### Clients
 
-Reddit - [Slide](https://github.com/ccrama/Slide) (Mobile)
-
-YouTube -[NewPipe](https://netpipe.net) (Mobile)
+Reddit - [Slide](https://github.com/ccrama/Slide) (Mobile) <br>
+YouTube -[NewPipe](https://netpipe.net) (Mobile) <br>
 
 <br>
 
