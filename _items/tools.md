@@ -174,7 +174,6 @@ YouTube -[NewPipe](https://netpipe.net) (Mobile) <br>
 Email is a nessecary evil that is required in this world. Email is inherently insecure, which means your email provider can read any of your messages. These providers offer encryption, anonymity and security. 
 
 - [Proton](https://proton.me) <button type="button" class="btn btn-xs btn-info"><a href="https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion">TOR</a></button>
-
 - [Mailfence](https://mailfence.com)
 
 #### Aliases
@@ -182,7 +181,6 @@ Email is a nessecary evil that is required in this world. Email is inherently in
 This provides multiple aliases for your emails, so you do not have to reveal your true email address. This is extremely useful especially if you are worried about your email being leaked.
 
 - [SimpleLogin](https://simplelogin.io/)
-
 - [AnonAddy](https://anonaddy.com/)
 
 <br>
@@ -201,14 +199,14 @@ Your messages must be secure as they reveal a lot about you. Choosing an encrypt
 
 <br>
 
-#### Centralized
+##### Centralized
 
 - [Signal](https://signal.org)
   - [Molly](https://github.com/mollyim/mollyim-android) (Mobile)
 
 <br>
 
-#### P2P
+##### P2P
 
 - [Briar](https://briarproject.org) (Mobile)
 
@@ -237,7 +235,7 @@ Password managers are a great way to both securely and remember all of your pass
 
 Your search engine knows a lot about you. This information is often times sold to 3rd parties and given away to government agencies. They often show biased search results. Choose a better one here.
 
-- [DuckDuckGo](https://duckduckgo.com) <button type="button" class="btn btn-xs btn-info"><a href="https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/">TOR</a></button>  <button type="button" class="btn btn-xs btn-warning"><a href="https://help.duckduckgo.com/duckduckgo-help-pages/community/open-source/">Closed-Source</a></button>
+- [DuckDuckGo](https://duckduckgo.com) <button type="button" class="btn btn-xs btn-info"><a href="https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/">TOR</a></button>  <button type="button" class="btn btn-xs btn-warning"><a href="https://help.duckduckgo.com/duckduckgo-help-pages/community/open-source/">Partially Closed-Source</a></button>
 - [SearX](https://searx.me)
 - [Brave Search](https://search.brave.com)
 
