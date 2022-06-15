@@ -26,30 +26,42 @@ Let's define a few important things here:
 
 `Security: The act of protecting yourself and online content such as files from either known and / or unknown adversary.`
 
-`Anonymity: The act of hiding yourself to become indistinguishable from everyone else. (blending in)`
+`Anonymity: The act of hiding yourself to become indistinguishable from everyone else or simply "blending in".`
 
 ### Getting Started
 
 _Disclaimer: This is for education / research._
 
+<br>
+
 ##### Table of contents:
 
-\>> [Important Concepts](#important-concepts) <br> 
-\>> [Proper Mindset](#proper-mindset) <br> 
-\>> [Knowing Your Adversary](#knowing-your-adversary) <br> 
-\>> [Setting Goals](#setting-goals) <br> 
-\>> [Creating Your Threat model](#creating-your-threat-model) <br> 
-\>> [Knowing Resources](#knowing-resources) <br> 
-\>> [Getting Ready to "clean up"](#getting-ready-to-"clean-up") <br> 
-\>> [Setting Your Foundation](#setting-your-foundation) <br>
-\>> [QubesOS](#qubesos) <br>
-\>> [GrapheneOS](#grapheneos) <br>
-\>> [Creating our Aliases](#creating-our-aliases) <br>
-\>> [Hardening](#hardening) <br>
+-\>> [Important Concepts](#important-concepts) <br>
+  - -\> *[TOR](#tor)* <br>
+
+-\>> [Proper Mindset](#proper-mindset) <br> 
+-\>> [Knowing Your Adversary](#knowing-your-adversary) <br> 
+-\>> [Setting Goals](#setting-goals) <br> 
+-\>> [Creating Your Threat model](#creating-your-threat-model) <br> 
+-\>> [Knowing Resources](#knowing-resources) <br> 
+-\>> [Cleaning Up](#cleaning-up) <br> 
+
+-\>> [Desktop](#desktop) <br>
+  - -\>> [QubesOS](#qubesos) <br>
+     - -\>> *[Installation](#installation)* <br>
+     - -\>> *[Template Setup](#template-setup)* <br>
+     - -\>> *[Onionizing Repositories](#onionizing-repositories)* <br>
+     - -\>> *[Qubes Basic Setup](#qube-basic-setup)* <br>
+
+-\>> [Creating our Aliases](#creating-our-aliases) <br>
+-\>> [Secure Communications](#secure-communications) <br>
+-\>> [Secure Hardware](#secure-hardware) <br>
+
+<br>
 
 #### __Important Concepts__
 
-This guide requires you to understand various important concepts in order to truly be anonymous - The following below is to be ASSUMED.
+This guide requires you to understand various important concepts in order to truly be anonymous on the internet. There is a vast array of concepts that will need to be thoroughly understood. You'll be able to make and choose your own model based upon this guide.
 
 *   Understanding of TOR and its threats<!--(put link here) -->
 *   Understanding benefits and negatives of a VPN <!--(PUT LINK HERE) -->
@@ -65,6 +77,18 @@ General Ideas:
 - An adversary with enough time and resources will eventually find you
 - The best way to hide is to not use the internet
 - The land of compromises
+
+<br>
+
+##### TOR
+
+TOR or The Onion Router was originally developed to keep U.S. military communications secure, and is now used world-wide to bypass censorship. TOR will route your network traffic through 3 servers worldwide randomly. ``entry-node`` -> ``middle-node`` -> ``exit-node``. This setup means that the ``entry-node`` will only have your IP address, the ``middle-node`` will only see the IP of ``entry-node`` __NOT__ your IP address. ``exit-node`` is the only node which will see *all* of your network traffic. 
+
+Utilizing TOR with other ``.onion`` sites, means that neither your IP nor the servers IP address is exposed. Like your traffic going through 3 nodes or "hops", the a server running on the TOR network also goes through the same, meaning that the ``exit-node`` *cannot* see your network traffic.
+
+With TOR, anyone is able to setup a node meaning that you cannot possible trust anything, which there are many issues including a malicious ``exit-node``, setup by an adversary in an attempt to de-anonymize users. The TOR network is not as secure as many put it, there are a variety of attacks that can be used to de-anonymize users. An adversary can setup multiple malicious ``entry``, ``middle``, and ``exit`` nodes, then can DDoS other public TOR nodes which can either shut them offline or increase the already terrible speeds. This could force a user to connect to the adversary's malicious nodes. On a large DDoS scale, it is possible to be connected to all 3 malicious nodes, which would ultimately de-anonymize you. 
+
+Many people argue against using VPNs with TOR, though there can be real-world benefits to having a setup like this. If you are worried about an adversary knowing you are connecting to the TOR network this can be beneficial, but keep in mind your adversary can see you connect to the VPN. If you are concerned about a malicious ``entry-node``, using a VPN can mask your IP address in this case. If you are using an "amnesic" setup such as Tails or anon-whonix on QubesOS, you do not need to worry about having the same ``guard-node``.
 
 <br>
 
@@ -156,7 +180,7 @@ Along your journey, you'll need to have the proper resources at hand to deal wit
 
 <br>
 
-#### __Getting Ready to "clean up"__
+#### __"Cleaning Up"__
 
 What is _"cleaning up"?_
 
@@ -170,26 +194,24 @@ As for finding services you may have forgotten, look through your entire email a
 
 There are some services which exist that can help expedite this process, though be aware of the risks involved in doing this. 
 
+
+As for finding services you may have forgotten, look through your entire email and find services you may have signed up for and start to do the same process. Often times, search for ``register``, ``registration``, ``welcome``. These keywords are often times used. Try to search up your commonly-used usernames to help you with this process. Do this for every single account, just to ensure there is not anything that you may have missed. There are some services which exist that can help expedite this process, though be aware of the risks involved in doing this. 
+
+Try to do searches on all of your identities and use this as a good way to help ensure that you've removed everything that you can. Utilize services such as [HaveIBeenpwned](https://haveibeenpwned.com) to ensure you haven't suffered any data breaches and use Sherlock to help find some of your missed accounts.
+
+Doing this in the real-world is just as important as online. Your bank, local grocery store, etc. all share your information. This is a big deal.
+
 <br>
 
-### Setting Foundation
+#### __Desktop__
 
-The next several sections are going to go over setting and creating our "foundation". Our foundation will be the core of our setup. Everything done here will impact the level of security, privacy and anonymity that we have. This section will be long, but is important.
+Choosing our operating system for desktop is an extremely important factor. Based upon your threat model, system resources and time, you'll have to choose an operating system which best suits you. Basically if you're using Windows / MacOS and you never thought there were other operating systems, this isn't for you. This if for somewhat knowledgeable people (no offense) and you can learn more elsewhere.
 
-Choosing our operating system is one of the most important pieces for this setup. This section will be focused around [QubesOS](https://qubes-os.org).
+The operating system you choose should not be based upon what is recommended here, you yourself have to choose what you want and need.
 
 <br>
 
-#### __QubesOS__
-
-<!--<div class="alert alert-info" role="alert">
-  <strong>Note:</strong> Your PC may not have enough RAM for this setup, modify it based upon your needs.
-</div>-->
-
-<!--For our setup with Qubes, we are going to be heavily utilizing virtualization. Ensure your PC has enough RAM. Make sure you verify the ISO and such. During installation, ensure to encrypt the disk along with a secure password as an insecure one could easily comprise the entire system. Ensure that Whonix will be installed along with updates over TOR. After installation, ensure everything is updated. 
-
-We can utilize updates over TOR to help prevent an adversary from knowing that we are using Qubes. This can be extremely beneficial as our adversary wouldn't know a "specific" way to target us.-->
-
+##### __QubesOS__
 
 What is QubesOS? Simply put, QubesOS is a "reasonably secure operating system" and it will be the basis of our secure setup. It uses a method known as "security by compartmentalization". Simply put, most aspects of the OS are split into Qubes which can be thought of as virtual machines, meaning that if something gets compromised, the rest of the system can be safely used. Due to the way QubesOS is built, requirements will be heavy. Recommend at *least* 16GB of RAM with plenty of storage. The official requirements can be found [here](https://www.qubes-os.org/doc/system-requirements/).
 
@@ -199,6 +221,8 @@ Why should we use QubesOS?
 - Provides amazing potential for creativity
 - Still can be considered trusted even if a section is compromised
 - Can heavily utilize TOR, proxies and VPNs
+
+QubesOS gives us an amazing amount of customization that we can harness for security. The sky is the limit with Qubes as it's based on VM's. Nothing ever leaves each VM so, each activity can be compartmentalized for amazing security.
 
 Things needed for setup & installation:
 
@@ -229,7 +253,7 @@ After verifying the integrity of the ISO, you are now able to use your desired f
 
 <br>
 
-##### Installation
+###### Installation
 
 After booting to your installation medium click the "verify" option. Afterwords, theres a few things we need to do. 
 
@@ -239,24 +263,28 @@ After booting to your installation medium click the "verify" option. Afterwords,
 
 After you go through this, select "Begin Installation" and wait until it asks you to reboot. Now you are ready for the final configuration. Ensure you have all the Whonix options selected. If you are using a desktop **do not** select the ``sys-usb`` option. This will render your mouse and keyboard useless. Use ``sys-usb`` on a laptop! For increased anonymity it is recommended to chose updates over TOR. We also want our default qubes along with the default system qubes.
 
-##### "Splitting"
+###### Qube Basic Setup
 
-Let's startup by creating some basic qubes. To start, clone ``vault`` and create ``pgp-keys`` and ``ssh-keys`` to store our keys securely. Both should have __no internet access__. We will need to properly setup [split-pgp](https://qubes-os.org/doc/split-gpg) and [split-ssh](https://kushaldas/in/posts/using-split-ssh-in-qubesos-4-0.html). Using the "split" method, we are able to create an additional [split-browser](https://github.com/rustybird/qubes-split-browser) and a [split-dm-crypt](https://github.com/rustybird/qubes-split-dm-crypt).
+As for networking, if you have a VPN service such as ProtonVPN, you are able to utilize ``qtunnel`` and setup multiple VPNs. For each of our VPN qubes, we will need a ``sys-firewall``. If you wanted a dedicated ``sys-dns``, there are several guides on this:
 
-More thoughts:
+- [qubes-dns](https://github.com/3hhh/qubes-dns)
+- [Pihole  qube](https://github.com/92VV3M42d3v8/PiHole)
 
-- Split-Browser
-- Split-Print
+``sys-net`` -> ``sys-firewall`` -> ``sys-vpn`` -> ``sys-firewall-vpn``
+
+We will now create additional qubes for our use.
+
+- ``sys-net`` -> ``sys-firewall`` -> ``sys-firewall-email-personal`` -> ``personal-email`` - By placing the firewall here, this allows us to only whitelist internet traffic from specifically our email provider.
 
 <br>
 
-##### Template Setup
+###### Template Setup
 
 Templates are going to be the foundation of any QubesOS install. As such, it should also be carefully configured.
 
 You should not install all of your applications on a single template qube, instead you should have different templates for each purpose. This is done as a security measure along with helping us with proper compartmentalization. It's best to use minimal templates as most applications will likely not get used, but if you need more applications you can simply install them in a new template. Ensure to read the [official documentation](https://qubes-os.org/doc/templates/minimal) for minimal templates.
 
-The official minimal templates are avaliable:
+The official minimal templates are available:
 - Fedora
 - Debian
 - CentOS
@@ -271,21 +299,65 @@ sudo qubes-dom0-update qubes-template-<DISTRO_NAME>-<RELEASE_NUMBER>-minimal
 Suggested packages to install on the minimal template:
 
 ```
-qubes-core-agent-paswordless-root
+qubes-core-agent-passwordless-root
 qubes-core-agent-dom0-updates
 qubes-usb-proxy
 qubes-gpg-split
 ```
 
+Unofficial templates can be found on the QubesOS forum, and there is always the ability to build your own template from scratch.
+
+Fedora-35:
+
+```
+sudo qubes-dom0-update qubes-template-fedora-35
+```
+
+Debian-11:
+
+```
+sudo qubes-dom0-update qubes-template-debian-11
+```
+
+When installing applications, it may be best to clone a minimal template and install the application on there for increased compartmentalization. 
+
 <br>
 
+###### Onionizing Repositories
 
-##### Qube Basic Setup
+If you've opted to have updates over TOR, it is recommended that we also update our repositories on both dom0 and our templates. Changing our repositories over TOR helps increase anonymity as we'd be connecting to the onion site instead of the clearnet.
+
+dom0:
+
+In dom0, edit ``/etc/yum.repos.d/qubes-dom0.repo`` and we will comment out the ``metalink`` and then uncomment the onion ``baseurl``. After, update dom0 to ensure this is configured properly.
+
+The same process above will take place in the ``/etc/qubes/repo-templates/qubes-templates.repo`` file.
+
+Debian Templates:
+
+Edit ``/etc/apt/sources.list``, comment out the clearnet repos and add the following:
+
+```
+2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian bullseye main contrib non-free
+
+deb tor+http://5ajw6aqf3ep7sijnscdzw77t7xq4xjpsy335yb2wiwgouo7yfxtjlmid.onion bullseye-security main contrib non-free
+
+#Optional Backports
+deb tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian bullseye-backports main contrib non-free
+```
+
+Fedora Templates:
+
+Edit ``/etc/yum.repos.d/qubes-r[version].repo``, comment out the clearnet ``baseurl`` and uncoment the onion ``baseurl``
+
+<br>
+
+###### Qube Basic Setup
 
 As for networking, if you have a VPN service such as ProtonVPN, you are able to utilize ``qtunnel`` and setup multiple VPNs. For each of our VPN qubes, we will need a ``sys-firewall``. If you wanted a dedicated ``sys-dns``, there are several guides on this:
 
 - [qubes-dns](https://github.com/3hhh/qubes-dns)
-- [Pihole  qube](https://github.com/92VV3M42d3v8/PiHole)
+- [Pihole qube](https://github.com/92VV3M42d3v8/PiHole)
 
 ``sys-net`` -> ``sys-firewall`` -> ``sys-vpn`` -> ``sys-firewall-vpn``
 
@@ -310,16 +382,20 @@ This can be used for a wide variety of activities, not just specifically "person
 
 <br>
 
+###### "Splitting"
 
-##### Additional Setup
+Let's startup by creating some basic qubes. To start, clone ``vault`` and create ``pgp-keys`` and ``ssh-keys`` to store our keys securely. Both should have __no internet access__. We will need to properly setup [split-pgp](https://qubes-os.org/doc/split-gpg) and [split-ssh](https://kushaldas/in/posts/using-split-ssh-in-qubesos-4-0.html). Using the "split" method, we are able to create an additional [split-browser](https://github.com/rustybird/qubes-split-browser) and a [split-dm-crypt](https://github.com/rustybird/qubes-split-dm-crypt).
 
-You are never truly done configuring and setting up Qubes. There will always be more and more to configure. This section goes through some of these additional configurations.
+More thoughts:
+
+- Split-Browser
+- Split-Print
 
 <br>
 
 ###### U2F-Proxy
 
-Like the variety of tools offered by QubesOS, [u2f-proxy](https://qubes-os.org/doc/u2f-proxy) is no exception. This is an amazing tool that we will use for multi-factor authentication. This allows you to "compartmentalize the browser in one qube and the USB stack in another so that they are always kept separate from each other".
+Using [u2f-proxy](https://qubes-os.org/doc/u2f-proxy) allows you to "compartmentalize the browser in one qube and the USB stack in another so that they are always kept separate from each other".
 
 The Qubes documentation shows the following for installation:
 
@@ -405,6 +481,21 @@ Now, edit ``/etc/pam.d/xscreensaver`` to include:
 ```
 auth include yubikey
 ```
+<br>
+
+###### Multi-Factor Authentication
+
+We are able to utilize a network-isolated Qube for MFA. This allows us to have security benefits of MFA while increased security as the qube is entirely offline and isolated. We will be utilizing the ``oathtool`` for this MFA setup. Start off by creating a template preferably cloned from ``fedora-minimal`` and then ``sudo dnf install oathtool``. Afterwords, create an AppVM based on the MFA template we just created *without* network access.
+
+Whenever you are enabling 2FA, ensure to copy the secret key, then paste it into your MFA qube as such: 
+
+```
+oathtool --base-32 --totp "SECRET_KEY"
+```
+
+Such a command will print the one-time token.
+
+It's best to preferably save the above command you typed, as this is how you will retrieve your one-time token. You're able to create a simple script that just executes the above command. You will do this for each 2FA account. ``account-1.sh``, ``account-2.sh``.
 
 <br>
 
@@ -416,30 +507,13 @@ This is for advanced users. Read the [official documentation](https://qubes-os.o
 
 ###### Backups
 
-Creating proper backups securely is critical for any setup, especially this one here. You must understand the different backup techniques and solutions available. For high security, it is recommended that we backup the system locally, meaning that we do not store our backups on the cloud. We should start to look at possible backup solutions. The built-in ``qvm-backup`` will work amazing for this. It provides security & authentication, which are both crucial to a proper backup solution. Ensure to read the [official documentation](https://github.com/qubes-os.org/doc/how-to-back-up-restore-and-migrate). 
+Creating proper backups securely is critical for any setup, especially this one here. You must understand the different backup techniques and solutions avaliable. For high security, it is recommended that we backup the system locally, meaning that we do not store our backups on the cloud. We should start to look at possible backup solutions. The built-in ``qvm-backup`` will work amazing for this. It provides security & authentication, which are both crucial to a proper backup solution. Ensure to read the [official documentation](https://github.com/qubes-os.org/doc/how-to-back-up-restore-and-migrate). 
 
-It's suggested you have a high-speed SSD or M.2 for this procedure. There are "special" options described as "rugged", which has additional layer of armor and is generally waterproof. Ensure this drive is also high-capacity. In some cases, it may make sense to have an additional drive incase of failure or other malfunction. Going into redundancy, you also have the ability to setup a local RAID on your network. This would provide increased redundancy, though it can *potentially* decrease security, as having another system on the network, proper hardening, etc. but is unlikely to cause any harm. You could setup a local NextCloud instance or another type of local network storage and utilize [wyng](https://github.com/tasket/wyng-backup).
-
-<br>
-
-#### __GrapheneOS__
-
-[GrapheneOS](https://grapheneos.com) is an amazing mobile operating system. This OS has been developed to provide security along with privacy. The only limitations is that it requires an OEM unlocked Google Pixel device. These devices have been known for their security, so putting them together is an amazing pair.
-
-<!-- Stuff here -->
-
-After installing, there is plenty of things we can start to do. We will be utilizing the built-in profiles along with the "work profile". We will need to install [F-droid](https://f-droid.org). 
-
-<!-- Maybe guid here, also reword above -->
-
+It's suggested you have a high-speed SSD or M.2 for this procedure. There are "special" options described as "rugged", which has additional layer of armor and are generally waterproof. Ensure this drive is also high-capacity. In some cases, it may make sense to have an additional drive incase of failure or other malfunction. Going into redundancy, you also have the ability to setup a local RAID on your network. This would provide increased redundancy, though it can *potentially* decrease security, as having another system on the network, proper hardening, etc. but is unlikely to cause any harm with the proper configuration. You could setup a local NextCloud instance or another type of local network storage and utilize [wyng](https://github.com/tasket/wyng-backup).
 
 <br>
 
-#### Creating our aliases
-
-<div class="alert alert-info" role="alert">
-  <strong>Note:</strong> This is a continuation of the [QubeOS setup](#qubesos).
-</div>
+##### Creating our aliases
 
 For setting our foundation, we are going to be creating a variety of aliases and each of these aliases are going to each need an "arsenal". For step 1 we are going to need a password manager.
 
@@ -447,6 +521,8 @@ Upon creating our aliases we will have several different approaches:
 
 1. Each username, email, and other will be completely random
 2. Each alias will have its own email, username, etc.
+
+We can generate an alias by thinking of a random word / phrase but this method could eventually compromise you if you keep choosing references from Star Trek.
 
 If you are using QubesOS, we are able to utilize compartmentalization heavily in this instance. We will start off by creating multiple qubes for our setup.
 
@@ -466,27 +542,66 @@ Each of our aliases is going to need some sort of "story". We are not putting th
 
 <br>
 
-<!--#### Secure Hardware
+#### __Secure Communications__
 
-There's no point in trying to setup a secure system if the hardware itself cannot be trusted. Anything can be pre-loaded with malicious code designed to compromise security, especially how mass-production has been increasing over time, meaning they just need to compromise a device on the production line.
+Having a secure operating system is only 1 part that we need. We need to ensure that all of our communications stay secure. The most common method to this is using E2EE (End-to-end encryption). This encrypts your messages locally on your device before sending them out. Let's take a look at some of the basic types of messengers.
+
+Centralized: Meaning there is a single server / point of failure. If the server gets blocked you'll need to circumvent that.
+
+Decentralized: Multiple servers, not a single authority meaning it's much more censorship resistent.
+
+The main differences between centralized and decentralized is that a single authority cannot easily block a decentralized network as there is not a single server unlike centralized. Decentralized services are *sometimes* prone to leaking metadata and may cause issues when federated.
+
+Here's a list of great messengers and services that you'll be able to use.
+
+- [Signal](https://signal.org) A great messenger for friends & family. Requires a phone number as it acts as a replacement to SMS / MMS.
+
+- [Session](https://getsession.org) Censorship-resistent messenger. A fork of Signal without the phone-number requirement. Session has built-in onion-routing.
+
+<br>
+
+#### __Secure Hardware__
+
+You should not be trying to setup a secure system if the hardware itself cannot be trusted. Anything can be pre-loaded with malicious code designed to compromise security, especially how mass-production has been increasing over time, meaning they just need to compromise a device on the production line.
+
+<br>
 
 ##### Basics
 
 Here is a list of "everyday"-type carry / use.
 
-- USB Data Blocker - This USB device has the data pins removed from it, this sits from your USB female to your USB male, acting as a "middle man". It's impossible for data to travel between. Useful for public USB ports or untrusted devices.
+USB Data Blocker: This USB device has the data pins removed from it, this sits from your USB female to your USB male, acting as a "middle man". It's impossible for data to travel between. Useful for public USB ports or untrusted devices. Very useful if you're at an airport, hotel or other public area in which you need to charge a USB device.
 
-- Faraday Pouch - This will block all electromagnetic fields, which can ensure that absolutely no signal is traveling out of your devices. It completely air-gaps the device.
+<br>
 
-<br>-->
+[PortaPow USB Data Blocker](https://www.amazon.com/PortaPow-3rd-Gen-Data-Blocker/dp/B00QRRZ2QM/) - The gold standard of USB data blocking. This is a USB-A connector with a built-in "SmartChip" designed to increase charging speeds.
 
-#### Hardening
+<br>
 
-Now that we've setup a solid foundation, it is now time for hardening. Hardening will be simple securing our pre-existing setup. You can never be too careful. Let's make some general notes here before we begin.
+<img src="../assets/Another_guide/img/USB_Data_Blocker.jpeg" alt="usb" width="200"/>
 
-- Mobile phones are extremely difficult to manage properly
-- You must think of all possible scenarios
-- Do your own research
+<br>
 
-Let's first start off with hardening our setup we've created above.
+[PortaPow Pure USB Data Blocker (Multicolored)](https://www.amazon.com/PortaPow-Pure-USB-Data-Blocker/dp/B07W928WRR/) - This USB-A Data Blocker is made of transparent plastic, meaning that you can physically verify that the data pins have been removed along with the removal of their "SmartChip". therefore increasing security. 
 
+<br>
+
+<img src="../assets/Another_guide/img/USB_Data_Blocker_Transparent.jpg" alt="usb" width="200"/>
+
+<br>
+
+[PortaPow USB-C to C Data Blocker](https://www.amazon.com/PortaPow-USB-C-Data-Blocker-Twin/dp/B082WDHS22/) - A USB-C cable that does not transfer any data.
+
+<br>
+
+<img src="../assets/Another_guide/img/USB_C_Data_Blocker.jpg" alt="usb" width="200"/>
+
+<br>
+
+[Malicious Cable Detector](https://hak5.org/products/malicious-cable-detector-by-o-mg) - Can be configured to detect malicious cables
+
+Hardware Key: A small little device that can be used for MFA and GPG. Very useful to have a physical device. Something like this is recommended to have a backup clone and stored in a safe location such as a safe.
+
+- Faraday Pouch - This will block all radio waves and signals, which can ensure that absolutely connectionn is traveling out of your devices. It completely air-gaps the device.
+
+<br>
