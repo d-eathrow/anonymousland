@@ -483,22 +483,6 @@ auth include yubikey
 ```
 <br>
 
-###### Multi-Factor Authentication
-
-We are able to utilize a network-isolated Qube for MFA. This allows us to have security benefits of MFA while increased security as the qube is entirely offline and isolated. We will be utilizing the ``oathtool`` for this MFA setup. Start off by creating a template preferably cloned from ``fedora-minimal`` and then ``sudo dnf install oathtool``. Afterwords, create an AppVM based on the MFA template we just created *without* network access.
-
-Whenever you are enabling 2FA, ensure to copy the secret key, then paste it into your MFA qube as such: 
-
-```
-oathtool --base-32 --totp "SECRET_KEY"
-```
-
-Such a command will print the one-time token.
-
-It's best to preferably save the above command you typed, as this is how you will retrieve your one-time token. You're able to create a simple script that just executes the above command. You will do this for each 2FA account. ``account-1.sh``, ``account-2.sh``.
-
-<br>
-
 ###### GUI-VM
 
 This is for advanced users. Read the [official documentation](https://qubes-os.org/guivm-configuration).
