@@ -205,9 +205,15 @@ Doing this in the real-world is just as important as online. Your bank, local gr
 
 #### __Desktop__
 
-Choosing our operating system for desktop is an extremely important factor. Based upon your threat model, system resources and time, you'll have to choose an operating system which best suits you. Basically if you're using Windows / MacOS and you never thought there were other operating systems, this isn't for you. This if for somewhat knowledgeable people (no offense) and you can learn more elsewhere.
+Our desktop contains a massive amount of information. This device should be both secure & private. Without these 2 things, it can easily compromise you. *What is the point of using a secure messenger, if your desktop is compromised by the same adversary you are protecting against via your secure messenger and they can see all of your activity?* 
 
-The operating system you choose should not be based upon what is recommended here, you yourself have to choose what you want and need.
+A massive amount of information is stored on our desktop, meaning that it contains a trove of our personal information. From search results to private documents. These items are **NOT** private on "traditional" operating systems.
+
+It is assumed that the average population is likely using Windows, Mac, or ChromeOS. These are absolutely terrible options for privacy. There are some efforts to "privatize" these operating systems, though due to the fact that they are all *closed-source*, means that many of these hardening methods that we would do, can just as easily fail if the OS itself is backdoored. If you are new to the "operating system realm", a good replacement / dual-boot for these would be Fedora or Manjaro. By "good", we assume the following: You are a beginner, you have little to none Linux experience or knowledge. These choices have been made for the easy installation and low maintenance. 
+
+The operating system you choose should not be based upon what is recommended here, you yourself will need to research what is best suited for your situation and needs.
+
+Those who are looking for some excitement or extremely into privacy, security and / or anonymity should look at [QubesOS](https://qubes-os.org) and [Tails](https://tails.boum.org) if you haven't already.
 
 <br>
 
@@ -541,6 +547,8 @@ Here's a list of great messengers and services that you'll be able to use.
 - [Signal](https://signal.org) A great messenger for friends & family. Requires a phone number as it acts as a replacement to SMS / MMS.
 
 - [Session](https://getsession.org) Censorship-resistent messenger. A fork of Signal without the phone-number requirement. Session has built-in onion-routing.
+
+- [Matrix](https://matrix.org) Matrix provides a federated platform, which allows for anyone to host their own server, meaning that it is resistent to censorship. 
 
 <br>
 
