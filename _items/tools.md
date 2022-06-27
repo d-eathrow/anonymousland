@@ -57,7 +57,7 @@ Multifactor authentication is extremely important as it provides multiple layers
 
 Your browser contains everything you do. It is the main entry point onto your system, along with the main privacy & security risk.
 
-- [TOR Browser](https://torproject.org) <button type="button" class="btn btn-xs btn-info"><a href="http://2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion/">TOR</a></button>
+- [Tor Browser](https://torproject.org) <button type="button" class="btn btn-xs btn-info"><a href="http://2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion/">Tor</a></button>
 - [Librewolf](https://librewolf.net/)
 - [Vanadium](https://vanadium.app) (Mobile)
 - [Bromite](https://bromite.org) (Mobile)
@@ -83,7 +83,7 @@ Extensions help increase privacy, at the cost of anonymity. None of these should
 
 #### Currencies
 
-- [Monero](https://getmonero.org) <button type="button" class="btn btn-xs btn-info"><a href="http://monerotoruzizulg5ttgat2emf4d6fbmiea25detrmmy7erypseyteyd.onion/">TOR</a></button>
+- [Monero](https://getmonero.org) <button type="button" class="btn btn-xs btn-info"><a href="http://monerotoruzizulg5ttgat2emf4d6fbmiea25detrmmy7erypseyteyd.onion/">Tor</a></button>
 - [ZCash](https://z.cash)
 
 <br>
@@ -107,7 +107,7 @@ Extensions help increase privacy, at the cost of anonymity. None of these should
 
 Registering a domain anonymously is very important, especially considering they can reveal a lot about you in a ``whois`` search if you haven't paid for "whois protection". These services will protect you.
 
-- [Njalla](https://njal.la) <button type="button" class="btn btn-xs btn-info"><a href="http://njallalafimoej5i4eg7vlnqjvmb6zhdh27qxcatdn647jtwwwui3nad.onion/">TOR</a></button>
+- [Njalla](https://njal.la) <button type="button" class="btn btn-xs btn-info"><a href="http://njallalafimoej5i4eg7vlnqjvmb6zhdh27qxcatdn647jtwwwui3nad.onion/">Tor</a></button>
 - [1984](https://1984hosting.com)
 
 <br>
@@ -125,7 +125,7 @@ Your files should *always* be encrypted. Even if your devices are compromised, y
 
 Sharing files can often times be difficult task. These are some applications that can securely share files.
 
-- [OnionShare](https://onionshare.org) <button type="button" class="btn btn-xs btn-info"><a href="http://lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/">TOR</a></button>
+- [OnionShare](https://onionshare.org) <button type="button" class="btn btn-xs btn-info"><a href="http://lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/">Tor</a></button>
 - [Syncthing](https://syncthing.net)
 
 <br>
@@ -173,7 +173,7 @@ YouTube -[NewPipe](https://netpipe.net) (Mobile) <br>
 
 Email is a nessecary evil that is required in this world. Email is inherently insecure, which means your email provider can read any of your messages. These providers offer encryption, anonymity and security. 
 
-- [Proton](https://proton.me) <button type="button" class="btn btn-xs btn-info"><a href="https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion">TOR</a></button>
+- [Proton](https://proton.me) <button type="button" class="btn btn-xs btn-info"><a href="https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion">Tor</a></button>
 - [Mailfence](https://mailfence.com)
 
 #### Aliases
@@ -217,8 +217,8 @@ Your messages must be secure as they reveal a lot about you. Choosing an encrypt
 Your operating system is the most important part, if it is insecure then you can assume any activities done are also compromised. This is the "heart" of ones setup and should be heavily considered and researched.
 
 - [Tails](https://tails.boum.org)
-- [Whonix](https://whonixproject.org) <button type="button" class="btn btn-xs btn-info"><a href="http://www.dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/">TOR</a></button>
-- [QubesOS](https://qubes-os.org) <button type="button" class="btn btn-xs btn-info"><a href="http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/">TOR</a></button>
+- [Whonix](https://whonixproject.org) <button type="button" class="btn btn-xs btn-info"><a href="http://www.dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/">Tor</a></button>
+- [QubesOS](https://qubes-os.org) <button type="button" class="btn btn-xs btn-info"><a href="http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/">Tor</a></button>
 - [GrapheneOS](https://grapheneos.org) (Mobile)
 
 <br>
@@ -235,7 +235,7 @@ Password managers are a great way to both securely and remember all of your pass
 
 Your search engine knows a lot about you. This information is often times sold to 3rd parties and given away to government agencies. They often show biased search results. Choose a better one here.
 
-- [DuckDuckGo](https://duckduckgo.com) <button type="button" class="btn btn-xs btn-info"><a href="https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/">TOR</a></button>  <button type="button" class="btn btn-xs btn-warning"><a href="https://help.duckduckgo.com/duckduckgo-help-pages/community/open-source/">Partially Closed-Source</a></button>
+- [DuckDuckGo](https://duckduckgo.com) <button type="button" class="btn btn-xs btn-info"><a href="https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/">Tor</a></button>  <button type="button" class="btn btn-xs btn-warning"><a href="https://help.duckduckgo.com/duckduckgo-help-pages/community/open-source/">Partially Closed-Source</a></button>
 - [SearX](https://searx.me)
 - [Brave Search](https://search.brave.com)
 
