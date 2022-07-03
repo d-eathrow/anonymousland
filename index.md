@@ -15,7 +15,10 @@ description: A fun happy place.
 
 </div>
 <body style="text-align:center">
-<l> <a href="https://codeberg.org/deathrow/anonymousland">Please Contribute!</a></l>
+<br>
+
+  <button type="button" class="btn btn-sm btn-info"><a href="https://codeberg.org/deathrow/anonymousland">Repository</a></button>
+
   <br>
   <br>
   <br>
@@ -30,8 +33,6 @@ description: A fun happy place.
   <l> <a href="">About</a></l>
   <l> - </l>
   <l> <a href="">Contact</a></l>
-  <l> - </l>
-  <l> <a href="">Donate</a></l>
   </body>
   
   

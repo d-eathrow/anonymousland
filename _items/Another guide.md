@@ -1,7 +1,9 @@
 ---
 layout: default1
 description: Just... a guide 
-title: Another Guide
+title: Guide
+permalink: /guide
+priority: 1
 ---
 
 <div style="text-align:center;">
@@ -135,6 +137,8 @@ More on this subject will be later in this _guide._
 *   Your life will change drastically.
 
 *   Do not be lazy
+
+People may think you are paranoid, but in a world like this it *is* useful to be even a bit paranoid. This will allow you to see the true realities of the world. If you are always thinking of ways you can be compromised, you'd actually likely reduce your risk due to the fact of you constantly thinking about it, rather than just "not really thinking" about it, or rather as often as you should. Privacy and security are constantly evolving, which means that you will have to evolve with it. Are you ready for a data breach? What are you going to do if your compromised? Questions like these are what you need to ask yourself in order to be successful, you must always have a backup plan that you can execute.
 
 <br>
 
