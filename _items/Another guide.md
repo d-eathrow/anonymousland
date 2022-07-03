@@ -39,7 +39,7 @@ _Disclaimer: This is for education / research._
 ##### Table of contents:
 
 -\>> [Important Concepts](#important-concepts) <br>
-  - -\> *[TOR](#tor)* <br>
+  - -\> *[Tor](#tor)* <br>
 
 -\>> [Proper Mindset](#proper-mindset) <br> 
 -\>> [Knowing Your Adversary](#knowing-your-adversary) <br> 
@@ -67,7 +67,7 @@ This guide requires you to understand various important concepts in order to tru
 There is a vast array of concepts that will need to be thoroughly understood. 
 You'll be able to make and choose your own model based upon this guide.
 
-*   Understanding of TOR and its threats<!--(put link here) -->
+*   Understanding of Tor and its threats<!--(put link here) -->
 *   Understanding benefits and negatives of a VPN <!--(PUT LINK HERE) -->
 *   Understanding important privacy concepts <!--(PUT LINK HERE) -->
 *   Understanding important security concepts <!--(PUT LINK HERE or make a section) -->
@@ -77,30 +77,30 @@ You'll be able to make and choose your own model based upon this guide.
 General Ideas:
 
 - Using a VPN will *NOT* make you anonymous
-- Just because you are using TOR does *NOT* mean you  are safe
+- Just because you are using Tor does *NOT* mean you  are safe
 - An adversary with enough time and resources will eventually find you
 - The best way to hide is to not use the internet
 - The land of compromises
 
 <br>
 
-##### TOR
+##### Tor
 
-TOR or The Onion Router was originally developed to keep U.S. military communications secure, and is now used world-wide to bypass censorship.
-TOR will route your network traffic through 3 servers worldwide randomly.
+Tor or The Onion Router was originally developed to keep U.S. military communications secure, and is now used world-wide to bypass censorship.
+Tor will route your network traffic through 3 servers worldwide randomly.
 ``entry-node`` -> ``middle-node`` -> ``exit-node``.
 This setup means that the ``entry-node`` will only have your IP address, the ``middle-node`` will only see the IP of ``entry-node`` __NOT__ your IP address.
 ``exit-node`` is the only node which will see *all* of your network traffic. 
 
-Utilizing TOR with other ``.onion`` sites, means that neither your IP nor the servers IP address is exposed. Like your traffic going through 3 nodes or "hops", the a server running on the TOR network also goes through the same, meaning that the ``exit-node`` *cannot* see your network traffic.
+Utilizing Tor with other ``.onion`` sites, means that neither your IP nor the servers IP address is exposed. Like your traffic going through 3 nodes or "hops", the a server running on the Tor network also goes through the same, meaning that the ``exit-node`` *cannot* see your network traffic.
 
-With TOR, anyone is able to setup a node meaning that you cannot possible trust anything, which there are many issues including a malicious ``exit-node``, setup by an adversary in an attempt to de-anonymize users.
-The TOR network is not as secure as many put it, there are a variety of attacks that can be used to de-anonymize users. An adversary can setup multiple malicious ``entry``, ``middle``, and ``exit`` nodes, then can DDoS other public TOR nodes which can either shut them offline or increase the already terrible speeds.
+With Tor, anyone is able to setup a node meaning that you cannot possible trust anything, which there are many issues including a malicious ``exit-node``, setup by an adversary in an attempt to de-anonymize users.
+The Tor network is not as secure as many put it, there are a variety of attacks that can be used to de-anonymize users. An adversary can setup multiple malicious ``entry``, ``middle``, and ``exit`` nodes, then can DDoS other public Tor nodes which can either shut them offline or increase the already terrible speeds.
 This could force a user to connect to the adversary's malicious nodes.
 On a large DDoS scale, it is possible to be connected to all 3 malicious nodes, which would ultimately de-anonymize you. 
 
-Many people argue against using VPNs with TOR, though there can be real-world benefits to having a setup like this.
-If you are worried about an adversary knowing you are connecting to the TOR network this can be beneficial, but keep in mind your adversary can see you connect to the VPN.
+Many people argue against using VPNs with Tor, though there can be real-world benefits to having a setup like this.
+If you are worried about an adversary knowing you are connecting to the Tor network this can be beneficial, but keep in mind your adversary can see you connect to the VPN.
 If you are concerned about a malicious ``entry-node``, using a VPN can mask your IP address in this case.
 If you are using an "amnesic" setup such as Tails or anon-whonix on QubesOS, you do not need to worry about having the same ``guard-node``.
 
@@ -173,12 +173,12 @@ Example - You don't want your neighbor Joe to see you sleeping, so you close you
 Developing a threat model will require a lot of time and effort.
 You will need to think of every possibility for your "assets".
 Using your resources.
-You will need to start documenting various tools and services will be a benefit to you, such as ProtonMail, TOR, Matrix, etc.
+You will need to start documenting various tools and services will be a benefit to you, such as ProtonMail, Tor, Matrix, etc.
 The tools and services will all depend on your threat model.
 
 Examples:
 
-- If you are trying to hide internet activity, then you would likely use a proxy, TOR, or a VPN.
+- If you are trying to hide internet activity, then you would likely use a proxy, Tor, or a VPN.
 
 - If you want to encrypt your emails, you would likely use a secure email provider and PGP.
 
@@ -288,7 +288,7 @@ Why should we use QubesOS?
 - It is commonly regarded as one of the most secure operating systems
 - Provides amazing potential for creativity
 - Still can be considered trusted even if a section is compromised
-- Can heavily utilize TOR, proxies and VPNs
+- Can heavily utilize Tor, proxies and VPNs
 
 QubesOS gives us an amazing amount of customization that we can harness for security.
 The sky is the limit with Qubes as it's based on VM's.
@@ -342,7 +342,7 @@ Now you are ready for the final configuration.
 Ensure you have all the Whonix options selected.
 If you are using a desktop **do not** select the ``sys-usb`` option.
 This will render your mouse and keyboard useless.
-Use ``sys-usb`` on a laptop! For increased anonymity it is recommended to chose updates over TOR.
+Use ``sys-usb`` on a laptop! For increased anonymity it is recommended to chose updates over Tor.
 We also want our default qubes along with the default system qubes.
 
 ###### Qube Basic Setup
@@ -413,8 +413,8 @@ When installing applications, it may be best to clone a minimal template and ins
 
 ###### Onionizing Repositories
 
-If you've opted to have updates over TOR, it is recommended that we also update our repositories on both dom0 and our templates.
-Changing our repositories over TOR helps increase anonymity as we'd be connecting to the onion site instead of the clearnet.
+If you've opted to have updates over Tor, it is recommended that we also update our repositories on both dom0 and our templates.
+Changing our repositories over Tor helps increase anonymity as we'd be connecting to the onion site instead of the clearnet.
 
 dom0:
 
@@ -637,7 +637,7 @@ If you are using QubesOS, we are able to utilize compartmentalization heavily in
 By doing this for each alias, you have now setup an amazing solution for compartmentalization.
 This only works if you utilize each qube for the specified task.
 Ensure that nothing will leave the qube.
-Ensure that all the ``alias`` qubes are properly routed via VPN or TOR to ensure proper setup.
+Ensure that all the ``alias`` qubes are properly routed via VPN or Tor to ensure proper setup.
 For a more advanced setup, you are able to utilize Whonix qubes.
 For each of our email addresses, we are able to setup email aliases using AnonAddy and SimpleLogin.
 
