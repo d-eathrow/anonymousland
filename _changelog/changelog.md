@@ -5,9 +5,6 @@ permalink: /changelog
 ---
 
 ---
-layout: default1
-title: Buttons
----
 
 # v1.0
 
