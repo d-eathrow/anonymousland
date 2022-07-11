@@ -16,10 +16,15 @@ description: A fun happy place.
 </div>
 <body style="text-align:center">
 <br>
+<br>
+
+  <button type="button" class="btn btn-lg btn-default"><a href="https://anonymousland.org/changelog">Changelog v1.0</a></button>
+
+<br>
+<br>
 
   <button type="button" class="btn btn-md btn-default"><a href="https://codeberg.org/deathrow/anonymousland">Repository</a></button>
 
-  <button type="button" class="btn btn-md btn-default"><a href="https://anonymousland.org/changelog">Changelog</a></button>
 
   <button type="button" class="btn btn-md btn-default"><a href="https://anonymousland.org/rss">RSS</a></button>
 
