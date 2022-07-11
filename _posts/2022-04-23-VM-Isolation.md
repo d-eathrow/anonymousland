@@ -6,15 +6,10 @@ categories: blog
 layout: post
 ---
 
-
-### 4/23/22
-
-##### Credits: 0xTheFather
-
-VM Isolation Guide
-
 VM Isolation Guide
 ------------------
+
+Credits: 0xTheFather
 
 As an alternate to using QubesOS, here is how one can properly setup isolation. This setup will provide proper isolation utilizing VMs and a secure host OS. This will provide increased security via isolation along with increased privacy with compartmentalization.
 
