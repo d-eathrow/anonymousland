@@ -45,7 +45,7 @@ As nature of this website, privacy and security must be our main priority, the f
 
 - Registered users are automatically joined into the lounges, this is to help prevent abuse!
 
-- Moderation is done via ''mjolnir'', let us keep this ban list to a minimum.
+- Moderation is done via ``mjolnir``, let us keep this ban list to a minimum.
 
 - Matrix metrics are disabled.
 
