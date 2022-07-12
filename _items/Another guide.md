@@ -639,7 +639,15 @@ This only works if you utilize each qube for the specified task.
 Ensure that nothing will leave the qube.
 Ensure that all the ``alias`` qubes are properly routed via VPN or Tor to ensure proper setup.
 For a more advanced setup, you are able to utilize Whonix qubes.
+
+Using multiple aliases outside QubeOS is definitely possible, and will require several things.
+You'll need several browsers configured to wipe all history, cookies, and cache on closure, along with a KeePass or another password manager database.
+
+Some accounts and aliases will need their own email, you can use [Proton](https://proton.me) for your mail provider.
+There are other alternatives out there that you can use as well.
+Currently Proton allows sign-ups over Tor, this may change.
 For each of our email addresses, we are able to setup email aliases using AnonAddy and SimpleLogin.
+Note that SimpleLogin has been acquired by Proton, meaning that Proton will technically know all of your email aliases, but this should be no concern for this type of setup.
 
 Each of our aliases is going to need some sort of "story".
 We are not putting this story out to tell per say, but simply knowing basic information about our new alias would be important.
