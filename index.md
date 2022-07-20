@@ -15,7 +15,24 @@ description: A fun happy place.
 
 </div>
 <body style="text-align:center">
-<l> <a href="https://codeberg.org/deathrow/anonymousland">Please Contribute!</a></l>
+<br>
+<br>
+
+  <button type="button" class="btn btn-lg btn-default"><a href="https://anonymousland.org/changelog">Changelog v1.0</a></button>
+
+<br>
+<br>
+
+  <button type="button" class="btn btn-md btn-default"><a href="https://codeberg.org/deathrow/anonymousland">Repository</a></button>
+
+
+  <button type="button" class="btn btn-md btn-default"><a href="https://anonymousland.org/rss">RSS</a></button>
+
+
+
+
+  
+
   <br>
   <br>
   <br>
@@ -23,15 +40,9 @@ description: A fun happy place.
   <p><b>Coming Soon:</b></p>  
   <l><a href="">Mastadon Instance</a></l>      
   <l> - </l>
-  <l> <a href="">RSS Feed</a></l>
-  <l> - </l>
   <l> <a href="">Forum</a></l>
   <li></li>
   <l> <a href="">About</a></l>
-  <l> - </l>
-  <l> <a href="">Contact</a></l>
-  <l> - </l>
-  <l> <a href="">Donate</a></l>
   </body>
   
   

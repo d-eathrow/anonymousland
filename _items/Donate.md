@@ -2,6 +2,7 @@
 layout: default1
 title: Donate
 description: money
+permalink: /donate
 ---
 
 ## Donations
