@@ -17,6 +17,10 @@ The Guide
 
 <br>
 
+## Preface
+
+---
+
 Well... I never thought i'd be making a guide so, here we go.... I guess....  
 Let's define a few important things here:
 
@@ -55,7 +59,9 @@ _Disclaimer: This is for education / research._
 
 -\>> [Creating our Aliases](#creating-our-aliases) <br>
 -\>> [Secure Communications](#secure-communications) <br>
--\>> [Secure Hardware](#secure-hardware) <br>
+
+-\>> [Physical Security](#physical-security) <br>
+  - -\>> [Secure Hardware](#secure-hardware) <br>
 
 <br>
 
@@ -256,15 +262,23 @@ Without these 2 things, it can easily compromise you.
 A massive amount of information is stored on our desktop, meaning that it contains a trove of our personal information.
 From search results to private documents.
 These items are **NOT** private on "traditional" operating systems.
+The default desktop enviroment has a broken security model.
+This is due to the fact of lacking permissions and proper isolation as done on mobile operating systems such as Android with their per-app permission toggles.
+Some services like Firejail, SELinux and Apparmor can fix a lot of these issues, but the fact is configuring these services for every application can be a daunting task and can lead to much user-error.
 
 It is assumed that the average population is likely using Windows, Mac, or ChromeOS.
 These are absolutely terrible options for privacy.
 There are some efforts to "privatize" these operating systems, though due to the fact that they are all *closed-source*, means that many of these hardening methods that we would do, can just as easily fail if the OS itself is backdoored.
 If you are new to the "operating system realm", a good replacement / dual-boot for these would be Fedora or Manjaro.
-By "good", we assume the following: You are a beginner, you have little to none Linux experience or knowledge.
+By "good", we assume the following: You are a beginner, you have little to no Linux experience or knowledge.
 These choices have been made for the easy installation and low maintenance.
 
 The operating system you choose should not be based upon what is recommended here, you yourself will need to research what is best suited for your situation and needs.
+Using a Linux-based operating system will **NOT** make you secure by default.
+This is often times a common misconception.
+The actual threat model of your Linux system will vary per-person.
+Linux is *private by default*, meaning that your personal information is not being *harvested* like traditional operating systems including Windows and MacOS.
+QubesOS is an exception as it is entirely based upon security.
 
 Those who are looking for some excitement or extremely into privacy, security and / or anonymity should look at [QubesOS](https://qubes-os.org) and [Tails](https://tails.boum.org) if you haven't already.
 
@@ -389,8 +403,6 @@ qubes-usb-proxy
 qubes-gpg-split
 ```
 
-Unofficial templates can be found on the QubesOS forum, and there is always the ability to build your own template from scratch.
-
 Fedora-35:
 
 ```
@@ -404,6 +416,10 @@ sudo qubes-dom0-update qubes-template-debian-11
 ```
 
 When installing applications, it may be best to clone a minimal template and install the application on there for increased compartmentalization.
+This is a suggested option if you have the capability to space additional system resources.
+
+Unofficial templates can be found on the QubesOS forum. 
+There is always the ability to build your own template utilizng the [Qubes builder](https://www.qubes-os.org/doc/qubes-builder/).
 
 <br>
 
@@ -411,6 +427,7 @@ When installing applications, it may be best to clone a minimal template and ins
 
 If you've opted to have updates over Tor, it is recommended that we also update our repositories on both dom0 and our templates.
 Changing our repositories over Tor helps increase anonymity as we'd be connecting to the onion site instead of the clearnet.
+See the [Whonix wiki](https://www.whonix.org/wiki/Onionizing_Repositories) for more information.
 
 dom0:
 
@@ -725,7 +742,15 @@ Hardware Key: A small little device that can be used for MFA and GPG.
 Very useful to have a physical device.
 Something like this is recommended to have a backup clone and stored in a safe location such as a safe.
 
-- Faraday Pouch - This will block all radio waves and signals, which can ensure that absolutely connectionn is traveling out of your devices.
+- Faraday Pouch - [Wiki](https://wikiless.northboot.xyz/wiki/Faraday_cage) This will block all radio waves and signals, which can ensure that absolutely connectionn is traveling out of your devices.
 It completely air-gaps the device.
+It's best to actually test this before you will need to actually use this.
+Connect to a bluetooth speaker while playing music, put the device into the bag and wait to see after the buffer for the music to stop.
+If the music does not ever stop, this means that the bag does not work properly and should not be used.
 
 <br>
+
+## Footnotes 
+
+---
+
