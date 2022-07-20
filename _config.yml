@@ -3,23 +3,25 @@ remote_theme: luxedo/jekyll-theme-potato-hacker
 theme_base: "dark"
 theme_switch: off
 blog: on
-avatar: off
-highlighter_theme: monokai  # Theme of the syntax_highlighter [base16 |
-                            # colorful | github | gruvbox | molokai |
-                            # monokai | pastie | thankful_eyes | tulip ]
-toolbar_priority:
-  - Guides
-  - dropdown1
-  - dropdown2
+highlighter_theme: monokai
+toolbar_priority: 
   - blog
-  
 collections:
   .well-known:
     output: true
     permalink: /:collection/:path/
-  guide:
-    output: true
-  dropdown:
-    output: true
   items:
     output: true
+  changelog:
+    output: true
+  pages:
+    output: true
+exclude:
+  - Gemfile
+  - Gemfile.lock
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+feed:
+  collections:
+    - changelog
