@@ -215,7 +215,7 @@ Your messages must be secure as they reveal a lot about you. Choosing an encrypt
 
 #### __Operating System__
 
-Your operating system is the most important part, if it is insecure then you can assume any activities done are also compromised. This is the "heart" of ones setup and should be heavily considered and researched.
+Your operating system is the most important part, if it is insecure then you can assume any activities done are also compromised.
 
 - [Tails](https://tails.boum.org)
 - [Whonix](https://whonixproject.org) <button type="button" class="btn btn-xs btn-info"><a href="http://www.dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/">Tor</a></button>
