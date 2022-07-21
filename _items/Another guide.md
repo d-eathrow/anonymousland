@@ -13,8 +13,8 @@ priority: 1
 <br>
 <br>
 
-The Guide
----------
+# The Guide
+
 *Note: Work in progress*
 
 <br>
@@ -34,13 +34,15 @@ Let's define a few important things here:
 
 `Anonymity: The act of hiding yourself to become indistinguishable from everyone else or simply "blending in".`
 
-### Getting Started
+---
+
+## Getting Started
 
 _Disclaimer: This is for education / research._
 
 <br>
 
-##### Table of contents:
+#### Table of contents:
 
 -\>> [Important Concepts](#important-concepts) <br>
   - -\> *[Tor](#tor)* <br>
@@ -63,9 +65,10 @@ _Disclaimer: This is for education / research._
 -\>> [Secure Communications](#secure-communications) <br>
 -\>> [Secure Hardware](#secure-hardware) <br>
 
-<br>
 
-#### __Important Concepts__
+---
+
+### __Important Concepts__
 
 This guide requires you to understand various important concepts in order to truly be anonymous on the internet.
 There is a vast array of concepts that will need to be thoroughly understood. 
@@ -88,7 +91,7 @@ General Ideas:
 
 <br>
 
-##### Tor
+#### Tor
 
 Tor or The Onion Router was originally developed to keep U.S. military communications secure, and is now used world-wide to bypass censorship.
 Tor will route your network traffic through 3 servers worldwide randomly.
@@ -110,7 +113,7 @@ If you are using an "amnesic" setup such as Tails or anon-whonix on QubesOS, you
 
 <br>
 
-#### __Proper Mindset__
+### __Proper Mindset__
 
 Having the proper mindset when starting a process like this, is critical for success. You must be both willing and determined.
 
@@ -146,7 +149,7 @@ People may think you are paranoid, but in a world like this it *is* useful to be
 
 <br>
 
-#### __Setting Goals__
+### __Setting Goals__
 
 We need to understand what we are trying to accomplish.
 
@@ -156,7 +159,7 @@ You need to properly identify a *threat model*, an *adversary* along with perfor
 
 <br>
 
-#### __Creating your threat model__
+### __Creating your threat model__
 
 The most important part of your setup.
 
@@ -195,12 +198,12 @@ Listed below are some useful resources for getting started.
 
 <br>
 
-#### __Knowing Resources__
+### __Knowing Resources__
 
 Along your journey, you'll need to have the proper resources at hand to deal with any sort of situation you will be facing.
 Get yourself accustomed to these resources to better understand various conceptions and prepare yourself.
 
-##### Common Tools:
+#### Common Tools:
 
 - [PrivacyGuides](https://privacyguides.org)
 - [PrivacyTools](https://privacytools.io)
@@ -208,14 +211,14 @@ Get yourself accustomed to these resources to better understand various concepti
 - [Techlore - YouTube](https://invidious-us.kavin.rocks/channel/UCs6KfncB4OV6Vug4o_bzijg)
 - [The Hated One - YouTube](https://invidio.xamh.de/channel/UCjr2bPAyPV7t35MvcgT3W8Q)
 
-##### More:
+#### More:
 
 - [Tor Project](https://torproject.org)
 - [EFF](https://eff.org)
 
 <br>
 
-#### __"Cleaning Up"__
+### __"Cleaning Up"__
 
 What is _"cleaning up"?_
 
@@ -237,7 +240,6 @@ Do this for every single account, just to ensure there is not anything that you 
 
 There are some services which exist that can help expedite this process, though be aware of the risks involved in doing this. 
 
-
 As for finding services you may have forgotten, look through your entire email and find services you may have signed up for and start to do the same process.
 Often times, search for ``register``, ``registration``, ``welcome``.
 These keywords are often times used.
@@ -254,7 +256,7 @@ This is a big deal.
 
 <br>
 
-#### __Desktop__
+### __Desktop__
 
 Our desktop contains a massive amount of information.
 This device should be both secure & private.
@@ -286,7 +288,7 @@ Those who are looking for some excitement or extremely into privacy, security an
 
 <br>
 
-##### __QubesOS__
+#### __QubesOS__
 
 What is QubesOS? Simply put, QubesOS is a "reasonably secure operating system" and it will be the basis of our secure setup.
 It uses a method known as "security by compartmentalization".
@@ -339,7 +341,7 @@ For Rufus users, select DD mode on format.
 
 <br>
 
-###### Installation
+##### Installation
 
 After booting to your installation medium click the "verify" option.
 Afterwords, theres a few things we need to do.
@@ -357,7 +359,9 @@ This will render your mouse and keyboard useless.
 Use ``sys-usb`` on a laptop! For increased anonymity it is recommended to chose updates over Tor.
 We also want our default qubes along with the default system qubes.
 
-###### Qube Basic Setup
+<br>
+
+##### Qubes Basic Setup
 
 As for networking, if you have a VPN service such as ProtonVPN, you are able to utilize ``qtunnel`` and setup multiple VPNs.
 For each of our VPN qubes, we will need a ``sys-firewall``.
@@ -374,7 +378,7 @@ We will now create additional qubes for our use.
 
 <br>
 
-###### Template Setup
+##### Template Setup
 
 Templates are going to be the foundation of any QubesOS install.
 As such, it should also be carefully configured.
@@ -425,7 +429,7 @@ There is always the ability to build your own template utilizng the [Qubes build
 
 <br>
 
-###### Onionizing Repositories
+##### Onionizing Repositories
 
 If you've opted to have updates over Tor, it is recommended that we also update our repositories on both dom0 and our templates.
 Changing our repositories over Tor helps increase anonymity as we'd be connecting to the onion site instead of the clearnet.
@@ -457,7 +461,7 @@ Edit ``/etc/yum.repos.d/qubes-r[version].repo``, comment out the clearnet ``base
 
 <br>
 
-###### Qube Basic Setup
+##### Qube Basic Setup
 
 As for networking, if you have a VPN service such as ProtonVPN, you are able to utilize ``qtunnel`` and setup multiple VPNs.
 For each of our VPN qubes, we will need a ``sys-firewall``.
@@ -492,7 +496,7 @@ The firewall can be useful for preventing data leaks & sniffing along with enfor
 
 <br>
 
-###### "Splitting"
+##### "Splitting"
 
 Let's startup by creating some basic qubes.
 To start, clone ``vault`` and create ``pgp-keys`` and ``ssh-keys`` to store our keys securely.Both should have __no internet access__.
@@ -506,7 +510,7 @@ More thoughts:
 
 <br>
 
-###### U2F-Proxy
+##### U2F-Proxy
 
 Using [u2f-proxy](https://qubes-os.org/doc/u2f-proxy) allows you to "compartmentalize the browser in one qube and the USB stack in another so that they are always kept separate from each other".
 
@@ -540,7 +544,7 @@ It's suggested you read the [u2f-proxy](https://qubes-os.org/doc/u2f-proxy) docu
 
 <br>
 
-###### YubiKey
+##### YubiKey
 
 Using a YubiKey can help mitigate certain attacks such as password "snooping", along with increasing security.
 Read the [official documentation](https://qubes-os.org/doc/yubikey).
@@ -598,14 +602,14 @@ auth include yubikey
 ```
 <br>
 
-###### GUI-VM
+##### GUI-VM
 
 This is for advanced users.
 Read the [official documentation](https://qubes-os.org/guivm-configuration).
 
 <br>
 
-###### Backups
+##### Backups
 
 Creating proper backups securely is critical for any setup, especially this one here.
 You must understand the different backup techniques and solutions available.
@@ -625,7 +629,7 @@ You could setup a local NextCloud instance or another type of local network stor
 
 <br>
 
-##### Creating our aliases
+#### Creating our aliases
 
 For setting our foundation, we are going to be creating a variety of aliases and each of these aliases are going to each need an "arsenal".
 For step 1 we are going to need a password manager.
@@ -675,7 +679,7 @@ Grudges, friendships and other must not travel over, this is how you fail.
 
 <br>
 
-#### __Secure Communications__
+### __Secure Communications__
 
 Having a secure operating system is only 1 part that we need.
 We need to ensure that all of our communications stay secure.
@@ -703,13 +707,13 @@ Session has built-in onion-routing.
 
 <br>
 
-#### __Secure Hardware__
+### __Secure Hardware__
 
 You should not be trying to setup a secure system if the hardware itself cannot be trusted.Anything can be pre-loaded with malicious code designed to compromise security, especially how mass-production has been increasing over time, meaning they just need to compromise a device on the production line.
 
 <br>
 
-##### Basics
+#### Basics
 
 Here is a list of "everyday"-type carry / use.
 
@@ -746,13 +750,15 @@ Which will prevent an additional attack surface from being used.
 
 <br>
 
-[Malicious Cable Detector](https://hak5.org/products/malicious-cable-detector-by-o-mg) - Can be configured to detect malicious cables
+[Malicious Cable Detector](https://hak5.org/products/malicious-cable-detector-by-o-mg) - Can be configured to detect malicious cables.
 
-Hardware Key: A small little device that can be used for MFA and GPG.
+[Hardware Key](https://wikiless.org/wiki/Security_token)- A small little device that can be used for MFA and GPG.
 Very useful to have a physical device.
 Something like this is recommended to have a backup clone and stored in a safe location such as a safe.
 
-- Faraday Pouch - [Wiki](https://wikiless.northboot.xyz/wiki/Faraday_cage) This will block all radio waves and signals, which can ensure that absolutely connectionn is traveling out of your devices.
+<br>
+
+[Faraday Pouch](https://wikiless.northboot.xyz/wiki/Faraday_cage) - This will block all radio waves and signals, which can ensure that absolutely connectionn is traveling out of your devices.
 It completely air-gaps the device.
 It's best to actually test this before you will need to actually use this.
 Connect to a bluetooth speaker while playing music, put the device into the bag and wait to see after the buffer for the music to stop.
