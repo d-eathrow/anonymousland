@@ -49,7 +49,6 @@ Multifactor authentication is extremely important as it provides multiple layers
 #### __Books__
 
 - [*Extreme Privacy: What It Takes to Disappear* by Michael Bazzell](https://www.amazon.com/dp/B09W78GW2T)
-
 - [*How to Disappear: Erase Your Digital Footprint, Leave False Trails, and Vanish without a Trace* by Frank M. Ahearn & Eileen C. Horan](https://www.amazon.com/How-Disappear-Digital-Footprint-Without/dp/1599219778/)
 
 <br>
