@@ -61,9 +61,7 @@ _Disclaimer: This is for education / research._
 
 -\>> [Creating our Aliases](#creating-our-aliases) <br>
 -\>> [Secure Communications](#secure-communications) <br>
-
--\>> [Physical Security](#physical-security) <br>
-  - -\>> [Secure Hardware](#secure-hardware) <br>
+-\>> [Secure Hardware](#secure-hardware) <br>
 
 <br>
 
