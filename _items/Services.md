@@ -5,6 +5,8 @@ title: Services
 permalink: /services
 ---
 
+  <button type="button" class="btn btn-lg btn-warning">Matrix Homeserver may be down to maintenance-related purposes.</button>
+
 
 ### __Services__
 
