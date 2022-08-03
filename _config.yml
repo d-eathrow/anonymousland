@@ -16,6 +16,8 @@ collections:
     output: true
   pages:
     output: true
+  information:
+    output: true
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -25,3 +27,5 @@ plugins:
 feed:
   collections:
     - changelog
+    - information
+    - items
