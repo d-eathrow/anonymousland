@@ -29,7 +29,7 @@ As nature of this website, privacy and security must be our main priority, the f
 
 - nginx logging is disabled.
 
-- Matrix IP addresses are logged for 1 hour then they are purged from the database.
+- Matrix IP addresses are logged for 30 seconds then they are purged from the database.
 
 - Matrix federation is enabled.
 
