@@ -39,8 +39,7 @@ Articles and stories related to technology, security or privacy
 
 - [Who is collecting data from your car](https://themarkup.org/the-breakdown/2022/07/27/who-is-collecting-data-from-your-car) (*07/27/2022*) 
 
-- [Hacking Police Body Cameras](https://www.wired.com/video/watch/hacking-police-body-cameras)(*08/11/2018
-*)
+- [Hacking Police Body Cameras](https://www.wired.com/video/watch/hacking-police-body-cameras)(*08/11/2018*)
 <br>
 
 ## Projects
