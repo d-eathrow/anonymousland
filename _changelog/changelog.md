@@ -6,6 +6,31 @@ permalink: /changelog
 
 ---
 
+
+# v1.01
+
+- Additional content for aliasing in ``/guide``
+
+- Update formatting and wording in ``/tools``
+
+- Include the preface and footnotes in ``/guide``
+
+- Update desktop security model information in ``/guide``
+
+- Formatting changes in ``/guide``
+
+- New blog post
+
+- Updated titles in ``/rss``
+
+- Matrix IP logging reduced to 30 seconds
+
+- New ``information`` page which will include articles, projects, etc.
+
+- Several typographical errors fixed
+
+- RSS feed for ``items``
+
 # v1.0
 
 - Added new page ``Services.md``
