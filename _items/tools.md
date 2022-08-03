@@ -37,7 +37,7 @@ _Disclaimer: This is for education / research._
 
 #### __Authentication__
 
-Multifactor authentication is extremely important as it provides multiple layers to your account even if your password is compromised.
+Multi-factor authentication is extremely important as it provides multiple layers to your account even if your password is compromised.
 
 - [Aegis](https://github.com/beemdevelopment/Aegis) (Mobile)
 - [andOTP](https://github.com/andOTP/andOTP) (Mobile)
