@@ -28,6 +28,11 @@ description: A fun happy place.
 
   <button type="button" class="btn btn-md btn-default"><a href="https://anonymousland.org/rss">RSS</a></button>
 
+<br>
+<br>
+
+  <button type="button" class="btn btn-md btn-default"><a href="https://anonymousland.org/information">Collections</a></button>
+
 
 
 
