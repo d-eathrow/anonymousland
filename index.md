@@ -18,7 +18,7 @@ description: A fun happy place.
 <br>
 <br>
 
-  <button type="button" class="btn btn-lg btn-default"><a href="https://anonymousland.org/changelog">Changelog v1.0</a></button>
+  <button type="button" class="btn btn-lg btn-default"><a href="https://anonymousland.org/changelog">Changelog v1.0.1</a></button>
 
 <br>
 <br>
