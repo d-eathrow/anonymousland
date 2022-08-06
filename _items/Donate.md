@@ -6,7 +6,7 @@ permalink: /donate
 ---
 
 ## Donations
-Donations are good. Money is how to keep this "alive".
+Donations are good. Money is how to keep this project running.
 
 Monero: 
 

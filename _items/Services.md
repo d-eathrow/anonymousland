@@ -51,8 +51,16 @@ As nature of this website, privacy and security must be our main priority, the f
 
 - Matrix metrics are disabled.
 
-
 <br>
+
+### __Policies__
+
+Your data and information will **NEVER** be sold or shared to another party. 
+Matrix federation may cause some information to be sent to third party servers as this is how federation functions.
+
+Your data and information will **NEVER** be handed away to *anyone*.
+
+We try to collect as little information as possible, to protect *everyone*.
 
 #### __Matrix__
 
@@ -60,7 +68,7 @@ The Matrix homeserver is located at
 
 ``https://matrix.anonymousland.org``
 
-As of currently, we do not offer a self-hosted Element instance, as it takes up server resources and there is no current need for our self-hosted platform.
+[element.anonymousland.org](https://element.anonymousland.org) - Self-hosted Element instance
 
 Password Policy:
 

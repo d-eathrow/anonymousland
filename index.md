@@ -44,7 +44,9 @@ description: A fun happy place.
 <li><a href="./donate">Donate</a> </li>
 <li><a href="./guide">Guide</a> </li>
 <li><a href="./information">Information</a> </li>
+<li><a href="./qubes">QubesOS</a> </li>
 <li><a href="./tools">Tools</a> </li>
 <li><a href="./services">Services</a> </li>
+
 
 </div>
