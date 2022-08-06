@@ -2,7 +2,7 @@
 layout: default1
 description: For QubesOS
 title: Qubes Notes
-permalink: /Qubes
+permalink: /qubes
 ---
 
 <div style="text-align:center;">
@@ -74,6 +74,7 @@ Installing LKRG
 
 ```
 sudo apt install --no-install-recommends lkrg-dkms linux-headers-amd64
+
 ```
 
 Enabling Hardened Malloc:
