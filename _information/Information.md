@@ -18,6 +18,7 @@ A collection of links, articles, resources and more.
   - -\> *[News](#news)* <br>
   - -\> *[Articles](#articles)* <br>
   - -\> *[Projects](#projects)* <br>
+  - -\> *[Research](#research)* <br>
   - -\> *[Random](#random)* <br>
 
 <br>
@@ -53,6 +54,10 @@ A list of interesting projects / products
 - [DEDA](https://github.com/dfd-tud/deda)
 
 <br>
+
+## Research
+
+For research-based articles
 
 ## Random
 

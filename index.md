@@ -9,11 +9,12 @@ description: A fun happy place.
 <h1>The happiest place on earth!</h1>
 <h2>(We’re all anonymous here)</h2>
 <p><i>“You can keep as quiet as you like, but one of these days somebody is going to find you.” </i></p>
-
 <br>
 <br>
-
 </div>
+
+---
+
 <body style="text-align:center">
 <br>
 <br>
@@ -33,34 +34,17 @@ description: A fun happy place.
 
   <button type="button" class="btn btn-md btn-default"><a href="https://anonymousland.org/information">Collections</a></button>
 
-
-
-
-  
-
-  <br>
-  <br>
-  <br>
-  <br>
-  <p><b>Coming Soon:</b></p>  
-  <l><a href="">Mastadon Instance</a></l>      
-  <l> - </l>
-  <l> <a href="">Forum</a></l>
-  <li></li>
-  <l> <a href="">About</a></l>
   </body>
   
-  
+<div style="text-align:left;">
 
-### What is this about?
+<h2> Pages </h2>
 
-Honestly, I don't know either. I just want to... feel in place. I always enjoyed the idea of setting up some sort of tool / service that could be used to benefit others, so I guess this is our purpose here.
+<li><a href="./changelog">Changelog</a> </li>
+<li><a href="./donate">Donate</a> </li>
+<li><a href="./guide">Guide</a> </li>
+<li><a href="./information">Information</a> </li>
+<li><a href="./tools">Tools</a> </li>
+<li><a href="./services">Services</a> </li>
 
-  
-  
-  
-  
-
-Let's just be happy
-
-Let's... all just be... together maybe?
+</div>
