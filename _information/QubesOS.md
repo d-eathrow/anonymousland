@@ -87,13 +87,7 @@ sudo apt install --no-install-recommends lkrg-dkms linux-headers-amd64
 Enabling Hardened Malloc:
 
 ```
-sudoedit /etc/ld.so.preload
-```
-
-and add:
-
-```
-/usr/lib/libhardened_malloc.so/libhardened_malloc.so
+echo "/usr/lib/libhardened_malloc.so/libhardened_malloc.so" | sudo tee /etc/ld.so.preload
 ```
 
 <br>
