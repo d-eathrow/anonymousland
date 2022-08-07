@@ -49,7 +49,7 @@ sudo apt install qubes-core-agent-passwordless-root qubes-core-agent-dom0-update
 Configuring git proxy
 
 ```
-git --config global.proxy 127.0.0.1:8002
+git config --global http.proxy http://127.0.0.1:8002
 ```
 
 <br>
@@ -114,7 +114,7 @@ sudo dnf install qubes-core-agent-passwordless-root qubes-core-agent-dom0-update
 Configuring git proxy
 
 ```
-git --config global.proxy 127.0.0.1:8002
+git config --global http.proxy http://127.0.0.1:8002
 ```
 
 <br>
