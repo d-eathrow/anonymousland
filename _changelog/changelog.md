@@ -6,6 +6,23 @@ permalink: /changelog
 
 ---
 
+# v1.02
+
+- Update ``index`` to include page list
+
+- Include ``research`` section inside ``/information``
+
+- Added self-hosted Element instance
+
+- New ``/qubes`` page for notes reguarding QubesOS
+
+- Additional Kicksecure documentation on ``/qubes``
+
+- Update ``services`` page
+
+- New Forums
+
+- Added Mega research URL
 
 # v1.01
 

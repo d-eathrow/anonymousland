@@ -19,7 +19,7 @@ description: A fun happy place.
 <br>
 <br>
 
-  <button type="button" class="btn btn-lg btn-default"><a href="https://anonymousland.org/changelog">Changelog v1.0.1</a></button>
+  <button type="button" class="btn btn-lg btn-default"><a href="./changelog">Changelog v1.0.2</a></button>
 
 <br>
 <br>
@@ -27,12 +27,19 @@ description: A fun happy place.
   <button type="button" class="btn btn-md btn-default"><a href="https://codeberg.org/deathrow/anonymousland">Repository</a></button>
 
 
-  <button type="button" class="btn btn-md btn-default"><a href="https://anonymousland.org/rss">RSS</a></button>
+  <button type="button" class="btn btn-md btn-default"><a href="./rss">RSS</a></button>
 
 <br>
 <br>
 
-  <button type="button" class="btn btn-md btn-default"><a href="https://anonymousland.org/information">Collections</a></button>
+  <button type="button" class="btn btn-md btn-default"><a href="./information">Collections</a></button>
+
+<br>
+<br>
+
+  <button type="button" class="btn btn-lg btn-default"><a href="https://forum.anonymousland.org">Forums</a></button>
+
+<br>
 
   </body>
   
