@@ -49,7 +49,7 @@ sudo apt install qubes-core-agent-passwordless-root qubes-core-agent-dom0-update
 Configuring git proxy
 
 ```
-git config --global http.proxy http://127.0.0.1:8002
+git config --global http.proxy http://127.0.0.1:8082/
 ```
 
 <br>
@@ -115,7 +115,7 @@ sudo dnf install qubes-core-agent-passwordless-root qubes-core-agent-dom0-update
 Configuring git proxy
 
 ```
-git config --global http.proxy http://127.0.0.1:8002
+git config --global http.proxy http://127.0.0.1:8082/
 ```
 
 <br>
@@ -133,7 +133,7 @@ qvm-run -a fedora-36 gnome-terminal
 
 dev=$(sudo losetup -f --show /var/tmp/template-upgrade-cache.img)
 
-qvm-block attach fedora-<new> dom0:${dev##*/}
+qvm-block attach fedora-36 dom0:${dev##*/}
 ```
 
 Running inside Fedora-36:
