@@ -5,9 +5,6 @@ title: Services
 permalink: /services
 ---
 
-  <button type="button" class="btn btn-lg btn-warning">Matrix Homeserver may be down to maintenance-related purposes.</button>
-
-
 ### __Services__
 
 These services are publicly available and free to use. 
@@ -69,6 +66,8 @@ The Matrix homeserver is located at
 ``https://matrix.anonymousland.org``
 
 [element.anonymousland.org](https://element.anonymousland.org) - Self-hosted Element instance
+
+Incidents: ``0``
 
 Password Policy:
 

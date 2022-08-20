@@ -17,6 +17,7 @@ A collection of links, articles, resources and more.
 -\>> [Main Collection](#main-collection) <br>
   - -\> *[News](#news)* <br>
   - -\> *[Articles](#articles)* <br>
+  - -\> *[Products](#products)* <br>
   - -\> *[Projects](#projects)* <br>
   - -\> *[Research](#research)* <br>
   - -\> *[Random](#random)* <br>
@@ -28,6 +29,8 @@ A collection of links, articles, resources and more.
 <br>
 
 ## News
+
+- [China targeting human rights](https://www.technologyreview.com/2022/08/16/1057894/hackers-linked-to-china-have-been-targeting-human-rights-groups-for-years/)
 
 For news
 
@@ -45,15 +48,27 @@ Articles and stories related to technology, security or privacy
 
 ## Projects
 
-A list of interesting projects / products
+A list of interesting projects
 
 - [HDMI Firewall](https://git.cuvoodoo.info/kingkevin/board/src/branch/hdmi_firewall/README.md)
 
-- [Unpickable](https://ominoushum.com/lock/)
-
 - [DEDA](https://github.com/dfd-tud/deda)
 
+- [Privsec](https://privsec.dev)
+
+- [Privacy.do](https://privacy.do)
+
 <br>
+
+## Products
+
+Items you can buy
+*(These are not affiliated or sometimes even recommended for some cases.
+This is simply a list.
+Do your own research).*
+
+- [Unpickable](https://ominoushum.com/lock/)
+
 
 ## Research
 

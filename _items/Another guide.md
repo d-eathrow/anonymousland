@@ -64,6 +64,7 @@ _Disclaimer: This is for education / research._
 -\>> [Creating our Aliases](#creating-our-aliases) <br>
 -\>> [Secure Communications](#secure-communications) <br>
 -\>> [Secure Hardware](#secure-hardware) <br>
+-\>> [TLDR](#tldr) <br>
 
 
 ---
@@ -84,7 +85,7 @@ You'll be able to make and choose your own model based upon this guide.
 General Ideas:
 
 - Using a VPN will *NOT* make you anonymous
-- Just because you are using Tor does *NOT* mean you  are safe
+- Just because you are using Tor does *NOT* mean you are safe
 - An adversary with enough time and resources will eventually find you
 - The best way to hide is to not use the internet
 - The land of compromises
@@ -193,7 +194,9 @@ Examples:
 
 Listed below are some useful resources for getting started.
 
+- [TheHatedOne Threat Modeling](https://invidious.sethforprivacy.com/watch?v=6AXkJ3dot2s)
 - [Techlore Threat Modeling](https://tube.cthd.icu/watch?v=DHZRhboZhfI)
+- [Privacy Guides Threat Modeling](https://www.privacyguides.org/basics/threat-modeling/)
 - [EFF Threat Modeling](https://ssd.eff.org/en/module/your-security-plan)
 
 <br>
@@ -203,18 +206,19 @@ Listed below are some useful resources for getting started.
 Along your journey, you'll need to have the proper resources at hand to deal with any sort of situation you will be facing.
 Get yourself accustomed to these resources to better understand various conceptions and prepare yourself.
 
-#### Common Tools:
+#### Suggested Resources:
 
-- [PrivacyGuides](https://privacyguides.org)
-- [PrivacyTools](https://privacytools.io)
-- [PRISM Break](https://prism-break.org/)
+- [PrivacyGuides](https://privacyguides.org) - "The guide to restoring your online privacy."
+- [PRISM Break](https://prism-break.org/) - "Opt out of global data surveillance programs like [PRISM](https://wikiless.org/wiki/PRISM_%28surveillance_program%29), [XKeyscore](https://wikiless.org/wiki/XKeyscore), [Tempora](https://wikiless.org/wiki/Tempora).
+- [Tor Project](https://torproject.org) - Defend yourself against tracking and surveillance. Circumvent censorship.
+- [EFF](https://eff.org) - The leading nonprofit defending digital privacy, free speech, and innovation.
+
+
+Media Channels:
+
 - [Techlore - YouTube](https://invidious-us.kavin.rocks/channel/UCs6KfncB4OV6Vug4o_bzijg)
 - [The Hated One - YouTube](https://invidio.xamh.de/channel/UCjr2bPAyPV7t35MvcgT3W8Q)
 
-#### More:
-
-- [Tor Project](https://torproject.org)
-- [EFF](https://eff.org)
 
 <br>
 
@@ -765,6 +769,10 @@ Connect to a bluetooth speaker while playing music, put the device into the bag 
 If the music does not ever stop, this means that the bag does not work properly and should not be used.
 
 <br>
+
+## TLDR
+
+Don't use the internet.
 
 ## Footnotes 
 
