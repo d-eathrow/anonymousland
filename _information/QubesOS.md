@@ -43,7 +43,7 @@ sudo apt update
 Installing packages
 
 ```
-sudo apt install qubes-core-agent-passwordless-root qubes-core-agent-dom0-updates qubes-usb-proxy qubes-gpg-split qubes-core-agent-networking git apt-transport-tor curl -y
+sudo apt install qubes-core-agent-dom0-updates qubes-usb-proxy qubes-gpg-split qubes-core-agent-networking git apt-transport-tor curl -y
 ```
 
 Configuring git proxy
