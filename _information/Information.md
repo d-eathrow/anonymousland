@@ -5,9 +5,9 @@ title: Information
 permalink: /information
 ---
 
-A collection of links, articles, resources and more.
+A collection of links, articles, resources and more. [<i class="fa fa-rss" aria-hidden="true"></i>](https://anonymousland.org/feed/information.xml)
 
-[RSS Feed](https://anonymousland.org/feed/information.xml)
+
 
 <br>
 
@@ -46,6 +46,17 @@ Articles and stories related to technology, security or privacy
 - [Hacking Police Body Cameras](https://www.wired.com/video/watch/hacking-police-body-cameras)
 <br>
 
+## Products
+
+Items you can buy
+*(These are not affiliated or sometimes even recommended for some cases.
+This is simply a list.
+Do your own research).*
+
+- [Unpickable](https://ominoushum.com/lock/)
+
+<br>
+
 ## Projects
 
 A list of interesting projects
@@ -59,16 +70,6 @@ A list of interesting projects
 - [Privacy.do](https://privacy.do)
 
 <br>
-
-## Products
-
-Items you can buy
-*(These are not affiliated or sometimes even recommended for some cases.
-This is simply a list.
-Do your own research).*
-
-- [Unpickable](https://ominoushum.com/lock/)
-
 
 ## Research
 
