@@ -6,6 +6,8 @@ permalink: /guide
 priority: 1
 ---
 
+
+
 <div style="text-align:center;">
 <p><i>“You never appreciate your anonymity until you don't have it anymore"</i></p>
 </div>
@@ -62,6 +64,11 @@ _Disclaimer: This is for education / research._
      - -\>> *[Qubes Basic Setup](#qube-basic-setup)* <br>
 
 -\>> [Creating our Aliases](#creating-our-aliases) <br>
+-\>> [Browsers](#browsers) <br>
+  - -\>> [Desktop](#desktop-1) <br>
+
+
+
 -\>> [Secure Communications](#secure-communications) <br>
 -\>> [Secure Hardware](#secure-hardware) <br>
 -\>> [TLDR](#tldr) <br>
@@ -69,7 +76,7 @@ _Disclaimer: This is for education / research._
 
 ---
 
-### __Important Concepts__
+## __Important Concepts__
 
 This guide requires you to understand various important concepts in order to truly be anonymous on the internet.
 There is a vast array of concepts that will need to be thoroughly understood. 
@@ -92,7 +99,7 @@ General Ideas:
 
 <br>
 
-#### Tor
+### Tor
 
 Tor or The Onion Router was originally developed to keep U.S. military communications secure, and is now used world-wide to bypass censorship.
 Tor will route your network traffic through 3 servers worldwide randomly.
@@ -114,7 +121,9 @@ If you are using an "amnesic" setup such as Tails or anon-whonix on QubesOS, you
 
 <br>
 
-### __Proper Mindset__
+---
+
+## __Proper Mindset__
 
 Having the proper mindset when starting a process like this, is critical for success. You must be both willing and determined.
 
@@ -150,7 +159,9 @@ People may think you are paranoid, but in a world like this it *is* useful to be
 
 <br>
 
-### __Setting Goals__
+---
+
+## __Setting Goals__
 
 We need to understand what we are trying to accomplish.
 
@@ -160,7 +171,9 @@ You need to properly identify a *threat model*, an *adversary* along with perfor
 
 <br>
 
-### __Creating your threat model__
+---
+
+## __Creating your threat model__
 
 The most important part of your setup.
 
@@ -201,12 +214,14 @@ Listed below are some useful resources for getting started.
 
 <br>
 
-### __Knowing Resources__
+---
+
+## __Knowing Resources__
 
 Along your journey, you'll need to have the proper resources at hand to deal with any sort of situation you will be facing.
 Get yourself accustomed to these resources to better understand various conceptions and prepare yourself.
 
-#### Suggested Resources:
+### Suggested Resources:
 
 - [PrivacyGuides](https://privacyguides.org) - "The guide to restoring your online privacy."
 - [PRISM Break](https://prism-break.org/) - "Opt out of global data surveillance programs like [PRISM](https://wikiless.org/wiki/PRISM_%28surveillance_program%29), [XKeyscore](https://wikiless.org/wiki/XKeyscore), [Tempora](https://wikiless.org/wiki/Tempora).
@@ -222,7 +237,9 @@ Media Channels:
 
 <br>
 
-### __"Cleaning Up"__
+---
+
+## __"Cleaning Up"__
 
 What is _"cleaning up"?_
 
@@ -260,7 +277,9 @@ This is a big deal.
 
 <br>
 
-### __Desktop__
+---
+
+## __Desktop__
 
 Our desktop contains a massive amount of information.
 This device should be both secure & private.
@@ -292,7 +311,9 @@ Those who are looking for some excitement or extremely into privacy, security an
 
 <br>
 
-#### __QubesOS__
+---
+
+### __QubesOS__
 
 What is QubesOS? Simply put, QubesOS is a "reasonably secure operating system" and it will be the basis of our secure setup.
 It uses a method known as "security by compartmentalization".
@@ -345,7 +366,7 @@ For Rufus users, select DD mode on format.
 
 <br>
 
-##### Installation
+#### Installation
 
 After booting to your installation medium click the "verify" option.
 Afterwords, theres a few things we need to do.
@@ -365,7 +386,7 @@ We also want our default qubes along with the default system qubes.
 
 <br>
 
-##### Qubes Basic Setup
+#### Qubes Basic Setup
 
 As for networking, if you have a VPN service such as ProtonVPN, you are able to utilize ``qtunnel`` and setup multiple VPNs.
 For each of our VPN qubes, we will need a ``sys-firewall``.
@@ -382,7 +403,7 @@ We will now create additional qubes for our use.
 
 <br>
 
-##### Template Setup
+#### Template Setup
 
 Templates are going to be the foundation of any QubesOS install.
 As such, it should also be carefully configured.
@@ -433,7 +454,7 @@ There is always the ability to build your own template utilizng the [Qubes build
 
 <br>
 
-##### Onionizing Repositories
+#### Onionizing Repositories
 
 If you've opted to have updates over Tor, it is recommended that we also update our repositories on both dom0 and our templates.
 Changing our repositories over Tor helps increase anonymity as we'd be connecting to the onion site instead of the clearnet.
@@ -465,7 +486,7 @@ Edit ``/etc/yum.repos.d/qubes-r[version].repo``, comment out the clearnet ``base
 
 <br>
 
-##### Qube Basic Setup
+#### Qube Basic Setup
 
 As for networking, if you have a VPN service such as ProtonVPN, you are able to utilize ``qtunnel`` and setup multiple VPNs.
 For each of our VPN qubes, we will need a ``sys-firewall``.
@@ -500,7 +521,7 @@ The firewall can be useful for preventing data leaks & sniffing along with enfor
 
 <br>
 
-##### "Splitting"
+#### "Splitting"
 
 Let's startup by creating some basic qubes.
 To start, clone ``vault`` and create ``pgp-keys`` and ``ssh-keys`` to store our keys securely.Both should have __no internet access__.
@@ -514,7 +535,7 @@ More thoughts:
 
 <br>
 
-##### U2F-Proxy
+#### U2F-Proxy
 
 Using [u2f-proxy](https://qubes-os.org/doc/u2f-proxy) allows you to "compartmentalize the browser in one qube and the USB stack in another so that they are always kept separate from each other".
 
@@ -548,7 +569,7 @@ It's suggested you read the [u2f-proxy](https://qubes-os.org/doc/u2f-proxy) docu
 
 <br>
 
-##### YubiKey
+#### YubiKey
 
 Using a YubiKey can help mitigate certain attacks such as password "snooping", along with increasing security.
 Read the [official documentation](https://qubes-os.org/doc/yubikey).
@@ -606,14 +627,14 @@ auth include yubikey
 ```
 <br>
 
-##### GUI-VM
+#### GUI-VM
 
 This is for advanced users.
 Read the [official documentation](https://qubes-os.org/guivm-configuration).
 
 <br>
 
-##### Backups
+#### Backups
 
 Creating proper backups securely is critical for any setup, especially this one here.
 You must understand the different backup techniques and solutions available.
@@ -633,7 +654,9 @@ You could setup a local NextCloud instance or another type of local network stor
 
 <br>
 
-#### Creating our aliases
+---
+
+## Creating our aliases
 
 For setting our foundation, we are going to be creating a variety of aliases and each of these aliases are going to each need an "arsenal".
 For step 1 we are going to need a password manager.
@@ -683,7 +706,146 @@ Grudges, friendships and other must not travel over, this is how you fail.
 
 <br>
 
-### __Secure Communications__
+---
+
+## __Browsers__
+
+Browsers contain a lot of information. 
+Browsers are also a major vulnerability, they must be properly hardened for our needs.
+Browsers usually contain all of our search history, cookies, cache, clicks, bookmarks, supercookies, and more.
+All of this information should be controlled properly.
+Your browser *can* be easily [fingerprinted](https://wikiless.org/wiki/Device_fingerprint#Browser_fingerprint), and tracked across the web, this can be all changed.
+
+To make a list of browsers we should avoid can be exhaustive, so instead here is a list of browsers that are generally recommended.
+
+<br>
+
+### Desktop
+
+<br>
+
+####  [Brave](https://brave.com)  <button type="button" class="btn btn-xs btn-xs"><a href="https://brave4u7jddbv7cyviptqjc7jusxh72uik7zt6adtckl5f4nwy2v72qd.onion/">Tor</a></button>
+
+Brave is based upon Chrome and includes significant enabled-by-default [privacy protections](https://brave.com/privacy-features/) by default unlike a lot of other browsers.
+Certain built-in functions such as IPFS and crypto may want to be avoided.
+<!--<i class="fa fa-arrow-right" aria-hidden="true"></i>-->
+  
+  <br>
+
+  <div class="panel panel-warning">
+      <div class="panel-heading">
+        <h3 class="panel-title">Notice</h3>
+      </div>
+      <div class="panel-body">
+        You should NOT use the built-in Tor function unless absolutely necessary!
+        This will leave a unique browser fingerprint over the Tor network, potentially leaving you vulnerable as there is no protection.
+      </div>
+    </div>
+
+  <br>
+
+#### [Firefox](https://firefox.com)
+
+Firefox can be configured to have strong privacy protections such as fingerprinting protection.
+By default, many settings should be changed.
+It is suggested to install [Arkenfox](https://github.com/arkenfox/user.js) for additional privacy.
+
+<br>
+
+Firefox can be configured for additional privacy.
+You are able to create multiple browser profiles via the ``about:profiles`` section.
+
+<br>
+
+<i class="fa fa-bars" aria-hidden="true"></i> 
+<i class="fa fa-long-arrow-right" aria-hidden="true"></i> 
+Settings
+<i class="fa fa-long-arrow-right" aria-hidden="true"></i> 
+<i class="fa fa-lock" aria-hidden="true"> </i> Privacy & Security
+<i class="fa fa-long-arrow-right" aria-hidden="true"></i> 
+Enhanced Tracking Protection
+
+Enable the following:
+<br>
+     <i class="fa fa-check-square" aria-hidden="true"></i> Cookies <br>
+     <i class="fa fa-check-square" aria-hidden="true"></i> Tracking Content <br>
+     <i class="fa fa-check-square" aria-hidden="true"></i> Cryptominers <br>
+     <i class="fa fa-check-square" aria-hidden="true"></i> Fingerprinters <br>
+
+<br>
+
+<i class="fa fa-bars" aria-hidden="true"></i> 
+<i class="fa fa-long-arrow-right" aria-hidden="true"></i> 
+Settings
+<i class="fa fa-long-arrow-right" aria-hidden="true"></i> 
+<i class="fa fa-lock" aria-hidden="true"> </i> Privacy & Security
+<i class="fa fa-long-arrow-right" aria-hidden="true"></i> 
+  HTTPS-Only Mode
+
+and select ``Enable HTTPS-Only Mode in all windows``
+
+<br>
+
+Fingerprinting can be reduced by keeping extensions to a minimum.
+A respected browser extension for a wide variety of setups would be [UblockOrigin](https://github.com/gorhill/uBlock/).
+
+Suggested Setup:
+
+- Enable ``I am an advanced user``
+- Enable ``Disable pre-fetching (to prevent any connection for blocked network requests) ``
+- For increased security you can block 3rd-party frames as [described here](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-Benefits-of-blocking-3rd-party-iframe-tags).
+You can also disable 3rd-party scripts for additional security as [described here](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-medium-mode).
+
+<br>
+
+  <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">Reduce Fingerprinting</h3>
+      </div>
+      <div class="panel-body">
+        UBlock Origin can be configured in a fashion which allows it to have multiple functions which can replace multiple browser extensions.
+        An ideal setup would utilize only UBlock Origin and Arkenfox.
+        Reducing the amount of needed extensions will also help limit browser fingerprinting.
+      </div>
+    </div>
+
+<br>
+
+#### [Librewolf](https://librewolf.net)
+
+A fork of Firefox, Librewolf aims to be *"A fork of Firefox, focused on privacy, security and freedom."*
+
+Librewolf contains many privacy features and additional hardening by default along with removing various "bloat" such as Pocket extension and Firefox Sync.
+A full list of features can be found [here](https://librewolf.net/docs/features/).
+
+Librewolf may suffer issues from potentially being behind on updates due to it being a fork.
+The official site states:
+
+*"LibreWolf is always based on the latest version of Firefox. Updates usually come within three days from each upstream stable release, at times even the same day. Unless problems arise, we always try to release often and in a timely manner. It should however be noted that LibreWolf does not have auto-update capabilities, and therefore it relies on package managers or users to apply them."*
+
+<br>
+
+#### General Notes
+
+- For an ideal browser setup focused around privacy, you should **NOT** store any browser history, cookies or cache.
+- HTTPS-Only should be activated on all browsers.
+- Disable saving of passwords, logins, credit cards, etc. as this is a security concern saving all of this in a web browser.
+
+There are a variety of tools to test your different browser configurations in a wide array of tests.
+
+- [TorZillaPrint](https://arkenfox.github.io/TZP/index.html)
+
+- [DeviceInfo](https://www.deviceinfo.me/)
+
+- [SSL Test](https://clienttest.ssllabs.com:8443/ssltest/viewMyClient.html)
+
+<br>
+
+
+
+---
+
+## __Secure Communications__
 
 Having a secure operating system is only 1 part that we need.
 We need to ensure that all of our communications stay secure.
@@ -709,15 +871,28 @@ Session has built-in onion-routing.
 
 - [Matrix](https://matrix.org) Matrix provides a federated platform, which allows for anyone to host their own server, meaning that it is resistent to censorship.
 
+Choosing your secure messenger will depend on your use-case.
+For instance, if you want to protect your traditional SMS / MMS messages, [Signal](https://signal.org) will be the best option if you are looking for a simple replacement that uses your telephone number, allowing contacts to easily add you, which would make this "easy adoption" unlike something like Matrix.
+
+If you are looking to participate anonymously in various communities, you may want to utilize [Matrix](https://matrix.org) as one of your options.
+Matrix allows you to *privately*(see below) sign up, and from there you are able to join a variety of communities.
+
+Note: The terms "private" will vary depending on which homeserver you opt to choose.
+Some servers will require an email address and others will not.
+For more information visit [JoinMatirx](https://joinmatrix.org).
+
+
 <br>
 
-### __Secure Hardware__
+---
+
+## __Secure Hardware__
 
 You should not be trying to setup a secure system if the hardware itself cannot be trusted.Anything can be pre-loaded with malicious code designed to compromise security, especially how mass-production has been increasing over time, meaning they just need to compromise a device on the production line.
 
 <br>
 
-#### Basics
+### Basics
 
 Here is a list of "everyday"-type carry / use.
 
