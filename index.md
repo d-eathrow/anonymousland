@@ -19,20 +19,20 @@ description: A fun happy place.
 <br>
 <br>
 
-  <button type="button" class="btn btn-lg btn-default"><a href="./changelog">Changelog v1.0.2</a></button>
+  <button type="button" class="btn btn-lg btn-default"><a href="./changelog"><i class="fa fa-clipboard" aria-hidden="true"></i> Changelog v1.0.2</a></button>
 
 <br>
 <br>
 
-  <button type="button" class="btn btn-md btn-default"><a href="https://codeberg.org/deathrow/anonymousland">Repository</a></button>
+  <button type="button" class="btn btn-md btn-default"><a href="https://codeberg.org/deathrow/anonymousland"> <i class="fa fa-github" aria-hidden="true"></i> Repository</a></button>
 
 
-  <button type="button" class="btn btn-md btn-default"><a href="./rss">RSS</a></button>
+  <button type="button" class="btn btn-md btn-default"><a href="./rss"><i class="fa fa-rss-square" aria-hidden="true"></i> RSS</a></button>
 
 <br>
 <br>
 
-  <button type="button" class="btn btn-md btn-default"><a href="./information">Collections</a></button>
+  <button type="button" class="btn btn-md btn-default"><a href="./information"><i class="fa fa-list" aria-hidden="true"></i> Collections</a></button>
 
 <br>
 <br>
@@ -40,20 +40,26 @@ description: A fun happy place.
   <button type="button" class="btn btn-lg btn-default"><a href="https://forum.anonymousland.org">Forums</a></button>
 
 <br>
+<br>
 
   </body>
-  
+
+<br>
+<br>
+
+
 <div style="text-align:left;">
 
 <h2> Pages </h2>
 
 <li><a href="./changelog">Changelog</a> </li>
+<li><a href="./definitions">Definitions</a> </li>
 <li><a href="./donate">Donate</a> </li>
 <li><a href="./guide">Guide</a> </li>
 <li><a href="./information">Information</a> </li>
+<li><a href="./matrix">Matrix</a> </li>
 <li><a href="./qubes">QubesOS</a> </li>
 <li><a href="./tools">Tools</a> </li>
 <li><a href="./services">Services</a> </li>
-
 
 </div>
