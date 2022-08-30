@@ -12,9 +12,11 @@ permalink: /tools
 <br>
 <br>
 
-### Getting Started
+Note: This is a list of different services, some items may impede others.
+This is up to you to decide which services if any you decide to use and how to use them.
 
-_Disclaimer: This is for education / research._
+<br>
+<br>
 
 ##### Table of contents:
 
@@ -55,7 +57,8 @@ Multi-factor authentication is extremely important as it provides multiple layer
 
 #### __Browser__
 
-Your browser contains everything you do. It is the main entry point onto your system, along with the main privacy & security risk.
+Your browser contains everything you do.
+It is the main entry point onto your system, along with the main privacy & security risk.
 
 - [Tor Browser](https://torproject.org) <button type="button" class="btn btn-xs btn-xs"><a href="http://2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion/">Tor</a></button>
 - [Librewolf](https://librewolf.net/)
@@ -66,7 +69,8 @@ Your browser contains everything you do. It is the main entry point onto your sy
 
 ##### Browser Extensions
 
-Extensions help increase privacy, at the cost of anonymity. None of these should be installed on Tor Browser.
+Extensions help increase privacy, at the cost of a more unique browser fingerprint.
+None of these should be installed on Tor Browser.
 
 - [ClearURL](https://github.com/ClearURLs/Addon)
 - [UBlock Origin](https://github.com/gorhill/uBlock)
@@ -90,8 +94,6 @@ Extensions help increase privacy, at the cost of anonymity. None of these should
 
 #### Wallets
 
-- [Exodus](https://exodus.com)
-
 <br>
 
 #### __Developer Tools__  
@@ -105,7 +107,8 @@ Extensions help increase privacy, at the cost of anonymity. None of these should
 
 #### __Domain Registrar__
 
-Registering a domain anonymously is very important, especially considering they can reveal a lot about you in a ``whois`` search if you haven't paid for "whois protection". These services will protect you.
+Registering a domain anonymously is very important, especially considering they can reveal a lot about you in a ``whois`` search if you haven't paid for "whois protection".
+These services will protect you.
 
 - [Njalla](https://njal.la) <button type="button" class="btn btn-xs btn-xs"><a href="http://njallalafimoej5i4eg7vlnqjvmb6zhdh27qxcatdn647jtwwwui3nad.onion/">Tor</a></button>
 - [1984](https://1984hosting.com)
@@ -114,7 +117,8 @@ Registering a domain anonymously is very important, especially considering they 
 
 #### __Encryption__
 
-Your files should *always* be encrypted. Even if your devices are compromised, your files should be safe assuming you've set things up properly.
+Your files should *always* be encrypted.
+Even if your devices are compromised, your files should be safe assuming you've set things up properly.
 
 - [VeraCrypt](https://veracrypt.fr)
 - [Photok](https://github.com/leonlatsch/Photok) (Mobile)
@@ -123,7 +127,8 @@ Your files should *always* be encrypted. Even if your devices are compromised, y
 
 #### __File Sharing__
 
-Sharing files can often times be difficult task. These are some applications that can securely share files.
+Sharing files can often times be difficult task.
+These are some applications that can securely share files.
 
 - [OnionShare](https://onionshare.org) <button type="button" class="btn btn-xs btn-xs"><a href="http://lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/">Tor</a></button>
 - [Syncthing](https://syncthing.net)
@@ -171,7 +176,8 @@ YouTube - [NewPipe](https://netpipe.net) (Mobile) <br>
 
 #### __Email Providers__
 
-Email is a nessecary evil that is required in this world. Email is inherently insecure, which means your email provider can read any of your messages. These providers offer encryption, anonymity and security. 
+Email is a nessecary evil that is required in this world. 
+Email is inherently insecure, which means your email provider can read any of your messages. These providers offer encryption, anonymity and security. 
 
 - [Proton](https://proton.me) <button type="button" class="btn btn-xs btn-xs"><a href="https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion">Tor</a></button>
 - [Mailfence](https://mailfence.com)
@@ -187,7 +193,8 @@ This provides multiple aliases for your emails, so you do not have to reveal you
 
 #### __Messengers__
 
-Your messages must be secure as they reveal a lot about you. Choosing an encrypted messenger will prevent any unauthorized users from reading any of your messages.
+Your messages must be secure as they reveal a lot about you.
+Choosing an encrypted messenger will prevent any unauthorized users from reading any of your messages.
 
 <br>
 
@@ -227,7 +234,8 @@ Your operating system is the most important part, if it is insecure then you can
 
 #### __Password Managers__
 
-Password managers are a great way to both securely and remember all of your passwords. Your passwords are saved in an encrypted database, which you only need to remember 1 password while generating secure passwords for all of your accounts.
+Password managers are a great way to both securely and remember all of your passwords.
+Your passwords are saved in an encrypted database, which you only need to remember 1 password while generating secure passwords for all of your accounts.
 
 - [KeePassXC](https://keepassxc.org)
 
@@ -235,7 +243,9 @@ Password managers are a great way to both securely and remember all of your pass
 
 #### __Search Engine__
 
-Your search engine knows a lot about you. This information is often times sold to 3rd parties and given away to government agencies. They often show biased search results. Choose a better one here.
+Your search engine knows a lot about you.
+This information is often times sold to 3rd parties and given away to government agencies.
+They often show biased search results. Choose a better one here.
 
 - [DuckDuckGo](https://duckduckgo.com) <button type="button" class="btn btn-xs btn-xs"><a href="https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/">Tor</a></button>  <button type="button" class="btn btn-xs btn-warning"><a href="https://help.duckduckgo.com/duckduckgo-help-pages/community/open-source/">Partially Closed-Source</a></button>
 - [SearX](https://searx.me)
