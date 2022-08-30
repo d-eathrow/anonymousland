@@ -104,6 +104,10 @@ Running in Dom0:
 sudo qubes-dom0-update qubes-template-fedora-36-minimal
 ```
 
+```
+qvm-run --pass-io -u root template-fedora-36-minimal 'apt instal qubes-core-agent-passwordless-root'
+```
+
 Running inside the template:
 
 ```

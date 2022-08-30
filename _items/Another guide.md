@@ -6,8 +6,6 @@ permalink: /guide
 priority: 1
 ---
 
-
-
 <div style="text-align:center;">
 <p><i>“You never appreciate your anonymity until you don't have it anymore"</i></p>
 </div>

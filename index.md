@@ -19,7 +19,7 @@ description: A fun happy place.
 <br>
 <br>
 
-  <button type="button" class="btn btn-lg btn-default"><a href="./changelog"><i class="fa fa-clipboard" aria-hidden="true"></i> Changelog v1.0.2</a></button>
+  <button type="button" class="btn btn-lg btn-default"><a href="./changelog"><i class="fa fa-clipboard" aria-hidden="true"></i> Changelog v1.0.3</a></button>
 
 <br>
 <br>
@@ -52,14 +52,13 @@ description: A fun happy place.
 
 <h2> Pages </h2>
 
-<li><a href="./changelog">Changelog</a> </li>
-<li><a href="./definitions">Definitions</a> </li>
-<li><a href="./donate">Donate</a> </li>
-<li><a href="./guide">Guide</a> </li>
-<li><a href="./information">Information</a> </li>
-<li><a href="./matrix">Matrix</a> </li>
-<li><a href="./qubes">QubesOS</a> </li>
-<li><a href="./tools">Tools</a> </li>
-<li><a href="./services">Services</a> </li>
+<li><a href="./changelog">Changelog</a> </li> <br>
+<li><a href="./donate">Donate</a> </li> <br>
+<li><a href="./guide">Guide</a> </li> <br>
+<li><a href="./information">Information</a> </li> <br>
+<li><a href="./matrix">Matrix</a> </li> <br>
+<li><a href="./qubes">QubesOS</a> </li> <br>
+<li><a href="./tools">Tools</a> </li> <br>
+<li><a href="./services">Services</a> </li> <br>
 
 </div>

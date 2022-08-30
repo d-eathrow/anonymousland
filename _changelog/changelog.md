@@ -6,6 +6,26 @@ permalink: /changelog
 
 ---
 
+# v1.03
+
+- Removed update notice
+
+- Updated resource links on ``/guide``
+
+- Updated several typographical errors
+
+- Added icons to index
+
+- New ``/matrix`` page
+
+- New browser section on ``/guide``
+
+- Additional content regarding secure messengers on ``/guide``
+
+- Updated various spacing and wording on ``/tools``
+
+- Update spacing on ``index``
+
 # v1.02
 
 - Update ``index`` to include page list
