@@ -34,6 +34,10 @@ Running in Dom0:
 sudo qubes-dom0-update qubes-template-debian-11-minimal
 ```
 
+```
+qvm-run --pass-io -u root template-debian-11-minimal 'apt instal qubes-core-agent-passwordless-root'
+```
+
 Running inside the template:
 
 ```
