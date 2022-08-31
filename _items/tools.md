@@ -248,8 +248,9 @@ This information is often times sold to 3rd parties and given away to government
 They often show biased search results. Choose a better one here.
 
 - [DuckDuckGo](https://duckduckgo.com) <button type="button" class="btn btn-xs btn-xs"><a href="https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/">Tor</a></button>  <button type="button" class="btn btn-xs btn-warning"><a href="https://help.duckduckgo.com/duckduckgo-help-pages/community/open-source/">Partially Closed-Source</a></button>
-- [SearX](https://searx.me)
-- [Brave Search](https://search.brave.com)
+- [SearX](https://searx.space) <button type="button" class="btn btn-xs btn-xs"><a href="searxspbitokayvkhzhsnljde7rqmn7rvoga6e4waeub3h7ug3nghoad.onion">Tor</a></button>
+
+- [Brave Search](https://search.brave.com) <button type="button" class="btn btn-xs btn-xs"><a href="https://search.brave4u7jddbv7cyviptqjc7jusxh72uik7zt6adtckl5f4nwy2v72qd.onion/">Tor</a></button>
 
 <br>
 
