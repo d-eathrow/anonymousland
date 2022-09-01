@@ -17,6 +17,7 @@ A collection of links, articles, resources and more. [<i class="fa fa-rss" aria-
 -\>> [Main Collection](#main-collection) <br>
   - -\> *[News](#news)* <br>
   - -\> *[Articles](#articles)* <br>
+  - -\> *[Communities](#communities)* <br>
   - -\> *[Products](#products)* <br>
   - -\> *[Projects](#projects)* <br>
   - -\> *[Research](#research)* <br>
@@ -30,9 +31,10 @@ A collection of links, articles, resources and more. [<i class="fa fa-rss" aria-
 
 ## News
 
+For news
+
 - [China targeting human rights](https://www.technologyreview.com/2022/08/16/1057894/hackers-linked-to-china-have-been-targeting-human-rights-groups-for-years/)
 
-For news
 
 <br>
 
@@ -45,6 +47,17 @@ Articles and stories related to technology, security or privacy
 
 - [Hacking Police Body Cameras](https://www.wired.com/video/watch/hacking-police-body-cameras)
 <br>
+
+## Communities
+
+A place for related various communities & media
+
+
+- [PrivacyGuides](https://privacyguides.org) <button type="button" class="btn btn-xs btn-xs"><a href="http://eter4u55b667kuo72ntpm7ut54sa2mxmr22iqgzns4jw7boeox3qgyid.onion">Tor</a></button>
+
+- [Privsec](https://privsec.dev)
+
+- [Privacy.do](https://privacy.do)
 
 ## Products
 
@@ -64,10 +77,6 @@ A list of interesting projects
 - [HDMI Firewall](https://git.cuvoodoo.info/kingkevin/board/src/branch/hdmi_firewall/README.md)
 
 - [DEDA](https://github.com/dfd-tud/deda)
-
-- [Privsec](https://privsec.dev)
-
-- [Privacy.do](https://privacy.do)
 
 <br>
 
