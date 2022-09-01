@@ -217,6 +217,8 @@ rm /var/tmp/template-upgrade-cache.img
 
 - [Kicksecure Guide](https://forum.qubes-os.org/t/guide-kicksecure-for-disp-sys/13324)
 
+- [QubesOS installation encrypted boot and header](https://forum.qubes-os.org/t/qubes-os-installation-detached-encrypted-boot-and-header/6205)
+
 <br>
 
 #### Wiki
