@@ -320,6 +320,8 @@ Due to the way QubesOS is built, requirements will be heavy.
 Recommend at *least* 16GB of RAM with plenty of storage.
 The official requirements can be found [here](https://www.qubes-os.org/doc/system-requirements/).
 
+Note: QubesOS / Qubes generally refers to the operating system, and the term qube is used describe the individual "VMs".
+
 Why should we use QubesOS?
 
 - It is commonly regarded as one of the most secure operating systems
@@ -386,18 +388,43 @@ We also want our default qubes along with the default system qubes.
 
 #### Qubes Basic Setup
 
+Visit the [Qubes notes](../qubes) page for other notes.
+
+#### Qube Basic Setup
+
 As for networking, if you have a VPN service such as ProtonVPN, you are able to utilize ``qtunnel`` and setup multiple VPNs.
 For each of our VPN qubes, we will need a ``sys-firewall``.
 If you wanted a dedicated ``sys-dns``, there are several guides on this:
 
 - [qubes-dns](https://github.com/3hhh/qubes-dns)
-- [Pihole  qube](https://github.com/92VV3M42d3v8/PiHole)
+- [Pihole qube](https://github.com/92VV3M42d3v8/PiHole)
 
 ``sys-net`` -> ``sys-firewall`` -> ``sys-vpn`` -> ``sys-firewall-vpn``
 
 We will now create additional qubes for our use.
 
 - ``sys-net`` -> ``sys-firewall`` -> ``sys-firewall-email-personal`` -> ``personal-email`` - By placing the firewall here, this allows us to only whitelist internet traffic from specifically our email provider.
+
+- ``sys-net`` -> ``sys-firewall`` -> ``sys-firewall-IN-vpn-us-1`` -> ``sys-vpn-us-1`` -> ``sys-firewall-vpn-us-1`` - This again gives us the ability to whitelist traffic from only the ``sys-vpn-us-1``.
+
+Each qube has the ability to utilize the built-in firewall rules.
+Using a dedicated firewall qube is more secure.
+
+More:
+
+- ``personal-web`` - Web Traffic
+- ``personal-email`` - Email
+- ``personal-dvm`` - Disposable
+- ``personal-random`` - Random Web
+- ``personal-social`` - Social Activity
+- ``sys-personal-vpn`` - VPN for only ``personal``
+- ``sys-firewall-personal`` - Firewall for only ``personal``
+- ``personal-vault`` - Vault VM for only ``personal``
+
+This can be used for a wide variety of activities, not just specifically "personal".
+Your setup should take heavy use of the ``sys-firewall`` VM.
+We can utilize the firewall to help maintain compartmentalization among our system.
+The firewall can be useful for preventing data leaks & sniffing along with enforcing VPN policies.
 
 <br>
 
@@ -415,9 +442,7 @@ The official minimal templates are available:
 - Fedora
 - Debian
 - CentOS
-- Gentoo
-
-For installing templates:
+- GentooVPNs.
 dom0:
 ```
 sudo qubes-dom0-update qubes-template-<DISTRO_NAME>-<RELEASE_NUMBER>-minimal
@@ -432,10 +457,10 @@ qubes-usb-proxy
 qubes-gpg-split
 ```
 
-Fedora-35:
+Fedora-36:
 
 ```
-sudo qubes-dom0-update qubes-template-fedora-35
+sudo qubes-dom0-update qubes-template-fedora-36
 ```
 
 Debian-11:
@@ -481,41 +506,6 @@ deb tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/de
 Fedora Templates:
 
 Edit ``/etc/yum.repos.d/qubes-r[version].repo``, comment out the clearnet ``baseurl`` and uncoment the onion ``baseurl``
-
-<br>
-
-#### Qube Basic Setup
-
-As for networking, if you have a VPN service such as ProtonVPN, you are able to utilize ``qtunnel`` and setup multiple VPNs.
-For each of our VPN qubes, we will need a ``sys-firewall``.
-If you wanted a dedicated ``sys-dns``, there are several guides on this:
-
-- [qubes-dns](https://github.com/3hhh/qubes-dns)
-- [Pihole qube](https://github.com/92VV3M42d3v8/PiHole)
-
-``sys-net`` -> ``sys-firewall`` -> ``sys-vpn`` -> ``sys-firewall-vpn``
-
-We will now create additional qubes for our use.
-
-- ``sys-net`` -> ``sys-firewall`` -> ``sys-firewall-email-personal`` -> ``personal-email`` - By placing the firewall here, this allows us to only whitelist internet traffic from specifically our email provider.
-
-- ``sys-net`` -> ``sys-firewall`` -> ``sys-firewall-IN-vpn-us-1`` -> ``sys-vpn-us-1`` -> ``sys-firewall-vpn-us-1`` - This again gives us the ability to whitelist traffic from only the ``sys-vpn-us-1``.
-
-More:
-
-- ``personal-web`` - Web Traffic
-- ``personal-email`` - Email
-- ``personal-dvm`` - Disposable
-- ``personal-random`` - Random Web
-- ``personal-social`` - Social Activity
-- ``sys-personal-vpn`` - VPN for only ``personal``
-- ``sys-firewall-personal`` - Firewall for only ``personal``
-- ``personal-vault`` - Vault VM for only ``personal``
-
-This can be used for a wide variety of activities, not just specifically "personal".
-Your setup should take heavy use of the ``sys-firewall`` VM.
-We can utilize the firewall to help maintain compartmentalization among our system.
-The firewall can be useful for preventing data leaks & sniffing along with enforcing VPN policies.
 
 <br>
 
@@ -697,7 +687,8 @@ Each of our aliases is going to need some sort of "story".
 We are not putting this story out to tell per say, but simply knowing basic information about our new alias would be important.
 Information including age, country, special food, and activities.
 We just need to make note of them, not giving any of this information away.
-It's crucial to blend in, therefore some of this information may be used in conversation.Remember, each alias we create is different, therefore there should be absolutely no connection between any of them.
+It's crucial to blend in, therefore some of this information may be used in conversation.
+Remember, each alias we create is different, therefore there should be absolutely no connection between any of them.
 For each alias, you will need to "reset" your memory in a way.
 You must be able to organize information you know from all of your aliases.
 Grudges, friendships and other must not travel over, this is how you fail.
@@ -839,8 +830,6 @@ There are a variety of tools to test your different browser configurations in a 
 
 <br>
 
-
-
 ---
 
 ## __Secure Communications__
@@ -935,7 +924,7 @@ Something like this is recommended to have a backup clone and stored in a safe l
 
 <br>
 
-[Faraday Pouch](https://wikiless.northboot.xyz/wiki/Faraday_cage) - This will block all radio waves and signals, which can ensure that absolutely connectionn is traveling out of your devices.
+[Faraday Pouch](https://wikiless.northboot.xyz/wiki/Faraday_cage) - This will block all radio waves and signals, which can ensure that absolutely no connection is traveling out of your devices.
 It completely air-gaps the device.
 It's best to actually test this before you will need to actually use this.
 Connect to a bluetooth speaker while playing music, put the device into the bag and wait to see after the buffer for the music to stop.

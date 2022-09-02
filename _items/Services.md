@@ -80,3 +80,6 @@ Password Policy:
 - At least 1 lowercase character
 
 - At least 1 uppercase character
+
+Due to how the Matrix protocol functions, metadata including your PfP, username, display name and device list will be sent to other servers if you are in a federated room.
+An IP address is automatically assigned with each client, signing out will remove your IP from the client and from the database as well.
