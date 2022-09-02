@@ -24,7 +24,7 @@ Things needed for this setup:
 Choosing the host OS is by far the most critical part of this setup. This host OS will need to have proper security updates and have the ability for increased hardening. Here are a few that would be recommended.
 
 *   [Fedora](https://getfedora.org/)
-*   [Void Linux](https://voidlinux.org/) (hardened musl build is higly recommended)
+*   [Void Linux](https://voidlinux.org/) (hardened musl build is highly recommended)
 *   [Arch](https://archlinux.org/)
 *   [PlagueOS](https://git.arrr.cloud/whichdoc/plagueos) (Hardened by default which makes it perfect for this setup)
 
