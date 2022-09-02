@@ -1,12 +1,12 @@
 ---
 layout: default1
-description: For QubesOS
+description: For Qubes OS
 title: Qubes Notes
 permalink: /qubes
 ---
 
 <div style="text-align:center;">
-A collection of QubesOS-related information.
+A collection of Qubes OS-related information.
 </div>
 <br>
 
