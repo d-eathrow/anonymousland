@@ -42,9 +42,8 @@ This is up to you to decide which services if any you decide to use and how to u
 Multi-factor authentication is extremely important as it provides multiple layers to your account even if your password is compromised.
 
 - [Aegis](https://github.com/beemdevelopment/Aegis) (Mobile)
-- [andOTP](https://github.com/andOTP/andOTP) (Mobile)
 - [NitroKey](https://www.nitrokey.com/) (Hardware)
-- [YubiKey](https://www.yubico.com/) (Hardware)
+- [YubiKey](https://www.yubico.com/) (Hardware) (**Warning: proprietary**)
 
 <br>
 
@@ -74,9 +73,6 @@ None of these should be installed on Tor Browser.
 
 - [ClearURL](https://github.com/ClearURLs/Addon)
 - [UBlock Origin](https://github.com/gorhill/uBlock)
-- [NoScript](https://github.com/hackademix/noscript)
-- [LocalCDN](https://codeberg.org/nobody/LocalCDN)
-- [CanvasBlocker](https://github.com/kkapsner/CanvasBlocker)
 - [Libredirect](https://github.com/libredirect/libredirect)
 
 <br>
@@ -227,7 +223,7 @@ Your operating system is the most important part, if it is insecure then you can
 
 - [Tails](https://tails.boum.org)
 - [Whonix](https://whonixproject.org) <button type="button" class="btn btn-xs btn-xs"><a href="http://www.dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/">Tor</a></button>
-- [QubesOS](https://qubes-os.org) <button type="button" class="btn btn-xs btn-xs"><a href="http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/">Tor</a></button>
+- [Qubes OS](https://qubes-os.org) <button type="button" class="btn btn-xs btn-xs"><a href="http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/">Tor</a></button>
 - [GrapheneOS](https://grapheneos.org) (Mobile)
 
 <br>
@@ -238,6 +234,7 @@ Password managers are a great way to both securely and remember all of your pass
 Your passwords are saved in an encrypted database, which you only need to remember 1 password while generating secure passwords for all of your accounts.
 
 - [KeePassXC](https://keepassxc.org)
+- [Bitwarden](https://bitwarden.com/) (more convenient since it's cloud synced)
 
 <br>
 
