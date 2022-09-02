@@ -75,7 +75,7 @@ sudo apt-get -t bullseye-backports --no-install-recommends install linux-image-a
 ```
 
 ```
-grub-install /dev/xvda
+sudo grub-install /dev/xvda
 ```
 
 Adding the Kicksecure repository:
