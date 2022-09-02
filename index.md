@@ -57,7 +57,7 @@ description: A fun happy place.
 <li><a href="./guide">Guide</a> </li> <br>
 <li><a href="./information">Information</a> </li> <br>
 <li><a href="./matrix">Matrix</a> </li> <br>
-<li><a href="./qubes">QubesOS</a> </li> <br>
+<li><a href="./qubes">Qubes OS</a> </li> <br>
 <li><a href="./tools">Tools</a> </li> <br>
 <li><a href="./services">Services</a> </li> <br>
 
