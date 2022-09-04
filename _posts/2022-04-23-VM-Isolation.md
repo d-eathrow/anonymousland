@@ -11,7 +11,7 @@ VM Isolation Guide
 
 Credits: 0xTheFather
 
-As an alternate to using QubesOS, here is how one can properly setup isolation. This setup will provide proper isolation utilizing VMs and a secure host OS. This will provide increased security via isolation along with increased privacy with compartmentalization.
+As an alternate to using Qubes OS, here is how one can properly setup isolation. This setup will provide proper isolation utilizing VMs and a secure host OS. This will provide increased security via isolation along with increased privacy with compartmentalization.
 
 Things needed for this setup:
 
@@ -24,7 +24,7 @@ Things needed for this setup:
 Choosing the host OS is by far the most critical part of this setup. This host OS will need to have proper security updates and have the ability for increased hardening. Here are a few that would be recommended.
 
 *   [Fedora](https://getfedora.org/)
-*   [Void Linux](https://voidlinux.org/)
+*   [Void Linux](https://voidlinux.org/) (hardened musl build is highly recommended)
 *   [Arch](https://archlinux.org/)
 *   [PlagueOS](https://git.arrr.cloud/whichdoc/plagueos) (Hardened by default which makes it perfect for this setup)
 
@@ -38,7 +38,7 @@ Note: If you've chosen PlagueOS, many of these things will automatically be appl
 
 After the host OS has been installed, it's now time to harden it. Depending on your distro, there will be slightly different techniques on hardening. General hardening ideas that apply to all distros are listed here:
 
-*   UFW/IPTables
+*   UFW / IPTables
 *   Fail2Ban
 *   Disable / tighten default SSH
 *   Kernel hardening

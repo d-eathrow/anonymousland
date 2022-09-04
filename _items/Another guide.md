@@ -23,9 +23,6 @@ priority: 1
 
 ---
 
-Well... I never thought i'd be making a guide so, here we go.... I guess....  
-Let's define a few important things here:
-
 `Adversary: Your threat.`
 
 `Privacy: The act of your personal activities being hidden from public.`
@@ -55,7 +52,7 @@ _Disclaimer: This is for education / research._
 -\>> [Cleaning Up](#cleaning-up) <br> 
 
 -\>> [Desktop](#desktop) <br>
-  - -\>> [QubesOS](#qubesos) <br>
+  - -\>> [Qubes OS](#qubesos) <br>
      - -\>> *[Installation](#installation)* <br>
      - -\>> *[Template Setup](#template-setup)* <br>
      - -\>> *[Onionizing Repositories](#onionizing-repositories)* <br>
@@ -84,7 +81,7 @@ You'll be able to make and choose your own model based upon this guide.
 *   Understanding benefits and negatives of a VPN <!--(PUT LINK HERE) -->
 *   Understanding important privacy concepts <!--(PUT LINK HERE) -->
 *   Understanding important security concepts <!--(PUT LINK HERE or make a section) -->
-*   [Understanding the principles of thread modeling](https://invidious.esmailelbob.xyz/watch?v=DHZRhboZhfI)
+*   [Understanding the principles of threat modeling](https://invidious.esmailelbob.xyz/watch?v=DHZRhboZhfI)
 *   Understanding how the internet functions
 
 General Ideas:
@@ -101,7 +98,7 @@ General Ideas:
 
 Tor or The Onion Router was originally developed to keep U.S. military communications secure, and is now used world-wide to bypass censorship.
 Tor will route your network traffic through 3 servers worldwide randomly.
-``entry-node`` -> ``middle-node`` -> ``exit-node``.
+``entry-node (aka Guard node)`` -> ``middle-node`` -> ``exit-node``.
 This setup means that the ``entry-node`` will only have your IP address, the ``middle-node`` will only see the IP of ``entry-node`` __NOT__ your IP address.
 ``exit-node`` is the only node which will see *all* of your network traffic. 
 
@@ -115,7 +112,7 @@ On a large DDoS scale, it is possible to be connected to all 3 malicious nodes, 
 Many people argue against using VPNs with Tor, though there can be real-world benefits to having a setup like this.
 If you are worried about an adversary knowing you are connecting to the Tor network this can be beneficial, but keep in mind your adversary can see you connect to the VPN.
 If you are concerned about a malicious ``entry-node``, using a VPN can mask your IP address in this case.
-If you are using an "amnesic" setup such as Tails or anon-whonix on QubesOS, you do not need to worry about having the same ``guard-node``.
+If you are using an "amnesic" setup such as Tails or anon-whonix on Qubes OS, you do not need to worry about having the same ``guard-node``.
 
 <br>
 
@@ -151,7 +148,7 @@ More on this subject will be later in this _guide._
 
 *   Your life will change drastically.
 
-*   Do not be lazy
+*   Do not be lazy.
 
 People may think you are paranoid, but in a world like this it *is* useful to be even a bit paranoid. This will allow you to see the true realities of the world. If you are always thinking of ways you can be compromised, you'd actually likely reduce your risk due to the fact of you constantly thinking about it, rather than just "not really thinking" about it, or rather as often as you should. Privacy and security are constantly evolving, which means that you will have to evolve with it. Are you ready for a data breach? What are you going to do if your compromised? Questions like these are what you need to ask yourself in order to be successful, you must always have a backup plan that you can execute.
 
@@ -311,25 +308,25 @@ Those who are looking for some excitement or extremely into privacy, security an
 
 ---
 
-### __QubesOS__
+### __Qubes OS__
 
-What is QubesOS? Simply put, QubesOS is a "reasonably secure operating system" and it will be the basis of our secure setup.
+What is Qubes OS? Simply put, Qubes OS is a "reasonably secure operating system" and it will be the basis of our secure setup.
 It uses a method known as "security by compartmentalization".
-Simply put, most aspects of the OS are split into Qubes which can be thought of as virtual machines, meaning that if something gets compromised, the rest of the system can be safely used.
-Due to the way QubesOS is built, requirements will be heavy.
-Recommend at *least* 16GB of RAM with plenty of storage.
+Simply put, most aspects of the OS are split into Qubes which are virtual machines, meaning that if something gets compromised, the rest of the system can be safely used.
+Due to the way Qubes OS is built, requirements will be heavy.
+Recommend at *least* 8GB of RAM with plenty of storage.
 The official requirements can be found [here](https://www.qubes-os.org/doc/system-requirements/).
 
-Note: QubesOS / Qubes generally refers to the operating system, and the term qube is used describe the individual "VMs".
+Why should we use Qubes OS?
 
-Why should we use QubesOS?
+Note: Qubes OS / Qubes generally refers to the operating system, and the term qube is used describe the individual "VMs".
 
 - It is commonly regarded as one of the most secure operating systems
 - Provides amazing potential for creativity
 - Still can be considered trusted even if a section is compromised
 - Can heavily utilize Tor, proxies and VPNs
 
-QubesOS gives us an amazing amount of customization that we can harness for security.
+Qubes OS gives us an amazing amount of customization that we can harness for security.
 The sky is the limit with Qubes as it's based on VM's.
 Nothing ever leaves each VM so, each activity can be compartmentalized for amazing security.
 
@@ -472,7 +469,7 @@ sudo qubes-dom0-update qubes-template-debian-11
 When installing applications, it may be best to clone a minimal template and install the application on there for increased compartmentalization.
 This is a suggested option if you have the capability to space additional system resources.
 
-Unofficial templates can be found on the QubesOS forum. 
+Unofficial templates can be found on the Qubes OS forum. 
 There is always the ability to build your own template utilizng the [Qubes builder](https://www.qubes-os.org/doc/qubes-builder/).
 
 <br>
@@ -674,7 +671,7 @@ Ensure that nothing will leave the qube.
 Ensure that all the ``alias`` qubes are properly routed via VPN or Tor to ensure proper setup.
 For a more advanced setup, you are able to utilize Whonix qubes.
 
-Using multiple aliases outside QubeOS is definitely possible, and will require several things.
+Using multiple aliases outside Qubes OS is definitely possible, and will require several things.
 You'll need several browsers configured to wipe all history, cookies, and cache on closure, along with a KeePass or another password manager database.
 
 Some accounts and aliases will need their own email, you can use [Proton](https://proton.me) for your mail provider.
@@ -715,7 +712,7 @@ To make a list of browsers we should avoid can be exhaustive, so instead here is
 
 ####  [Brave](https://brave.com)  <button type="button" class="btn btn-xs btn-xs"><a href="https://brave4u7jddbv7cyviptqjc7jusxh72uik7zt6adtckl5f4nwy2v72qd.onion/">Tor</a></button>
 
-Brave is based upon Chrome and includes significant enabled-by-default [privacy protections](https://brave.com/privacy-features/) by default unlike a lot of other browsers.
+Brave is based upon Chromium and includes significant enabled-by-default [privacy protections](https://brave.com/privacy-features/) by default unlike a lot of other browsers.
 Certain built-in functions such as IPFS and crypto may want to be avoided.
 <!--<i class="fa fa-arrow-right" aria-hidden="true"></i>-->
   
@@ -727,7 +724,7 @@ Certain built-in functions such as IPFS and crypto may want to be avoided.
       </div>
       <div class="panel-body">
         You should NOT use the built-in Tor function unless absolutely necessary!
-        This will leave a unique browser fingerprint over the Tor network, potentially leaving you vulnerable as there is no protection.
+        This will leave a unique browser fingerprint over the Tor network, potentially leaving you vulnerable as there is no FP protection.
       </div>
     </div>
 
