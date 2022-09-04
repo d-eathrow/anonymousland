@@ -25,6 +25,9 @@ description: A fun happy place.
 <br>
 
   <button type="button" class="btn btn-md btn-default"><a href="https://codeberg.org/deathrow/anonymousland"> <i class="fa fa-github" aria-hidden="true"></i> Repository</a></button>
+  
+  <button type="button" class="btn btn-md btn-default"><a href="https://github.com/d-eathrow/anonymousland"> <i class="fa fa-github" aria-hidden="true">
+    </i> GitHub mirror</a></button>
 
 
   <button type="button" class="btn btn-md btn-default"><a href="./rss"><i class="fa fa-rss-square" aria-hidden="true"></i> RSS</a></button>
@@ -57,7 +60,7 @@ description: A fun happy place.
 <li><a href="./guide">Guide</a> </li> <br>
 <li><a href="./information">Information</a> </li> <br>
 <li><a href="./matrix">Matrix</a> </li> <br>
-<li><a href="./qubes">QubesOS</a> </li> <br>
+<li><a href="./qubes">Qubes OS</a> </li> <br>
 <li><a href="./tools">Tools</a> </li> <br>
 <li><a href="./services">Services</a> </li> <br>
 
