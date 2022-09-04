@@ -23,9 +23,6 @@ priority: 1
 
 ---
 
-Well... I never thought i'd be making a guide so, here we go.... I guess....  
-Let's define a few important things here:
-
 `Adversary: Your threat.`
 
 `Privacy: The act of your personal activities being hidden from public.`
