@@ -8,20 +8,19 @@ permalink: /services
 ### __Services__
 
 These services are publicly available and free to use. 
-These services are not intended to spread spam or malicious content, or sharing / distributing / hosting of malicious content.
 
 You can check the status of our Matrix Homeserver and all off our other services on our [status page](https://status.anonymousland.org/status/services).
 <br>
 
+### __Terms of Service (ToS)__
+
+These services are not intended to spread spam or malicious content, or sharing / distributing / hosting of malicious content.
+
 *Everything done on these services **MUST** remain legal.*
 
-<br>
+Your account *can* be suspended if you take part in any sort of malicious activity ranging from targeted harassment, raids, discussing illegal activities, conducting illegal activities or any other questionable content.
 
-Your account *can* be suspended if you take part in any sort of malicious activity ranging from targeted harassment, raids, discussing illegal activities, conducting illegal activities or any questionable content.
-
-<br>
-
-### __Privacy / Security__
+### __Privacy&Security policy__
 
 As nature of this website, privacy and security must be our main priority, the following is currently in effect:
 
