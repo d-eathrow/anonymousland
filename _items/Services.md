@@ -65,7 +65,9 @@ The Matrix homeserver is located at
 
 `https://matrix.anonymousland.org`
 
-`[element.anonymousland.org](https://element.anonymousland.org)` - Self-hosted Element instance
+We also have our self-hosted Element instance located at
+
+`https://element.anonymousland.org`
 
 You can check the status of the homeserver on our [status page](https://status.anonymousland.org/status/services).
 
