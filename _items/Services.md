@@ -20,7 +20,7 @@ These services are not intended to spread spam or malicious content, or sharing 
 
 Your account *can* be suspended if you take part in any sort of malicious activity ranging from targeted harassment, raids, discussing illegal activities, conducting illegal activities or any other questionable content.
 
-### __Privacy&Security policy__
+### __Privacy & Security policy__
 
 As nature of this website, privacy and security must be our main priority, the following is currently in effect:
 
