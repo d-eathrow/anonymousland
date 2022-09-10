@@ -10,6 +10,7 @@ permalink: /services
 These services are publicly available and free to use. 
 These services are not intended to spread spam or malicious content, or sharing / distributing / hosting of malicious content.
 
+You can check the status of our Matrix Homeserver and all off our other services on our [status page](https://status.anonymousland.org/status/services).
 <br>
 
 *Everything done on these services **MUST** remain legal.*
@@ -68,8 +69,6 @@ The Matrix homeserver is located at
 We also have our self-hosted Element instance located at
 
 `https://element.anonymousland.org`
-
-You can check the status of the homeserver on our [status page](https://status.anonymousland.org/status/services).
 
 Incidents: ``1``
 
