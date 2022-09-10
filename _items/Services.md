@@ -8,19 +8,19 @@ permalink: /services
 ### __Services__
 
 These services are publicly available and free to use. 
-These services are not intended to spread spam or malicious content, or sharing / distributing / hosting of malicious content.
 
+You can check the status of our Matrix Homeserver and all off our other services on our [status page](https://status.anonymousland.org/status/services).
 <br>
+
+### __Terms of Service (ToS)__
+
+These services are not intended to spread spam or malicious content, or sharing / distributing / hosting of malicious content.
 
 *Everything done on these services **MUST** remain legal.*
 
-<br>
+Your account *can* be suspended if you take part in any sort of malicious activity ranging from targeted harassment, raids, discussing illegal activities, conducting illegal activities or any other questionable content.
 
-Your account *can* be suspended if you take part in any sort of malicious activity ranging from targeted harassment, raids, discussing illegal activities, conducting illegal activities or any questionable content.
-
-<br>
-
-### __Privacy / Security__
+### __Privacy & Security policy__
 
 As nature of this website, privacy and security must be our main priority, the following is currently in effect:
 
@@ -63,11 +63,13 @@ We try to collect as little information as possible, to protect *everyone*.
 
 The Matrix homeserver is located at
 
-``https://matrix.anonymousland.org``
+`https://matrix.anonymousland.org`
 
-[element.anonymousland.org](https://element.anonymousland.org) - Self-hosted Element instance
+We also have our self-hosted Element instance located at
 
-Incidents: ``0``
+`https://element.anonymousland.org`
+
+Incidents: ``1``
 
 Password Policy:
 
@@ -81,5 +83,5 @@ Password Policy:
 
 - At least 1 uppercase character
 
-Due to how the Matrix protocol functions, metadata including your PfP, username, display name and device list will be sent to other servers if you are in a federated room.
+Due to how the Matrix protocol functions, metadata including your Profile picture, username, display name and device list will be sent to other homeservers if you are in a federated room.
 An IP address is automatically assigned with each client, signing out will remove your IP from the client and from the database as well.
