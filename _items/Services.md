@@ -66,8 +66,9 @@ The Matrix homeserver is located at
 ``https://matrix.anonymousland.org``
 
 [element.anonymousland.org](https://element.anonymousland.org) - Self-hosted Element instance
+You can check the status of the homeserver on our [status page](https://status.anonymousland.org/status/services)
 
-Incidents: ``0``
+Incidents: ``1``
 
 Password Policy:
 
@@ -81,5 +82,5 @@ Password Policy:
 
 - At least 1 uppercase character
 
-Due to how the Matrix protocol functions, metadata including your PfP, username, display name and device list will be sent to other servers if you are in a federated room.
+Due to how the Matrix protocol functions, metadata including your Profile picture, username, display name and device list will be sent to other homeservers if you are in a federated room.
 An IP address is automatically assigned with each client, signing out will remove your IP from the client and from the database as well.
