@@ -24,29 +24,36 @@ Your account *can* be suspended if you take part in any sort of malicious activi
 
 As nature of this website, privacy and security must be our main priority, the following is currently in effect:
 
-- nginx logging is disabled.
+- nginx logging is disabled on all servers.
 
-- Matrix IP addresses are logged for 30 seconds then they are purged from the database.
+<br>
 
-- Matrix federation is enabled.
-
-- Ratelimiting actions is currently set as default on Matrix, and can be easily re-enabled if needed, do not ruin this for others.
-
-- Matrix URL previews are allowed
-
-- We are currently not using a CAPTCHA for registration or requiring an Email, CAPTCHA will be enabled if abuse happens!
+#### Matrix
 
 - Registration is open, if abuse takes place, registration will turn to an invite-only system.
 
-- Password hashing bcrypt rounds are set to 15.
+- Registered users are automatically joined into the lounges, this is to help prevent abuse!
 
 - Guest access is currently enabled, and will be disabled if abuse takes place.
 
-- Registered users are automatically joined into the lounges, this is to help prevent abuse!
-
 - Moderation is done via ``mjolnir``, let us keep this ban list to a minimum.
 
-- Matrix metrics are disabled.
+- Ratelimiting actions is currently set as default on Matrix, and can be easily re-enabled if needed, do not ruin this for others.
+
+- We are currently not using a CAPTCHA for registration or requiring an Email, CAPTCHA will be enabled if abuse happens!
+
+- Metrics are disabled.
+
+- Federation is enabled.
+
+- URL previews are allowed.
+
+
+- `user_ips_max_age` is currently set to `7d`
+
+- `bcrypt_rounds` is set to `15`
+
+- `MSC2285` is enabled
 
 <br>
 
@@ -58,6 +65,8 @@ Matrix federation may cause some information to be sent to third party servers a
 Your data and information will **NEVER** be handed away to *anyone*.
 
 We try to collect as little information as possible, to protect *everyone*.
+
+<br>
 
 #### __Matrix__
 
@@ -83,5 +92,17 @@ Password Policy:
 
 - At least 1 uppercase character
 
-Due to how the Matrix protocol functions, metadata including your Profile picture, username, display name and device list will be sent to other homeservers if you are in a federated room.
-An IP address is automatically assigned with each client, signing out will remove your IP from the client and from the database as well.
+<br>
+
+  <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">Metadata</h3>
+      </div>
+      <div class="panel-body">
+        Due to how the Matrix protocol functions, metadata including your Profile picture, username, display name and device list will be sent to other homeservers if you are in a federated room.
+        An IP address is automatically assigned with each client, signing out will remove your IP from the client and from the database as well.
+      </div>
+    </div>
+
+<br>
+
