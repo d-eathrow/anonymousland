@@ -90,6 +90,8 @@ None of these should be installed on Tor Browser.
 
 #### Wallets
 
+- [Trezor](https://trezor.io) (Hardware)
+
 <br>
 
 #### __Developer Tools__  

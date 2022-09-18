@@ -6,7 +6,14 @@ permalink: /donate
 ---
 
 ## Donations
-Donations are good. Money is how to keep this project running.
+Donations are good.
+People often times utilize emotional reactions to get people to buy things, so here are several dogs:
+
+<br>
+
+![](https://media.giphy.com/media/Atqa0foqfzuTu/giphy.gif) ![](https://media.giphy.com/media/DOmoqqHVkhLos/giphy.gif) ![](https://media.giphy.com/media/nTCIt0E9Kqlbi/giphy.gif)
+
+<br>
 
 Monero: 
 
