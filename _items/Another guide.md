@@ -62,8 +62,6 @@ _Disclaimer: This is for education / research._
 -\>> [Browsers](#browsers) <br>
   - -\>> [Desktop](#desktop-1) <br>
 
-
-
 -\>> [Secure Communications](#secure-communications) <br>
 -\>> [Secure Hardware](#secure-hardware) <br>
 -\>> [TLDR](#tldr) <br>

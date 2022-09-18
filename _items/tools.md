@@ -172,7 +172,7 @@ YouTube - [NewPipe](https://netpipe.net) (Mobile) <br>
 
 #### __Email Providers__
 
-Email is a nessecary evil that is required in this world. 
+Email is a necessary evil that is required in this world. 
 Email is inherently insecure, which means your email provider can read any of your messages. 
 These providers offer encryption, anonymity and security. 
 
@@ -235,7 +235,7 @@ Password managers are a great way to both securely and remember all of your pass
 Your passwords are saved in an encrypted database, which you only need to remember 1 password while generating secure passwords for all of your accounts.
 
 - [KeePassXC](https://keepassxc.org)
-- [Bitwarden](https://bitwarden.com/) (more convenient since it's cloud synced)
+- [Bitwarden](https://bitwarden.com/) *(Introduces convenance as it is a hosted service)*
 
 <br>
 
