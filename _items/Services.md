@@ -53,7 +53,7 @@ As nature of this website, privacy and security must be our main priority, the f
 ### __Policies__
 
 Your data and information will **NEVER** be sold or shared to another party. 
-However, we host our services on 1984 hosting, therefore, they have access to all of the information. Here is 1984's privacy policy: https://1984.hosting/GDPR/
+However, we host our services on 1984 hosting, therefore, they have access to all of the information. Click [here](https://1984.hosting/GDPR/) to see 1984's privacy policy.
 Matrix federation may cause some information to be sent to third party servers as this is how federation functions.
 
 Your data and information will **NEVER** be handed away to *anyone*.
