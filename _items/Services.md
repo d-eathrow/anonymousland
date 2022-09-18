@@ -48,6 +48,7 @@ As nature of this website, privacy and security must be our main priority, the f
 
 - URL previews are allowed.
 
+- Synapse is hosted with [1984](https://1984.hosting/GDPR/)
 
 - `user_ips_max_age` is currently set to `7d`
 
@@ -61,15 +62,13 @@ As nature of this website, privacy and security must be our main priority, the f
 
 Your data and information will **NEVER** be sold or shared to another party. 
 
-However, we host our Matrix Homeserver on 1984 hosting, therefore, they have access to all of that information. Click [here](https://1984.hosting/GDPR/) to see 1984's privacy policy.
-
-Additionally, we host the remaining services on Njalla, click [here](https://njal.la/about/) to see Njalla's privacy policy.
-
 Matrix federation may cause some information to be sent to third party servers as this is how federation functions.
 
 Your data and information will **NEVER** be handed away to *anyone*.
 
 We try to collect as little information as possible, to protect *everyone*.
+
+Additional services are hosted with [Njalla](https://njal.la/about/).
 
 <br>
 
