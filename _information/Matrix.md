@@ -16,3 +16,7 @@ For a more comprehensive list, view [Matrix Clients](https://matrix.org/clients/
 - [SchildiChat](https://schildi.chat)
 
 <br>
+
+### Servers
+
+- [JoinMatrix](https://joinmatrix.org/servers)

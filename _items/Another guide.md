@@ -302,7 +302,7 @@ The actual threat model of your Linux system will vary per-person.
 Linux is *private by default*, meaning that your personal information is not being *harvested* like traditional operating systems including Windows and MacOS.
 QubesOS is an exception as it is entirely based upon security.
 
-Those who are looking for some excitement or extremely into privacy, security and / or anonymity should look at [QubesOS](https://qubes-os.org) and [Tails](https://tails.boum.org) if you haven't already.
+Those who are looking for some excitement or extremely into privacy, security and / or anonymity should look at [QubesOS](https://qubes-os.org) <button type="button" class="btn btn-xs btn-xs"><a href="http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/">Tor</a></button> and [Tails](https://tails.boum.org) if you haven't already.
 
 <br>
 

@@ -75,6 +75,8 @@ description: A fun happy place.
   - [Donate](./donate)
   - [Guide](./guide)
   - [Information](./information)
+     - [GrapheneOS](./graphene)
+     - [F-Droid](./f-droid)
      - [Matrix](./matrix)
      - [Qubes OS](./qubes)
   - [Propagation](./propagate)

@@ -1,13 +1,17 @@
 ---
 layout: default1
 description: For Qubes OS
-title: Qubes Notes
+title: Qubes OS
 permalink: /qubes
 ---
 
 <div style="text-align:center;">
 A collection of Qubes OS-related information.
 </div>
+<br>
+
+Website: [https://qubes-os.org](https://qubes-os.org) <button type="button" class="btn btn-xs btn-xs"><a href="http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/">Tor</a></button>
+
 <br>
 
 #### Table of contents:
