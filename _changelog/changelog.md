@@ -26,6 +26,8 @@ permalink: /changelog
 
 - Added favicon
 
+- Add disclaimer for Duckduckgo and Yubikey on ``/tools``
+
 # v1.03
 
 - Removed update notice
