@@ -43,7 +43,7 @@ Multi-factor authentication is extremely important as it provides multiple layer
 
 - [Aegis](https://github.com/beemdevelopment/Aegis) (Mobile)
 - [NitroKey](https://www.nitrokey.com/) (Hardware)
-- [YubiKey](https://www.yubico.com/) (Hardware) (**Warning: proprietary**)
+- [YubiKey](https://www.yubico.com/) (Hardware) <button type="button" class="btn btn-xs btn-warning"> <a href="https://www.yubico.com/blog/secure-hardware-vs-open-source/"> Proprietary </a> </button>
 
 <br>
 
@@ -206,7 +206,7 @@ Choosing an encrypted messenger will prevent any unauthorized users from reading
 
 ##### Centralized
 
-- [Signal](https://signal.org)
+- [Signal](https://signal.org) *(Requires telephone number)*
   - [Molly](https://github.com/mollyim/mollyim-android) (Mobile)
 
 <br>
@@ -244,7 +244,7 @@ Your search engine knows a lot about you.
 This information is often times sold to 3rd parties and given away to government agencies.
 They often show biased search results. Choose a better one here.
 
-- [DuckDuckGo](https://duckduckgo.com) <button type="button" class="btn btn-xs btn-xs"><a href="https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/">Tor</a></button>  <button type="button" class="btn btn-xs btn-warning"><a href="https://help.duckduckgo.com/duckduckgo-help-pages/community/open-source/">Partially Closed-Source</a></button>
+- [DuckDuckGo](https://duckduckgo.com) <button type="button" class="btn btn-xs btn-xs"><a href="https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/">Tor</a></button>  <button type="button" class="btn btn-xs btn-warning"><a href="https://help.duckduckgo.com/duckduckgo-help-pages/community/open-source/">Partially Closed-Source</a></button> *(May be removed in the future for major controversy.)*
 - [SearX](https://searx.space) <button type="button" class="btn btn-xs btn-xs"><a href="searxspbitokayvkhzhsnljde7rqmn7rvoga6e4waeub3h7ug3nghoad.onion">Tor</a></button>
 
 - [Brave Search](https://search.brave.com) <button type="button" class="btn btn-xs btn-xs"><a href="https://search.brave4u7jddbv7cyviptqjc7jusxh72uik7zt6adtckl5f4nwy2v72qd.onion/">Tor</a></button>

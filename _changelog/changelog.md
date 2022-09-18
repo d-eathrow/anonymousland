@@ -6,6 +6,26 @@ permalink: /changelog
 
 ---
 
+# v1.04
+
+- Fixed various naming schemes
+
+- Removed NoScript, LocalCDN and CanvasBlocker from ``/tools``
+
+- Added Bitwarden to ``/tools``
+
+- Update page list on ``/index``
+
+- Update ``/services`` page for better formatting and wording
+
+- Updated ``/RSS`` page
+
+- New ``/propagate`` page
+
+- Update button layout on ``/index``
+
+- Added favicon
+
 # v1.03
 
 - Removed update notice

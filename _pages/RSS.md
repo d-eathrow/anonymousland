@@ -4,10 +4,10 @@ title: RSS
 permalink: /rss
 ---
 
-## [Blog](https://anonymousland.org/feed.xml)
+<a href="./feed/changelog.xml "><i class="fa fa-rss-square" aria-hidden="true"></i> Changelog</a>
 
-## [Changelog](https://anonymousland.org/feed/changelog.xml)
+<a href="https://codeberg.org/deathrow/anonymousland.rss"><i class="fa fa-rss-square" aria-hidden="true"></i> Codeberg</a>
 
-## [Information](https://anonymousland.org/feed/information.xml)
+<a href="./feed/information.xml "><i class="fa fa-rss-square" aria-hidden="true"></i> Information</a>
 
-## [Items](https://anonymousland.org/feed/items.xml)
+<a href="./feed/items.xml "><i class="fa fa-rss-square" aria-hidden="true"></i> Items</a>
