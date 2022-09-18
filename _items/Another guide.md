@@ -218,7 +218,8 @@ Get yourself accustomed to these resources to better understand various concepti
 
 - [PrivacyGuides](https://privacyguides.org) - "The guide to restoring your online privacy."
 - [PRISM Break](https://prism-break.org/) - "Opt out of global data surveillance programs like [PRISM](https://wikiless.org/wiki/PRISM_%28surveillance_program%29), [XKeyscore](https://wikiless.org/wiki/XKeyscore), [Tempora](https://wikiless.org/wiki/Tempora).
-- [Tor Project](https://torproject.org) - Defend yourself against tracking and surveillance. Circumvent censorship.
+- [Tor Project](https://torproject.org) - Defend yourself against tracking and surveillance. 
+Circumvent censorship.
 - [EFF](https://eff.org) - The leading nonprofit defending digital privacy, free speech, and innovation.
 
 
@@ -226,7 +227,6 @@ Media Channels:
 
 - [Techlore - YouTube](https://invidious-us.kavin.rocks/channel/UCs6KfncB4OV6Vug4o_bzijg)
 - [The Hated One - YouTube](https://invidio.xamh.de/channel/UCjr2bPAyPV7t35MvcgT3W8Q)
-
 
 <br>
 

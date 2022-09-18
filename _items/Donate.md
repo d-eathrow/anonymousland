@@ -11,7 +11,7 @@ People often times utilize emotional reactions to get people to buy things, so h
 
 <br>
 
-![](https://media.giphy.com/media/Atqa0foqfzuTu/giphy.gif) ![](https://media.giphy.com/media/DOmoqqHVkhLos/giphy.gif) ![](https://media.giphy.com/media/nTCIt0E9Kqlbi/giphy.gif)
+![](../assets/img/gif/donation1.gif) ![](../assets/img/gif/donation2.gif) ![](../assets/img/gif/donation3.gif)
 
 <br>
 
