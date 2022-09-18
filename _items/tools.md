@@ -173,14 +173,16 @@ YouTube - [NewPipe](https://netpipe.net) (Mobile) <br>
 #### __Email Providers__
 
 Email is a nessecary evil that is required in this world. 
-Email is inherently insecure, which means your email provider can read any of your messages. These providers offer encryption, anonymity and security. 
+Email is inherently insecure, which means your email provider can read any of your messages. 
+These providers offer encryption, anonymity and security. 
 
 - [Proton](https://proton.me) <button type="button" class="btn btn-xs btn-xs"><a href="https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion">Tor</a></button>
 - [Mailfence](https://mailfence.com)
 
 #### Aliases
 
-This provides multiple aliases for your emails, so you do not have to reveal your true email address. This is extremely useful especially if you are worried about your email being leaked.
+This provides multiple aliases for your emails, so you do not have to reveal your true email address. 
+This is extremely useful especially if you are worried about your email being leaked.
 
 - [SimpleLogin](https://simplelogin.io/)
 - [AnonAddy](https://anonaddy.com/)
@@ -195,8 +197,6 @@ Choosing an encrypted messenger will prevent any unauthorized users from reading
 <br>
 
 ##### Decentralized
-
-
 
 - [Matrix](https://matrix.org)
 - [XMPP](https://xmpp.org)
@@ -214,6 +214,7 @@ Choosing an encrypted messenger will prevent any unauthorized users from reading
 ##### P2P
 
 - [Briar](https://briarproject.org) (Mobile)
+- [I2P](https://geti2p.net/)
 
 <br>
 
