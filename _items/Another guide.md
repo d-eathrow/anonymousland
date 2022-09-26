@@ -50,6 +50,7 @@ _Disclaimer: This is for education / research._
 -\>> [Creating Your Threat model](#creating-your-threat-model) <br> 
 -\>> [Knowing Resources](#knowing-resources) <br> 
 -\>> [Cleaning Up](#cleaning-up) <br> 
+-\>> [Email](#email) <br>
 
 -\>> [Desktop](#desktop) <br>
   - -\>> [Qubes OS](#qubesos) <br>
@@ -267,6 +268,47 @@ Utilize services such as [HaveIBeenpwned](https://haveibeenpwned.com) to ensure 
 Doing this in the real-world is just as important as online.
 Your bank, local grocery store, etc. all share your information.
 This is a big deal.
+
+<br>
+
+---
+
+## __Email__
+
+Often times you will find yourself needing an email address.
+Creating an anonymous email account will be necessary in some cases.
+It is best to absolutely avoid commercial services such as gmail, outlook and icloud, these services are not anonymous or even private.
+Default (gmail, icloud, etc.) email providers can read your inbox, and will send your information on government requests.
+For anonymity, it may be best to utilize Tor for email to help prevent an adversary from obtaining your IP address, and to help prevent fingerprinting.
+
+Using a web browser to access email allows for malicious javascript to be utilized to capture your credentials along with your mail contents.
+Some services only allow for web-based applications, while others such as Proton allow for a local-client on paid plans.
+Be mindful of this.
+
+If you need a temporary email, you are able to use:
+
+- [Guerilla Mail](https://www.guerrillamail.com/)
+
+- [tmail](https://tmail.link/)
+
+For a more permanent mail solution, you can use:
+
+- [Proton](https://proton.me) <button type="button" class="btn btn-xs btn-xs"><a href="https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion">Tor</a></button>
+
+- [Tutanota](https://tutanota.com)
+
+These email providers allow you to sign up with little to no personal information, and allows sign-ups over Tor.
+In the event you need to upgrade your email plan, you can pay anonymously with cryptocurrency.
+
+If you plan to expand your email upon other services, you have the ability to create email aliases.
+This allows you to create multiple email aliases which forward to your true email without exposing your true email.
+
+Some aliasing services:
+
+- [AnonAddy](https://anonaddy.com/)
+
+- [SimpleLogin](https://simplelogin.io/)
+
 
 <br>
 
@@ -862,7 +904,6 @@ Matrix allows you to *privately*(see below) sign up, and from there you are able
 Note: The terms "private" will vary depending on which homeserver you opt to choose.
 Some servers will require an email address and others will not.
 For more information visit [JoinMatirx](https://joinmatrix.org).
-
 
 <br>
 
