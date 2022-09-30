@@ -91,6 +91,8 @@ A list of interesting projects
 
 For research-based articles
 
+- [Practically-exploitable Cryptographic Vulnerabilities in Matrix](https://nebuchadnezzar-megolm.github.io/)
+
 - [Memetic Warfare](https://www.academia.edu/43534914/Memetic_Warfare_The_Future_of_War)
 
 - [Mega.nz Encryption](https://mega-awry.io/)
