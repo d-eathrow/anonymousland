@@ -859,6 +859,8 @@ The official site states:
 
 _"LibreWolf is always based on the latest version of Firefox. Updates usually come within three days from each upstream stable release, at times even the same day. Unless problems arise, we always try to release often and in a timely manner. It should however be noted that LibreWolf does not have auto-update capabilities, and therefore it relies on package managers or users to apply them."_
 
+Librewolf is a good alternative to utilizing Arkenfox on Qubes as we cannot reasonably trust a human to consistently and manually check for updates on Arkenfox.
+
 <br>
 
 #### General Notes
