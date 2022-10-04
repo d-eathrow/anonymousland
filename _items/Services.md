@@ -5,6 +5,10 @@ title: Services
 permalink: /services
 ---
 
+<div style="text-align:center;">
+<i>“There are too many of us, he thought. There are billions of us and that's too many. Nobody knows anyone. Strangers come and violate you. Strangers come and cut your heart out. Strangers come and take your blood. Good God, who were those men? I never saw them before in my life!” </i>
+</div>
+
 ### __Services__
 
 These services are publicly available and free to use. 

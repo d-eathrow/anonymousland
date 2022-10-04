@@ -30,6 +30,8 @@ description: A fun happy place.
   <button type="button" class="btn btn-md btn-default"><a href="https://github.com/d-eathrow/anonymousland"> <i class="fa fa-github" aria-hidden="true">
     </i> GitHub mirror</a></button>
 
+<br>
+<br>
 
   <button type="button" class="btn btn-md btn-default"><a href="./rss"><i class="fa fa-rss-square" aria-hidden="true"></i> RSS</a></button>
 
@@ -83,3 +85,4 @@ description: A fun happy place.
   - [RSS](./rss)
   - [Tools](./tools)
   - [Services](./services)
+  - [Snowflake](./snowflake)
