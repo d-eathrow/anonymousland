@@ -1,6 +1,6 @@
 ---
 layout: default1
-description: Just... a guide 
+description: Just... a guide
 title: Guide
 permalink: /guide
 priority: 1
@@ -15,7 +15,7 @@ priority: 1
 
 # The Guide
 
-*Note: Work in progress*
+_Note: Work in progress_
 
 <br>
 
@@ -42,51 +42,54 @@ _Disclaimer: This is for education / research._
 #### Table of contents:
 
 -\>> [Important Concepts](#important-concepts) <br>
-  - -\> *[Tor](#tor)* <br>
 
--\>> [Proper Mindset](#proper-mindset) <br> 
--\>> [Knowing Your Adversary](#knowing-your-adversary) <br> 
--\>> [Setting Goals](#setting-goals) <br> 
--\>> [Creating Your Threat model](#creating-your-threat-model) <br> 
--\>> [Knowing Resources](#knowing-resources) <br> 
--\>> [Cleaning Up](#cleaning-up) <br> 
+- -\> _[Tor](#tor)_ <br>
+
+-\>> [Proper Mindset](#proper-mindset) <br>
+-\>> [Knowing Your Adversary](#knowing-your-adversary) <br>
+-\>> [Setting Goals](#setting-goals) <br>
+-\>> [Creating Your Threat model](#creating-your-threat-model) <br>
+-\>> [Knowing Resources](#knowing-resources) <br>
+-\>> [Cleaning Up](#cleaning-up) <br>
 -\>> [Email](#email) <br>
 
 -\>> [Desktop](#desktop) <br>
-  - -\>> [Qubes OS](#qubesos) <br>
-     - -\>> *[Installation](#installation)* <br>
-     - -\>> *[Template Setup](#template-setup)* <br>
-     - -\>> *[Onionizing Repositories](#onionizing-repositories)* <br>
-     - -\>> *[Qubes Basic Setup](#qube-basic-setup)* <br>
+
+- -\>> [Qubes OS](#qubesos) <br>
+  - -\>> _[Installation](#installation)_ <br>
+  - -\>> _[Template Setup](#template-setup)_ <br>
+  - -\>> _[Onionizing Repositories](#onionizing-repositories)_ <br>
+  - -\>> _[Qubes Basic Setup](#qube-basic-setup)_ <br>
 
 -\>> [Creating our Aliases](#creating-our-aliases) <br>
 -\>> [Browsers](#browsers) <br>
-  - -\>> [Desktop](#desktop-1) <br>
 
+- -\>> [Desktop](#desktop-1) <br>
+
+-\>> [Physical](#physical) <br>
 -\>> [Secure Communications](#secure-communications) <br>
 -\>> [Secure Hardware](#secure-hardware) <br>
 -\>> [TLDR](#tldr) <br>
 
-
 ---
 
-## __Important Concepts__
+## **Important Concepts**
 
 This guide requires you to understand various important concepts in order to truly be anonymous on the internet.
-There is a vast array of concepts that will need to be thoroughly understood. 
+There is a vast array of concepts that will need to be thoroughly understood.
 You'll be able to make and choose your own model based upon this guide.
 
-*   Understanding of Tor and its threats<!--(put link here) -->
-*   Understanding benefits and negatives of a VPN <!--(PUT LINK HERE) -->
-*   Understanding important privacy concepts <!--(PUT LINK HERE) -->
-*   Understanding important security concepts <!--(PUT LINK HERE or make a section) -->
-*   [Understanding the principles of threat modeling](https://invidious.esmailelbob.xyz/watch?v=DHZRhboZhfI)
-*   Understanding how the internet functions
+- Understanding of Tor and its threats<!--(put link here) -->
+- Understanding benefits and negatives of a VPN <!--(PUT LINK HERE) -->
+- Understanding important privacy concepts <!--(PUT LINK HERE) -->
+- Understanding important security concepts <!--(PUT LINK HERE or make a section) -->
+- [Understanding the principles of threat modeling](https://invidious.esmailelbob.xyz/watch?v=DHZRhboZhfI)
+- Understanding how the internet functions
 
 General Ideas:
 
-- Using a VPN will *NOT* make you anonymous
-- Just because you are using Tor does *NOT* mean you are safe
+- Using a VPN will _NOT_ make you anonymous
+- Just because you are using Tor does _NOT_ mean you are safe
 - An adversary with enough time and resources will eventually find you
 - The best way to hide is to not use the internet
 - The land of compromises
@@ -97,77 +100,77 @@ General Ideas:
 
 Tor or The Onion Router was originally developed to keep U.S. military communications secure, and is now used world-wide to bypass censorship.
 Tor will route your network traffic through 3 servers worldwide randomly.
-``entry-node (aka Guard node)`` -> ``middle-node`` -> ``exit-node``.
-This setup means that the ``entry-node`` will only have your IP address, the ``middle-node`` will only see the IP of ``entry-node`` __NOT__ your IP address.
-``exit-node`` is the only node which will see *all* of your network traffic. 
+`entry-node (aka Guard node)` -> `middle-node` -> `exit-node`.
+This setup means that the `entry-node` will only have your IP address, the `middle-node` will only see the IP of `entry-node` **NOT** your IP address.
+`exit-node` is the only node which will see _all_ of your network traffic.
 
-Utilizing Tor with other ``.onion`` sites, means that neither your IP nor the servers IP address is exposed. Like your traffic going through 3 nodes or "hops", the a server running on the Tor network also goes through the same, meaning that the ``exit-node`` *cannot* see your network traffic.
+Utilizing Tor with other `.onion` sites, means that neither your IP nor the servers IP address is exposed. Like your traffic going through 3 nodes or "hops", the a server running on the Tor network also goes through the same, meaning that the `exit-node` _cannot_ see your network traffic.
 
-With Tor, anyone is able to setup a node meaning that you cannot possible trust anything, which there are many issues including a malicious ``exit-node``, setup by an adversary in an attempt to de-anonymize users.
-The Tor network is not as secure as many put it, there are a variety of attacks that can be used to de-anonymize users. An adversary can setup multiple malicious ``entry``, ``middle``, and ``exit`` nodes, then can DDoS other public Tor nodes which can either shut them offline or increase the already terrible speeds.
+With Tor, anyone is able to setup a node meaning that you cannot possible trust anything, which there are many issues including a malicious `exit-node`, setup by an adversary in an attempt to de-anonymize users.
+The Tor network is not as secure as many put it, there are a variety of attacks that can be used to de-anonymize users. An adversary can setup multiple malicious `entry`, `middle`, and `exit` nodes, then can DDoS other public Tor nodes which can either shut them offline or increase the already terrible speeds.
 This could force a user to connect to the adversary's malicious nodes.
-On a large DDoS scale, it is possible to be connected to all 3 malicious nodes, which would ultimately de-anonymize you. 
+On a large DDoS scale, it is possible to be connected to all 3 malicious nodes, which would ultimately de-anonymize you.
 
 Many people argue against using VPNs with Tor, though there can be real-world benefits to having a setup like this.
 If you are worried about an adversary knowing you are connecting to the Tor network this can be beneficial, but keep in mind your adversary can see you connect to the VPN.
-If you are concerned about a malicious ``entry-node``, using a VPN can mask your IP address in this case.
-If you are using an "amnesic" setup such as Tails or anon-whonix on Qubes OS, you do not need to worry about having the same ``guard-node``.
+If you are concerned about a malicious `entry-node`, using a VPN can mask your IP address in this case.
+If you are using an "amnesic" setup such as Tails or anon-whonix on Qubes OS, you do not need to worry about having the same `guard-node`.
 
 <br>
 
 ---
 
-## __Proper Mindset__
+## **Proper Mindset**
 
 Having the proper mindset when starting a process like this, is critical for success. You must be both willing and determined.
 
 Here is a general thought process...
 
-*   Always always always know what you are doing. You don't want to compromise yourself because you _thought_ you knew what you were doing. Make sure 100%. Do research **before**.
-  
-*   Have a strong mind. Most flaws are user error, meaning YOU. Having a strong mind is critical.
-You must be in a clear state of mind, and almost be "talking to yourself" mentally.
-Ask yourself before you do something "is this right".
-A good memory is CRITICAL. You are going to need to remember almost **EVERYTHING** you do on the internet if you want to do this _"properly"._ 
-Don't be compromised because you forgot something. 
-Let's eliminate user error. 
-More on this subject will be later in this _guide._
-  
-*   Take over-procedures. Don't "skimp" out on encryption because you don't feel like entering in a password. Don't be lazy.
-  
-*   Do not compromise your security for a friend. If they are your friend, they will respect your new-founded love for being secure.
-  
-*   Do not reveal more than you need to. MMJ doesn't need to know what you had for lunch.
-  
-(things to keep in mind)*   Reveal as little about yourself and origin as possible.
-  
-*   Remember - you can be identified by more ways than you can imagine.
+- Always always always know what you are doing. You don't want to compromise yourself because you _thought_ you knew what you were doing. Make sure 100%. Do research **before**.
 
-*   Do not trust anyone.
+- Have a strong mind. Most flaws are user error, meaning YOU. Having a strong mind is critical.
+  You must be in a clear state of mind, and almost be "talking to yourself" mentally.
+  Ask yourself before you do something "is this right".
+  A good memory is CRITICAL. You are going to need to remember almost **EVERYTHING** you do on the internet if you want to do this _"properly"._
+  Don't be compromised because you forgot something.
+  Let's eliminate user error.
+  More on this subject will be later in this _guide._
 
-*   Your life will change drastically.
+- Take over-procedures. Don't "skimp" out on encryption because you don't feel like entering in a password. Don't be lazy.
 
-*   Do not be lazy.
+- Do not compromise your security for a friend. If they are your friend, they will respect your new-founded love for being secure.
 
-People may think you are paranoid, but in a world like this it *is* useful to be even a bit paranoid. This will allow you to see the true realities of the world. If you are always thinking of ways you can be compromised, you'd actually likely reduce your risk due to the fact of you constantly thinking about it, rather than just "not really thinking" about it, or rather as often as you should. Privacy and security are constantly evolving, which means that you will have to evolve with it. Are you ready for a data breach? What are you going to do if your compromised? Questions like these are what you need to ask yourself in order to be successful, you must always have a backup plan that you can execute.
+- Do not reveal more than you need to. MMJ doesn't need to know what you had for lunch.
+
+(things to keep in mind)\* Reveal as little about yourself and origin as possible.
+
+- Remember - you can be identified by more ways than you can imagine.
+
+- Do not trust anyone.
+
+- Your life will change drastically.
+
+- Do not be lazy.
+
+People may think you are paranoid, but in a world like this it _is_ useful to be even a bit paranoid. This will allow you to see the true realities of the world. If you are always thinking of ways you can be compromised, you'd actually likely reduce your risk due to the fact of you constantly thinking about it, rather than just "not really thinking" about it, or rather as often as you should. Privacy and security are constantly evolving, which means that you will have to evolve with it. Are you ready for a data breach? What are you going to do if your compromised? Questions like these are what you need to ask yourself in order to be successful, you must always have a backup plan that you can execute.
 
 <br>
 
 ---
 
-## __Setting Goals__
+## **Setting Goals**
 
 We need to understand what we are trying to accomplish.
 
 Think - what are you trying to do?
 
-You need to properly identify a *threat model*, an *adversary* along with performing a self-analysis. You need to understand your own flaws.
+You need to properly identify a _threat model_, an _adversary_ along with performing a self-analysis. You need to understand your own flaws.
 
 <br>
 
 ---
 
-## __Creating your threat model__
+## **Creating your threat model**
 
 The most important part of your setup.
 
@@ -175,7 +178,7 @@ Threat modeling can become an advanced topic, you will need to learn how to bala
 Everyone has something to protect, whether it is passwords, location, internet activity, confidential documents, etc.
 The items you are trying to protect will be referred here as "assets".
 
- Ask yourself these basic questions:
+Ask yourself these basic questions:
 
 - What am I trying to protect?
 - Who am I trying to protect this from?
@@ -210,7 +213,7 @@ Listed below are some useful resources for getting started.
 
 ---
 
-## __Knowing Resources__
+## **Knowing Resources**
 
 Along your journey, you'll need to have the proper resources at hand to deal with any sort of situation you will be facing.
 Get yourself accustomed to these resources to better understand various conceptions and prepare yourself.
@@ -219,10 +222,9 @@ Get yourself accustomed to these resources to better understand various concepti
 
 - [PrivacyGuides](https://privacyguides.org) - "The guide to restoring your online privacy."
 - [PRISM Break](https://prism-break.org/) - "Opt out of global data surveillance programs like [PRISM](https://wikiless.org/wiki/PRISM_%28surveillance_program%29), [XKeyscore](https://wikiless.org/wiki/XKeyscore), [Tempora](https://wikiless.org/wiki/Tempora).
-- [Tor Project](https://torproject.org) - Defend yourself against tracking and surveillance. 
-Circumvent censorship.
+- [Tor Project](https://torproject.org) - Defend yourself against tracking and surveillance.
+  Circumvent censorship.
 - [EFF](https://eff.org) - The leading nonprofit defending digital privacy, free speech, and innovation.
-
 
 Media Channels:
 
@@ -233,13 +235,13 @@ Media Channels:
 
 ---
 
-## __"Cleaning Up"__
+## **"Cleaning Up"**
 
 What is _"cleaning up"?_
 
 Simply put, cleaning up is the process of deleting your various traces on the internet.
 For the average person, this will be a long and arduous process.
-You'll have to go through every single online account, email, activity, forum, message, game, etc. and literally delete *everything*.
+You'll have to go through every single online account, email, activity, forum, message, game, etc. and literally delete _everything_.
 This may seem extremely tedious - but remember, your adversary can easily find these data points and exploit them.
 
 How to do this efficiently? Well... there is no "efficient" method, you just have to brute force this all of your data points have somewhat been eliminated.
@@ -253,10 +255,10 @@ As for finding services you may have forgotten, look through your entire email a
 Try to search up your commonly-used usernames to help you with this process.
 Do this for every single account, just to ensure there is not anything that you may have missed.
 
-There are some services which exist that can help expedite this process, though be aware of the risks involved in doing this. 
+There are some services which exist that can help expedite this process, though be aware of the risks involved in doing this.
 
 As for finding services you may have forgotten, look through your entire email and find services you may have signed up for and start to do the same process.
-Often times, search for ``register``, ``registration``, ``welcome``.
+Often times, search for `register`, `registration`, `welcome`.
 These keywords are often times used.
 Try to search up your commonly-used usernames to help you with this process.
 Do this for every single account, just to ensure there is not anything that you may have missed.
@@ -273,7 +275,7 @@ This is a big deal.
 
 ---
 
-## __Email__
+## **Email**
 
 Often times you will find yourself needing an email address.
 Creating an anonymous email account will be necessary in some cases.
@@ -309,17 +311,16 @@ Some aliasing services:
 
 - [SimpleLogin](https://simplelogin.io/)
 
-
 <br>
 
 ---
 
-## __Desktop__
+## **Desktop**
 
 Our desktop contains a massive amount of information.
 This device should be both secure & private.
 Without these 2 things, it can easily compromise you.
-*What is the point of using a secure messenger, if your desktop is compromised by the same adversary you are protecting against via your secure messenger and they can see all of your activity?* 
+_What is the point of using a secure messenger, if your desktop is compromised by the same adversary you are protecting against via your secure messenger and they can see all of your activity?_
 
 A massive amount of information is stored on our desktop, meaning that it contains a trove of our personal information.
 From search results to private documents.
@@ -330,7 +331,7 @@ Some services like Firejail, SELinux and Apparmor can fix a lot of these issues,
 
 It is assumed that the average population is likely using Windows, Mac, or ChromeOS.
 These are absolutely terrible options for privacy.
-There are some efforts to "privatize" these operating systems, though due to the fact that they are all *closed-source*, means that many of these hardening methods that we would do, can just as easily fail if the OS itself is backdoored.
+There are some efforts to "privatize" these operating systems, though due to the fact that they are all _closed-source_, means that many of these hardening methods that we would do, can just as easily fail if the OS itself is backdoored.
 If you are new to the "operating system realm", a good replacement / dual-boot for these would be Fedora or Manjaro.
 By "good", we assume the following: You are a beginner, you have little to no Linux experience or knowledge.
 These choices have been made for the easy installation and low maintenance.
@@ -339,7 +340,7 @@ The operating system you choose should not be based upon what is recommended her
 Using a Linux-based operating system will **NOT** make you secure by default.
 This is often times a common misconception.
 The actual threat model of your Linux system will vary per-person.
-Linux is *private by default*, meaning that your personal information is not being *harvested* like traditional operating systems including Windows and MacOS.
+Linux is _private by default_, meaning that your personal information is not being _harvested_ like traditional operating systems including Windows and MacOS.
 QubesOS is an exception as it is entirely based upon security.
 
 Those who are looking for some excitement or extremely into privacy, security and / or anonymity should look at [QubesOS](https://qubes-os.org) <button type="button" class="btn btn-xs btn-xs"><a href="http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/">Tor</a></button> and [Tails](https://tails.boum.org) if you haven't already.
@@ -348,13 +349,13 @@ Those who are looking for some excitement or extremely into privacy, security an
 
 ---
 
-### __Qubes OS__
+### **Qubes OS**
 
 What is Qubes OS? Simply put, Qubes OS is a "reasonably secure operating system" and it will be the basis of our secure setup.
 It uses a method known as "security by compartmentalization".
 Simply put, most aspects of the OS are split into Qubes which are virtual machines, meaning that if something gets compromised, the rest of the system can be safely used.
 Due to the way Qubes OS is built, requirements will be heavy.
-Recommend at *least* 8GB of RAM with plenty of storage.
+Recommend at _least_ 8GB of RAM with plenty of storage.
 The official requirements can be found [here](https://www.qubes-os.org/doc/system-requirements/).
 
 Why should we use Qubes OS?
@@ -374,7 +375,7 @@ Things needed for setup & installation:
 
 - [GnuPG](https://gnupg.org/download/index.html)
 - At least an 8GB flash drive
-- [Rufus](https://rufus.ie), [BalenaEtcher](https://www.balena.io/etcher/), or ``dd``
+- [Rufus](https://rufus.ie), [BalenaEtcher](https://www.balena.io/etcher/), or `dd`
 
 ![](../assets/Another_guide/img/Qubes-Title.png)
 
@@ -383,16 +384,16 @@ To first start off, [download](https://qubes-os.org/downloads/) the official ISO
 ![](../assets/Another_guide/img/Qubes-1.png)
 
 To verify the ISO, run the command: <br>
-```md5sum -c Qubes-RX-x86_64.iso.DIGESTS``` <br>
- which should output ``Qubes-RX-x86_64.iso: OK``.
- If not, it can mean either the download is corrupt or compromised.
+`md5sum -c Qubes-RX-x86_64.iso.DIGESTS` <br>
+which should output `Qubes-RX-x86_64.iso: OK`.
+If not, it can mean either the download is corrupt or compromised.
 
 ![](../assets/Another_guide/img/Qubes-2.png)
 
 To verifiy with GPG, run the following command: <br>
-```gpg2 -v --verify Qubes-RX-x86_64.iso.asc Qubes-RX-x86_64.iso``` 
+`gpg2 -v --verify Qubes-RX-x86_64.iso.asc Qubes-RX-x86_64.iso`
 
-The output should read ``Good signature from "Qubes OS Release X Signing Key"``
+The output should read `Good signature from "Qubes OS Release X Signing Key"`
 
 ![](../assets/Another_guide/img/Qubes-3.png)
 
@@ -408,17 +409,17 @@ For Rufus users, select DD mode on format.
 After booting to your installation medium click the "verify" option.
 Afterwords, theres a few things we need to do.
 
-- Set a *strong* encryption password.
-This is super important! Make it strong
-- Ensure __root__ is disabled
+- Set a _strong_ encryption password.
+  This is super important! Make it strong
+- Ensure **root** is disabled
 - Set a strong user account password
 
 After you go through this, select "Begin Installation" and wait until it asks you to reboot.
 Now you are ready for the final configuration.
 Ensure you have all the Whonix options selected.
-If you are using a desktop **do not** select the ``sys-usb`` option.
+If you are using a desktop **do not** select the `sys-usb` option.
 This will render your mouse and keyboard useless.
-Use ``sys-usb`` on a laptop! For increased anonymity it is recommended to chose updates over Tor.
+Use `sys-usb` on a laptop! For increased anonymity it is recommended to chose updates over Tor.
 We also want our default qubes along with the default system qubes.
 
 <br>
@@ -429,37 +430,37 @@ Visit the [Qubes notes](../qubes) page for other notes.
 
 #### Qube Basic Setup
 
-As for networking, if you have a VPN service such as ProtonVPN, you are able to utilize ``qtunnel`` and setup multiple VPNs.
-For each of our VPN qubes, we will need a ``sys-firewall``.
-If you wanted a dedicated ``sys-dns``, there are several guides on this:
+As for networking, if you have a VPN service such as ProtonVPN, you are able to utilize `qtunnel` and setup multiple VPNs.
+For each of our VPN qubes, we will need a `sys-firewall`.
+If you wanted a dedicated `sys-dns`, there are several guides on this:
 
 - [qubes-dns](https://github.com/3hhh/qubes-dns)
 - [Pihole qube](https://github.com/92VV3M42d3v8/PiHole)
 
-``sys-net`` -> ``sys-firewall`` -> ``sys-vpn`` -> ``sys-firewall-vpn``
+`sys-net` -> `sys-firewall` -> `sys-vpn` -> `sys-firewall-vpn`
 
 We will now create additional qubes for our use.
 
-- ``sys-net`` -> ``sys-firewall`` -> ``sys-firewall-email-personal`` -> ``personal-email`` - By placing the firewall here, this allows us to only whitelist internet traffic from specifically our email provider.
+- `sys-net` -> `sys-firewall` -> `sys-firewall-email-personal` -> `personal-email` - By placing the firewall here, this allows us to only whitelist internet traffic from specifically our email provider.
 
-- ``sys-net`` -> ``sys-firewall`` -> ``sys-firewall-IN-vpn-us-1`` -> ``sys-vpn-us-1`` -> ``sys-firewall-vpn-us-1`` - This again gives us the ability to whitelist traffic from only the ``sys-vpn-us-1``.
+- `sys-net` -> `sys-firewall` -> `sys-firewall-IN-vpn-us-1` -> `sys-vpn-us-1` -> `sys-firewall-vpn-us-1` - This again gives us the ability to whitelist traffic from only the `sys-vpn-us-1`.
 
 Each qube has the ability to utilize the built-in firewall rules.
 Using a dedicated firewall qube is more secure.
 
 More:
 
-- ``personal-web`` - Web Traffic
-- ``personal-email`` - Email
-- ``personal-dvm`` - Disposable
-- ``personal-random`` - Random Web
-- ``personal-social`` - Social Activity
-- ``sys-personal-vpn`` - VPN for only ``personal``
-- ``sys-firewall-personal`` - Firewall for only ``personal``
-- ``personal-vault`` - Vault VM for only ``personal``
+- `personal-web` - Web Traffic
+- `personal-email` - Email
+- `personal-dvm` - Disposable
+- `personal-random` - Random Web
+- `personal-social` - Social Activity
+- `sys-personal-vpn` - VPN for only `personal`
+- `sys-firewall-personal` - Firewall for only `personal`
+- `personal-vault` - Vault VM for only `personal`
 
 This can be used for a wide variety of activities, not just specifically "personal".
-Your setup should take heavy use of the ``sys-firewall`` VM.
+Your setup should take heavy use of the `sys-firewall` VM.
 We can utilize the firewall to help maintain compartmentalization among our system.
 The firewall can be useful for preventing data leaks & sniffing along with enforcing VPN policies.
 
@@ -476,11 +477,13 @@ It's best to use minimal templates as most applications will likely not get used
 Ensure to read the [official documentation](https://qubes-os.org/doc/templates/minimal) for minimal templates.
 
 The official minimal templates are available:
+
 - Fedora
 - Debian
 - CentOS
 - GentooVPNs.
-dom0:
+  dom0:
+
 ```
 sudo qubes-dom0-update qubes-template-<DISTRO_NAME>-<RELEASE_NUMBER>-minimal
 ```
@@ -509,7 +512,7 @@ sudo qubes-dom0-update qubes-template-debian-11
 When installing applications, it may be best to clone a minimal template and install the application on there for increased compartmentalization.
 This is a suggested option if you have the capability to space additional system resources.
 
-Unofficial templates can be found on the Qubes OS forum. 
+Unofficial templates can be found on the Qubes OS forum.
 There is always the ability to build your own template utilizng the [Qubes builder](https://www.qubes-os.org/doc/qubes-builder/).
 
 <br>
@@ -522,14 +525,14 @@ See the [Whonix wiki](https://www.whonix.org/wiki/Onionizing_Repositories) for m
 
 dom0:
 
-In dom0, edit ``/etc/yum.repos.d/qubes-dom0.repo`` and we will comment out the ``metalink`` and then uncomment the onion ``baseurl``.
+In dom0, edit `/etc/yum.repos.d/qubes-dom0.repo` and we will comment out the `metalink` and then uncomment the onion `baseurl`.
 After, update dom0 to ensure this is configured properly.
 
-The same process above will take place in the ``/etc/qubes/repo-templates/qubes-templates.repo`` file.
+The same process above will take place in the `/etc/qubes/repo-templates/qubes-templates.repo` file.
 
 Debian Templates:
 
-Edit ``/etc/apt/sources.list``, comment out the clearnet repos and add the following:
+Edit `/etc/apt/sources.list`, comment out the clearnet repos and add the following:
 
 ```
 2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/debian bullseye main contrib non-free
@@ -542,14 +545,14 @@ deb tor+http://2s4yqjx5ul6okpp3f2gaunr2syex5jgbfpfvhxxbbjwnrsvbk5v3qbid.onion/de
 
 Fedora Templates:
 
-Edit ``/etc/yum.repos.d/qubes-r[version].repo``, comment out the clearnet ``baseurl`` and uncoment the onion ``baseurl``
+Edit `/etc/yum.repos.d/qubes-r[version].repo`, comment out the clearnet `baseurl` and uncoment the onion `baseurl`
 
 <br>
 
 #### "Splitting"
 
 Let's startup by creating some basic qubes.
-To start, clone ``vault`` and create ``pgp-keys`` and ``ssh-keys`` to store our keys securely.Both should have __no internet access__.
+To start, clone `vault` and create `pgp-keys` and `ssh-keys` to store our keys securely.Both should have **no internet access**.
 We will need to properly setup [split-pgp](https://qubes-os.org/doc/split-gpg) and [split-ssh](https://kushaldas/in/posts/using-split-ssh-in-qubesos-4-0.html).
 Using the "split" method, we are able to create an additional [split-browser](https://github.com/rustybird/qubes-split-browser) and a [split-dm-crypt](https://github.com/rustybird/qubes-split-dm-crypt).
 
@@ -567,6 +570,7 @@ Using [u2f-proxy](https://qubes-os.org/doc/u2f-proxy) allows you to "compartment
 The Qubes documentation shows the following for installation:
 
 dom0:
+
 ```
 sudo qubes-dom0-update qubes-u2f-dom0
 ```
@@ -579,12 +583,14 @@ qvm-service --enable QUBE_NAME qubes-u2f-proxy
 
 To install on our templates, use the following:
 
-Fedora: 
+Fedora:
+
 ```
 sudo dnf install qubes-u2f
 ```
 
 Debian:
+
 ```
 sudo apt install qubes-u2f
 ```
@@ -602,32 +608,34 @@ Read the [official documentation](https://qubes-os.org/doc/yubikey).
 Installation for template qubes:
 
 Fedora:
+
 ```
 sudo dnf install ykpers yubikey-personalization-gui
 ```
 
 Debian:
+
 ```
 sudo apt-get install yubikey-personalization yubikey-personalization-gui
 ```
 
-The GUI on for Debian can be run via the ``yubikey-personalization-gui`` command.
+The GUI on for Debian can be run via the `yubikey-personalization-gui` command.
 
-- Choose ``configuration slot2``.
-- Select ``HMAC-SHA1 mode: fixed 64 bit input``.
-- Ensure to backup the ``Secret Key (20 bytes hex)``.
-
+- Choose `configuration slot2`.
+- Select `HMAC-SHA1 mode: fixed 64 bit input`.
+- Ensure to backup the `Secret Key (20 bytes hex)`.
 
 Now the following is required for dom0:
+
 ```
 sudo qubes-dom0-update qubes-yubikey-dom0
 ```
 
-If we had changed the name of ``sys-usb`` or are using something other than that, we would need to edit ``/etc/qubes/yk-keys/yk-vm'' in dom0.
+If we had changed the name of `sys-usb` or are using something other than that, we would need to edit ``/etc/qubes/yk-keys/yk-vm'' in dom0.
 
-- Paste the ``Secret Key (20 bytes hex)`` into ``/etc/qubes/yk-keys/yk-secret-key.hex`` in dom0.
+- Paste the `Secret Key (20 bytes hex)` into `/etc/qubes/yk-keys/yk-secret-key.hex` in dom0.
 
-- Paste your hashed password into ``/etc/qubes/yk-keys/yk-login-pass-hashed.hex`` in dom0.
+- Paste your hashed password into `/etc/qubes/yk-keys/yk-login-pass-hashed.hex` in dom0.
 
 To get your hashed password:
 
@@ -639,17 +647,18 @@ read -r password
 echo -n "$password" | openssl dgst -sha1
 ```
 
-Edit ``/etc/pam.d/login`` in dom0 and add:
+Edit `/etc/pam.d/login` in dom0 and add:
 
 ```
 auth include yubikey
 ```
 
-Now, edit ``/etc/pam.d/xscreensaver`` to include:
+Now, edit `/etc/pam.d/xscreensaver` to include:
 
 ```
 auth include yubikey
 ```
+
 <br>
 
 #### GUI-VM
@@ -665,7 +674,7 @@ Creating proper backups securely is critical for any setup, especially this one 
 You must understand the different backup techniques and solutions available.
 For high security, it is recommended that we backup the system locally, meaning that we do not store our backups on the cloud.
 We should start to look at possible backup solutions.
-The built-in ``qvm-backup`` will work amazing for this.
+The built-in `qvm-backup` will work amazing for this.
 It provides security & authentication, which are both crucial to a proper backup solution.
 Ensure to read the [official documentation](https://github.com/qubes-os.org/doc/how-to-back-up-restore-and-migrate).
 
@@ -674,7 +683,7 @@ There are "special" options described as "rugged", which has additional layer of
 Ensure this drive is also high-capacity.
 In some cases, it may make sense to have an additional drive incase of failure or other malfunction.
 Going into redundancy, you also have the ability to setup a local RAID on your network.
-This would provide increased redundancy, though it can *potentially* decrease security, as having another system on the network, proper hardening, etc. but is unlikely to cause any harm with the proper configuration.
+This would provide increased redundancy, though it can _potentially_ decrease security, as having another system on the network, proper hardening, etc. but is unlikely to cause any harm with the proper configuration.
 You could setup a local NextCloud instance or another type of local network storage and utilize [wyng](https://github.com/tasket/wyng-backup).
 
 <br>
@@ -695,20 +704,20 @@ We can generate an alias by thinking of a random word / phrase but this method c
 
 If you are using QubesOS, we are able to utilize compartmentalization heavily in this instance. We will start off by creating multiple qubes for our setup.
 
-- ``alias-web``
-- ``alias-email``
-- ``alias-untrusted``
-- ``alias-messenger``
-- ``alias-tor``
-- ``alias-vault``
-- ``alias-wallet``
-- ``sys-firewall-alias``
-- ``sys-vpn-alias``
+- `alias-web`
+- `alias-email`
+- `alias-untrusted`
+- `alias-messenger`
+- `alias-tor`
+- `alias-vault`
+- `alias-wallet`
+- `sys-firewall-alias`
+- `sys-vpn-alias`
 
 By doing this for each alias, you have now setup an amazing solution for compartmentalization.
 This only works if you utilize each qube for the specified task.
 Ensure that nothing will leave the qube.
-Ensure that all the ``alias`` qubes are properly routed via VPN or Tor to ensure proper setup.
+Ensure that all the `alias` qubes are properly routed via VPN or Tor to ensure proper setup.
 For a more advanced setup, you are able to utilize Whonix qubes.
 
 Using multiple aliases outside Qubes OS is definitely possible, and will require several things.
@@ -734,13 +743,13 @@ Grudges, friendships and other must not travel over, this is how you fail.
 
 ---
 
-## __Browsers__
+## **Browsers**
 
-Browsers contain a lot of information. 
+Browsers contain a lot of information.
 Browsers are also a major vulnerability, they must be properly hardened for our needs.
 Browsers usually contain all of our search history, cookies, cache, clicks, bookmarks, supercookies, and more.
 All of this information should be controlled properly.
-Your browser *can* be easily [fingerprinted](https://wikiless.org/wiki/Device_fingerprint#Browser_fingerprint), and tracked across the web, this can be all changed.
+Your browser _can_ be easily [fingerprinted](https://wikiless.org/wiki/Device_fingerprint#Browser_fingerprint), and tracked across the web, this can be all changed.
 
 To make a list of browsers we should avoid can be exhaustive, so instead here is a list of browsers that are generally recommended.
 
@@ -750,12 +759,13 @@ To make a list of browsers we should avoid can be exhaustive, so instead here is
 
 <br>
 
-####  [Brave](https://brave.com)  <button type="button" class="btn btn-xs btn-xs"><a href="https://brave4u7jddbv7cyviptqjc7jusxh72uik7zt6adtckl5f4nwy2v72qd.onion/">Tor</a></button>
+#### [Brave](https://brave.com) <button type="button" class="btn btn-xs btn-xs"><a href="https://brave4u7jddbv7cyviptqjc7jusxh72uik7zt6adtckl5f4nwy2v72qd.onion/">Tor</a></button>
 
 Brave is based upon Chromium and includes significant enabled-by-default [privacy protections](https://brave.com/privacy-features/) by default unlike a lot of other browsers.
 Certain built-in functions such as IPFS and crypto may want to be avoided.
+
 <!--<i class="fa fa-arrow-right" aria-hidden="true"></i>-->
-  
+
   <br>
 
   <div class="panel panel-warning">
@@ -779,36 +789,36 @@ It is suggested to install [Arkenfox](https://github.com/arkenfox/user.js) for a
 <br>
 
 Firefox can be configured for additional privacy.
-You are able to create multiple browser profiles via the ``about:profiles`` section.
+You are able to create multiple browser profiles via the `about:profiles` section.
 
 <br>
 
-<i class="fa fa-bars" aria-hidden="true"></i> 
-<i class="fa fa-long-arrow-right" aria-hidden="true"></i> 
+<i class="fa fa-bars" aria-hidden="true"></i>
+<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 Settings
-<i class="fa fa-long-arrow-right" aria-hidden="true"></i> 
+<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 <i class="fa fa-lock" aria-hidden="true"> </i> Privacy & Security
-<i class="fa fa-long-arrow-right" aria-hidden="true"></i> 
+<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 Enhanced Tracking Protection
 
 Enable the following:
 <br>
-     <i class="fa fa-check-square" aria-hidden="true"></i> Cookies <br>
-     <i class="fa fa-check-square" aria-hidden="true"></i> Tracking Content <br>
-     <i class="fa fa-check-square" aria-hidden="true"></i> Cryptominers <br>
-     <i class="fa fa-check-square" aria-hidden="true"></i> Fingerprinters <br>
+<i class="fa fa-check-square" aria-hidden="true"></i> Cookies <br>
+<i class="fa fa-check-square" aria-hidden="true"></i> Tracking Content <br>
+<i class="fa fa-check-square" aria-hidden="true"></i> Cryptominers <br>
+<i class="fa fa-check-square" aria-hidden="true"></i> Fingerprinters <br>
 
 <br>
 
-<i class="fa fa-bars" aria-hidden="true"></i> 
-<i class="fa fa-long-arrow-right" aria-hidden="true"></i> 
+<i class="fa fa-bars" aria-hidden="true"></i>
+<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 Settings
-<i class="fa fa-long-arrow-right" aria-hidden="true"></i> 
+<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 <i class="fa fa-lock" aria-hidden="true"> </i> Privacy & Security
-<i class="fa fa-long-arrow-right" aria-hidden="true"></i> 
-  HTTPS-Only Mode
+<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+HTTPS-Only Mode
 
-and select ``Enable HTTPS-Only Mode in all windows``
+and select `Enable HTTPS-Only Mode in all windows`
 
 <br>
 
@@ -817,10 +827,10 @@ A respected browser extension for a wide variety of setups would be [UblockOrigi
 
 Suggested Setup:
 
-- Enable ``I am an advanced user``
-- Enable ``Disable pre-fetching (to prevent any connection for blocked network requests) ``
+- Enable `I am an advanced user`
+- Enable `Disable pre-fetching (to prevent any connection for blocked network requests) `
 - For increased security you can block 3rd-party frames as [described here](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-Benefits-of-blocking-3rd-party-iframe-tags).
-You can also disable 3rd-party scripts for additional security as [described here](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-medium-mode).
+  You can also disable 3rd-party scripts for additional security as [described here](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-medium-mode).
 
 <br>
 
@@ -839,7 +849,7 @@ You can also disable 3rd-party scripts for additional security as [described her
 
 #### [Librewolf](https://librewolf.net)
 
-A fork of Firefox, Librewolf aims to be *"A fork of Firefox, focused on privacy, security and freedom."*
+A fork of Firefox, Librewolf aims to be _"A fork of Firefox, focused on privacy, security and freedom."_
 
 Librewolf contains many privacy features and additional hardening by default along with removing various "bloat" such as Pocket extension and Firefox Sync.
 A full list of features can be found [here](https://librewolf.net/docs/features/).
@@ -847,7 +857,7 @@ A full list of features can be found [here](https://librewolf.net/docs/features/
 Librewolf may suffer issues from potentially being behind on updates due to it being a fork.
 The official site states:
 
-*"LibreWolf is always based on the latest version of Firefox. Updates usually come within three days from each upstream stable release, at times even the same day. Unless problems arise, we always try to release often and in a timely manner. It should however be noted that LibreWolf does not have auto-update capabilities, and therefore it relies on package managers or users to apply them."*
+_"LibreWolf is always based on the latest version of Firefox. Updates usually come within three days from each upstream stable release, at times even the same day. Unless problems arise, we always try to release often and in a timely manner. It should however be noted that LibreWolf does not have auto-update capabilities, and therefore it relies on package managers or users to apply them."_
 
 <br>
 
@@ -869,12 +879,12 @@ There are a variety of tools to test your different browser configurations in a 
 
 ---
 
-## __Secure Communications__
+## **Secure Communications**
 
 Having a secure operating system is only 1 part that we need.
 We need to ensure that all of our communications stay secure.
 The most common method to this is using E2EE (End-to-end encryption).
-This encrypts your messages locally on your device before sending them out.
+anThis encrypts your messages locally on your device before sending them out.
 Let's take a look at some of the basic types of messengers.
 
 Centralized: Meaning there is a single server / point of failure.
@@ -882,24 +892,27 @@ If the server gets blocked you'll need to circumvent that.
 
 Decentralized: Multiple servers, not a single authority meaning it's much more censorship resistent.
 
-The main differences between centralized and decentralized is that a single authority cannot easily block a decentralized network as there is not a single server unlike centralized.Decentralized services are *sometimes* prone to leaking metadata and may cause issues when federated.
+The main differences between centralized and decentralized is that a single authority cannot easily block a decentralized network as there is not a single server unlike centralized.Decentralized services are _sometimes_ prone to leaking metadata and may cause issues when federated.
 
 Here's a list of great messengers and services that you'll be able to use.
 
 - [Signal](https://signal.org) A great messenger for friends & family.
-Requires a phone number as it acts as a replacement to SMS / MMS.
+  Requires a phone number as it acts as a replacement to SMS / MMS.
 
 - [Session](https://getsession.org) Censorship-resistent messenger.
-A fork of Signal without the phone-number requirement.
-Session has built-in onion-routing.
+  A fork of Signal without the phone-number requirement.
+  Session has built-in onion-routing.
 
-- [Matrix](https://matrix.org) Matrix provides a federated platform, which allows for anyone to host their own server, meaning that it is resistent to censorship.
+- [Matrix](https://matrix.org) Matrix provides a federated platform, which allows for anyone to host their own server, meaning that it is resistent to censorship as it does not rely on a single server.
+
+- [Briar](https://briarproject.org) A P2P messenger app which is designed for extreme threat models.
+  Allows for bluetooth communication along with routing communications over Tor network.
 
 Choosing your secure messenger will depend on your use-case.
 For instance, if you want to protect your traditional SMS / MMS messages, [Signal](https://signal.org) will be the best option if you are looking for a simple replacement that uses your telephone number, allowing contacts to easily add you, which would make this "easy adoption" unlike something like Matrix.
 
 If you are looking to participate anonymously in various communities, you may want to utilize [Matrix](https://matrix.org) as one of your options.
-Matrix allows you to *privately*(see below) sign up, and from there you are able to join a variety of communities.
+Matrix allows you to _privately_(see below) sign up, and from there you are able to join a variety of communities.
 
 Note: The terms "private" will vary depending on which homeserver you opt to choose.
 Some servers will require an email address and others will not.
@@ -909,7 +922,124 @@ For more information visit [JoinMatirx](https://joinmatrix.org).
 
 ---
 
-## __Secure Hardware__
+## **Physical**
+
+Your physical state is just as important as your online state.
+If you can be physically tracked and stalked, this could potentially lead to the compromise of your online being.
+For instance, if someone stalks your behavior and notices you leave your device unattended, this can lead to malicious activity taking place such as compromising firmware, installing a small bluetooth transmitter, accessing device information if the device is unencrypted, or even just outright taking the device.
+
+Such careless behavior will certainly lead to your demise.
+You cannot reasonably expect to protect your online self if you do not protect your physical self.
+All of your protective measures could be easily bypassed if you are physically forced.
+
+You must be able to hide your physical activities and protect yourself.
+
+To hide yourself, you first must identify your identifiable qualities.
+Some examples of this include:
+
+- Height / Weight
+- DNA
+- Fingerprint
+- Tattoos / Scars
+- Heart rate
+- Writing style
+- Walking style
+- Dominant hand
+- Medical conditions
+- Voice
+
+At first glance, many of this seems like defining qualities, but they can be altered in a manner in which that can help prevent you from being identified.
+
+Walking Style: Your walking style is a unique identifier, and 
+
+Heart Rate: Your heart rate is a unique identifier.
+Based on [this article](https://www.technologyreview.com/2019/06/27/238884/the-pentagon-has-a-laser-that-can-identify-people-from-a-distanceby-their-heartbeat/) your heart rate can be identified from up to 200 meters away.
+
+To change your heart rate, you can rely on external substances such as medications or energy drinks to do this.
+Doing such will raise / lower your heart rate based upon what you do.
+To hide your heart rate from such technology, it is advisable to use tinfoil to block the signal.
+This can be done via foil clothing or line a jacket with the proper tinfoil material.
+
+Fingerprints: You can use sandpaper to sand down your fingerprints.
+Certain medications may do this as well. (or gloves. NOT LATEX GLOVES as these do not protect your fingerprint)
+
+Weight: You can wear extra bulky clothing or a weighted vest underneath a sweatshirt
+
+Height: You can wear large boots to gain a few inches.
+When walking into a store, ensure to lower your spine or lean in a way that your true height is not identifiable based on the measurements on the door.
+
+Writing: You can write with your non-dominate hand or have a different writing position / posture.
+
+Tattoos: Don't get one.
+You can use makeup.
+
+Scars: You can use makeup to hide identifiable scars.
+
+Medical Conditions: If you take certain medications, please know the limits of these medicines and the limits of your body.
+For instance, if you take adderall, taking a higher dosage than prescribed can change your behavior.
+This would produce abnormal behavior, which in turn is no longer identifiable with your normal self.
+
+Voice: You can talk with an accent, or give yourself a lisp.
+
+Driving Pattern: Make all tires on your vehicle a different size.
+This will allow for abnormal driving patterns.
+Avoid taking main roads.
+
+A small tracker can be placed anywhere on your vehicle without your knowledge, to detect this you can switch your radio to "AM" and go from there.
+To protect against this, you can buy a signal jammer.
+It is advisable to remove any electronic equipment on your vehicle.
+
+For additional protection, you may:
+
+- Tint the windows
+- Remove / replace vehicle badges and emblems
+- Remove the vehicle license plate, replace with a fake one, or severely damage or cover the plate to beyond recognition (dirt / debris or license plate physically wearing off)
+- Remove all signs of VIN or any other unique identifiers
+
+<br>
+
+### Additional Tracking Measures
+
+You can be tracked physically with a wide array of technologies including but not limited to:
+
+- Bluetooth devices (Example: Airtags)
+- WiFi signals
+- Radio signals
+- Car license plate
+- Security cameras
+- Someone physically watching you
+- Heat signature
+- Facial recognition
+
+<br>
+
+### Falsifying Information (Plausible Deniability)
+
+Certain situations will require you exchange information.
+For example, when signing up for something (library, paper route, milk delivery) you will likely be required to provide a name.
+To get around this, you have several options.
+You can provide a fake name, you can provide an alias, or you can misspell your real name.
+Using a fake name does not have any plausibly deniability in some circumstances.
+You can develop an alias / nickname for yourself in which you can use "day to day".
+If at least one person calls you by this name / alias, you will have plausible deniability as this is a legitimate naming scheme for yourself.
+Another option you may choose to do, is to have your name intentionally misspelled.
+Doing such is another was to plausibly deny using a fake name.
+
+For various instances, you may be required to give a license number.
+Unless the service *explicitly states* this number has to be yours, you are able to use a generated number.
+
+For example:
+
+You walk into the cinema and they demand you give a drivers license number.
+You say "really...? okay.... can I give **A** *insert location* number?
+If this individual says "yes", then you can do such.
+Realistically, you should refuse and take it from there.
+
+<br>
+
+---
+
+## **Secure Hardware**
 
 You should not be trying to setup a secure system if the hardware itself cannot be trusted.Anything can be pre-loaded with malicious code designed to compromise security, especially how mass-production has been increasing over time, meaning they just need to compromise a device on the production line.
 
@@ -972,7 +1102,6 @@ If the music does not ever stop, this means that the bag does not work properly 
 
 Don't use the internet.
 
-## Footnotes 
+## Footnotes
 
 ---
-
