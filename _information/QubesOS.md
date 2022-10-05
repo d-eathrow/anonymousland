@@ -24,7 +24,9 @@ Website: [https://qubes-os.org](https://qubes-os.org) <button type="button" clas
   - -\> *[Upgrading Fedora](#upgrading-fedora)* <br>
 
 -\>> [Links & Resources](#links--resources) <br>
+  - -\> *[Customizations](#customizations)* <br>
   - -\> *[Guides](#guides)* <br>
+  - -\> *[Templates](#templates)* <br>
   - -\> *[Wiki](#wiki)* <br>
 
 <br>
@@ -215,6 +217,13 @@ rm /var/tmp/template-upgrade-cache.img
 
 <br>
 
+#### Customizations
+- [Wallpapers](https://forum.qubes-os.org/t/qubes-os-wallpapers/2819)
+
+- [KDE](https://forum.qubes-os.org/t/kde-changing-the-way-you-use-qubes/4730)
+
+- [XFCE Global Dark Mode](https://forum.qubes-os.org/t/guide-xfce-global-dark-mode-in-qubes-4-0-4-1/10757)
+
 #### Guides
 
 - [Fully ephemeral dispvms](https://forum.qubes-os.org/t/fully-ephemeral-dispvms/12030)
@@ -225,7 +234,19 @@ rm /var/tmp/template-upgrade-cache.img
 
 - [Qubes OS installation encrypted boot and header](https://forum.qubes-os.org/t/qubes-os-installation-detached-encrypted-boot-and-header/6205)
 
+- [Trezor Bridge in 4.1](https://forum.qubes-os.org/t/how-to-set-up-the-trezor-bridge-in-4-1/11103)
+
+- [split-ProtonMail](https://forum.qubes-os.org/t/guide-split-protonmail-offline-send-receive-qubes-pm-bridge-vm/11096)
+
+- [How to create an Android Qube](https://forum.qubes-os.org/t/how-to-create-an-android-qube/8467)
+
 <br>
+
+#### Templates
+
+- [Windows](https://github.com/elliotkillick/qvm-create-windows-qube)
+
+- [Minimal](https://www.qubes-os.org/doc/templates/minimal/)
 
 #### Wiki
 
