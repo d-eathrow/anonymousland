@@ -76,6 +76,7 @@ description: A fun happy place.
   - [Changelog](./changelog)
   - [Donate](./donate)
   - [Guide](./guide)
+  - [Help](./help)
   - [Information](./information)
      - [GrapheneOS](./graphene)
      - [F-Droid](./f-droid)
