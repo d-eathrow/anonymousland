@@ -6,7 +6,7 @@ permalink: /help
 
 <div style="text-align:center;">
 <i>"People yakkity yak a streak and waste your time of day
-But Mister Ed will never speak unless he has something to say.</i>
+But Mister Ed will never speak unless he has something to say."</i>
 </div>
 
 <br>

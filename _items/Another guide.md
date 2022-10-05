@@ -997,6 +997,8 @@ For additional protection, you may:
 - Remove / replace vehicle badges and emblems
 - Remove the vehicle license plate, replace with a fake one, or severely damage or cover the plate to beyond recognition (dirt / debris or license plate physically wearing off)
 - Remove all signs of VIN or any other unique identifiers
+ 
+ Read more [here](https://www.eff.org/pages/automated-license-plate-readers-alpr) reguarding license plate readers.
 
 <br>
 
@@ -1011,7 +1013,11 @@ You can be tracked physically with a wide array of technologies including but no
 - Security cameras
 - Someone physically watching you
 - Heat signature
+    - [Thermal Imaging Surveillance](https://theyarewatching.org/technology/thermal-imaging-surveillance)
+
+    - [Real Time Object Tracking System using Thermal Camera](https://medium.com/analytics-vidhya/real-time-object-tracking-system-using-thermal-camera-b4d077a20f16)
 - Facial recognition
+    - [wearable face projector](https://inv.bp.projectsegfau.lt/watch?v=_PoudPCevN0)
 
 <br>
 
@@ -1063,16 +1069,8 @@ This is a USB-A connector with a built-in "SmartChip" designed to increase charg
 
 <br>
 
-<img src="../assets/Another_guide/img/USB_Data_Blocker.jpeg" alt="usb" width="200"/>
-
-<br>
-
 [PortaPow Pure USB Data Blocker (Multicolored)](https://www.amazon.com/PortaPow-Pure-USB-Data-Blocker/dp/B07W928WRR/) - This USB-A Data Blocker is made of transparent plastic, meaning that you can physically verify that the data pins have been removed along with the removal of their "SmartChip".
 Which will prevent an additional attack surface from being used.
-
-<br>
-
-<img src="../assets/Another_guide/img/USB_Data_Blocker_Transparent.jpg" alt="usb" width="200"/>
 
 <br>
 
@@ -1080,11 +1078,9 @@ Which will prevent an additional attack surface from being used.
 
 <br>
 
-<img src="../assets/Another_guide/img/USB_C_Data_Blocker.jpg" alt="usb" width="200"/>
+[Malicious Cable Detector](https://hak5.org/products/malicious-cable-detector-by-o-mg) - Can be configured to detect malicious cables.
 
 <br>
-
-[Malicious Cable Detector](https://hak5.org/products/malicious-cable-detector-by-o-mg) - Can be configured to detect malicious cables.
 
 [Hardware Key](https://wikiless.org/wiki/Security_token)- A small little device that can be used for MFA and GPG.
 Very useful to have a physical device.
@@ -1097,6 +1093,34 @@ It completely air-gaps the device.
 It's best to actually test this before you will need to actually use this.
 Connect to a bluetooth speaker while playing music, put the device into the bag and wait to see after the buffer for the music to stop.
 If the music does not ever stop, this means that the bag does not work properly and should not be used.
+
+<br>
+
+### Advanced
+
+[Reflectables](https://www.reflectacles.com/) - These are sunglasses designed with reflective frames to block infrared in low-light conditions.
+
+<br>
+
+<img src="../assets/Another_guide/img/Reflectacles-Creator.gif" alt="usb" width="400"/>
+
+<img src="../assets/Another_guide/img/Reflectables.jpg" alt="usb" width="400"/>
+
+<br>
+
+<br>
+
+[UrmeSurveillance](https://www.urmesurveillance.com/urme-paper-mask) - This is a paper mask in which everyone can wear to look alike.
+
+<br>
+
+<img src="../assets/Another_guide/img/urme.jpg" alt="usb" width="400"/>
+
+<br>
+
+<br>
+
+[Survival Blanket](https://www.amazon.com/dp/B01H6NC8XU) - This blanket blocks infrared signature.
 
 <br>
 
