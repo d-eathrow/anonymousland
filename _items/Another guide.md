@@ -52,7 +52,6 @@ _Disclaimer: This is for education / research._
 -\>> [Knowing Resources](#knowing-resources) <br>
 -\>> [Cleaning Up](#cleaning-up) <br>
 -\>> [Email](#email) <br>
-
 -\>> [Desktop](#desktop) <br>
 
 - -\>> [Qubes OS](#qubesos) <br>
@@ -63,8 +62,7 @@ _Disclaimer: This is for education / research._
 
 -\>> [Creating our Aliases](#creating-our-aliases) <br>
 -\>> [Browsers](#browsers) <br>
-
-- -\>> [Desktop](#desktop-1) <br>
+  - -\>> _[Desktop](#desktop-1)_ <br>
 
 -\>> [Physical](#physical) <br>
 -\>> [Secure Communications](#secure-communications) <br>
@@ -930,6 +928,8 @@ Your physical state is just as important as your online state.
 If you can be physically tracked and stalked, this could potentially lead to the compromise of your online being.
 For instance, if someone stalks your behavior and notices you leave your device unattended, this can lead to malicious activity taking place such as compromising firmware, installing a small bluetooth transmitter, accessing device information if the device is unencrypted, or even just outright taking the device.
 
+<br>
+
 Such careless behavior will certainly lead to your demise.
 You cannot reasonably expect to protect your online self if you do not protect your physical self.
 All of your protective measures could be easily bypassed if you are physically forced.
@@ -952,9 +952,18 @@ Some examples of this include:
 
 At first glance, many of this seems like defining qualities, but they can be altered in a manner in which that can help prevent you from being identified.
 
-Walking Style: Your walking style is a unique identifier, and 
+<br>
 
-Heart Rate: Your heart rate is a unique identifier.
+### Walking Style
+Your walking style is a unique identifier, and can be used to track you.
+To change this, you are able to do a variety of things to change your normal behavior / pattern.
+The easiest method would be to put a coin inside your shoe.
+
+<br>
+
+### Heart Tate
+
+Your heart rate is a unique identifier.
 Based on [this article](https://www.technologyreview.com/2019/06/27/238884/the-pentagon-has-a-laser-that-can-identify-people-from-a-distanceby-their-heartbeat/) your heart rate can be identified from up to 200 meters away.
 
 To change your heart rate, you can rely on external substances such as medications or energy drinks to do this.
@@ -962,30 +971,61 @@ Doing such will raise / lower your heart rate based upon what you do.
 To hide your heart rate from such technology, it is advisable to use tinfoil to block the signal.
 This can be done via foil clothing or line a jacket with the proper tinfoil material.
 
-Fingerprints: You can use sandpaper to sand down your fingerprints.
+<br>
+
+### Fingerprints
+
+You can use sandpaper to sand down your fingerprints.
 Certain medications may do this as well. (or gloves. NOT LATEX GLOVES as these do not protect your fingerprint)
 
-Weight: You can wear extra bulky clothing or a weighted vest underneath a sweatshirt
+<br>
 
-Height: You can wear large boots to gain a few inches.
+### Weight
+
+You can wear extra bulky clothing or a weighted vest underneath a sweatshirt
+
+<br>
+
+### Height
+
+You can wear large boots to gain a few inches.
 When walking into a store, ensure to lower your spine or lean in a way that your true height is not identifiable based on the measurements on the door.
 
-Writing: You can write with your non-dominate hand or have a different writing position / posture.
+<br>
 
-Tattoos: Don't get one.
-You can use makeup.
+### Writing
 
-Scars: You can use makeup to hide identifiable scars.
+You can write with your non-dominate hand or have a different writing position / posture.
+Try to use use extremely generic ink and ensure to purchase this ink as anonymously as possible.
 
-Medical Conditions: If you take certain medications, please know the limits of these medicines and the limits of your body.
+<br>
+
+### Tattoos & Scars
+
+You can use makeup to hide both tattoos and identifiable scars.
+
+<br>
+
+### Medical Conditions
+
+If you take certain medications, please know the limits of these medicines and the limits of your body.
 For instance, if you take adderall, taking a higher dosage than prescribed can change your behavior.
 This would produce abnormal behavior, which in turn is no longer identifiable with your normal self.
 
-Voice: You can talk with an accent, or give yourself a lisp.
+<br>
 
-Driving Pattern: Make all tires on your vehicle a different size.
-This will allow for abnormal driving patterns.
-Avoid taking main roads.
+### Voice
+
+You can talk with an accent, or give yourself a lisp.
+
+<br>
+
+### Driving
+
+Making all tires on your vehicle a different size will produce abnormal driving patterns.
+
+Avoid taking main roads when going to a destination if possible.
+It is best to plan your route in advance and have several backup routes.
 
 A small tracker can be placed anywhere on your vehicle without your knowledge, to detect this you can switch your radio to "AM" and go from there.
 To protect against this, you can buy a signal jammer.
@@ -1097,6 +1137,10 @@ If the music does not ever stop, this means that the bag does not work properly 
 <br>
 
 ### Advanced
+
+For additional products that may not be as "realistic" to have with you at all times, or depending on what you need, it may be realistic.
+
+<br>
 
 [Reflectables](https://www.reflectacles.com/) - These are sunglasses designed with reflective frames to block infrared in low-light conditions.
 
