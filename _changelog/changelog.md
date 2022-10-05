@@ -5,6 +5,29 @@ permalink: /changelog
 ---
 
 ---
+# v1.05
+
+- New GrapheneOS page on ``/graphene``
+
+- New F-Droid page on ``/f-droid``
+
+- Updated Qubes OS content on ``/qubes``
+
+- Update various formatting
+
+- Added Briar on ``/guide``
+
+- New "Physical" section on ``/guide``
+
+- New ``/snowflake`` page
+
+- New ``/help`` page
+
+- Additional content on ``/information`` for products
+
+- More content on ``/guide`` for secure hardware
+
+- New articles & videos on ``/guide`` for facial recognition and thermal imaging
 
 # v1.04
 
