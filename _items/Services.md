@@ -24,7 +24,7 @@ You can check the status of our Matrix Homeserver and all off our other services
 
 These services are not intended to spread spam or malicious content, or sharing / distributing / hosting of malicious content.
 
-Your account *can* be suspended if you take part in any sort of malicious activity or questionable content including but limited to targeted harassment, raids, phishing, DOXxing or violating laws of __Sweden__ and __Iceland__.
+Your account *can* be suspended if you take part in any sort of malicious activity or questionable content including but not limited to targeted harassment, raids, phishing, DOXxing or violating laws of __Sweden__ and __Iceland__.
 
 ### __Privacy & Security policy__
 
