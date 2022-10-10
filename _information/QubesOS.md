@@ -224,6 +224,8 @@ rm /var/tmp/template-upgrade-cache.img
 
 - [XFCE Global Dark Mode](https://forum.qubes-os.org/t/guide-xfce-global-dark-mode-in-qubes-4-0-4-1/10757)
 
+<br>
+
 #### Guides
 
 - [Fully ephemeral dispvms](https://forum.qubes-os.org/t/fully-ephemeral-dispvms/12030)
@@ -247,6 +249,8 @@ rm /var/tmp/template-upgrade-cache.img
 - [Windows](https://github.com/elliotkillick/qvm-create-windows-qube)
 
 - [Minimal](https://www.qubes-os.org/doc/templates/minimal/)
+
+<br>
 
 #### Wiki
 
