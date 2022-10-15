@@ -237,7 +237,7 @@ Password managers are a great way to both securely and remember all of your pass
 Your passwords are saved in an encrypted database, which you only need to remember 1 password while generating secure passwords for all of your accounts.
 
 - [KeePassXC](https://keepassxc.org)
-- [Bitwarden](https://bitwarden.com/) *(Introduces convenance as it is a hosted service)*
+- [Bitwarden](https://bitwarden.com/) *(Introduces convenience as it is a hosted service)*
 
 <br>
 
