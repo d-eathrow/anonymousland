@@ -509,7 +509,7 @@ When installing applications, it may be best to clone a minimal template and ins
 This is a suggested option if you have the capability to space additional system resources.
 
 Unofficial templates can be found on the Qubes OS forum.
-There is always the ability to build your own template utilizng the [Qubes builder](https://www.qubes-os.org/doc/qubes-builder/) _**However, keep in mind that by using unofficial templates you are trusting more entities because now you have to trust the Qubes team and also the maintainers of the Unofficial templates, depending on your threat model using Unofficial templates might not be worth the security risk it carries.**_
+There is always the ability to build your own template utilizng the [Qubes builder](https://www.qubes-os.org/doc/qubes-builder/). _**However, keep in mind that by using unofficial templates you are trusting more entities because now you have to trust the Qubes team and also the maintainers of the Unofficial templates, depending on your threat model using Unofficial templates might not be worth the security risk it carries.**_
 
 <br>
 
