@@ -325,7 +325,7 @@ From search results to private documents.
 These items are **NOT** private on "traditional" operating systems.
 The default desktop enviroment has a broken security model.
 This is due to the fact of lacking permissions and proper isolation as done on mobile operating systems such as Android with their per-app permission toggles.
-Some services like Firejail, SELinux and Apparmor can fix a lot of these issues, but the fact is configuring these services for every application can be a daunting task and can lead to much user-error.
+Some services like Firejail, Bubblewrap, SELinux and Apparmor can fix a lot of these issues, but the fact is configuring these services for every application can be a daunting task and can lead to much user-error.
 
 It is assumed that the average population is likely using Windows, Mac, or ChromeOS.
 These are absolutely terrible options for privacy.
@@ -424,9 +424,7 @@ We also want our default qubes along with the default system qubes.
 
 #### Qubes Basic Setup
 
-Visit the [Qubes notes](../qubes) page for other notes.
-
-#### Qubes Basic Setup
+*Visit the [Qubes notes](../qubes) page for more information.*
 
 As for networking, if you have a VPN service such as ProtonVPN, you are able to utilize `qtunnel` and setup multiple VPNs.
 For each of our VPN qubes, we will need a `sys-firewall`.
