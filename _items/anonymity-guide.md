@@ -909,7 +909,7 @@ Matrix allows you to _privately_(see below) sign up, and from there you are able
 
 Note: The terms "private" will vary depending on which homeserver you opt to choose.
 Some servers will require an email address and others will not.
-For more information visit [JoinMatirx](https://joinmatrix.org).
+For more information visit [JoinMatrix](https://joinmatrix.org).
 
 <br>
 
