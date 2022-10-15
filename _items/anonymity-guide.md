@@ -277,8 +277,8 @@ This is a big deal.
 
 Often times you will find yourself needing an email address.
 Creating an anonymous email account will be necessary in some cases.
-It is best to absolutely avoid commercial services such as gmail, outlook and icloud, these services are not anonymous or even private.
-Default (gmail, icloud, etc.) email providers can read your inbox, and will send your information on government requests.
+It is best to absolutely avoid commercial services such as Gmail, Outlook and Icloud, these services are not anonymous or even private.
+Default (Gmail, Icloud, etc.) email providers can read your inbox, and will send your information on government requests.
 For anonymity, it may be best to utilize Tor for email to help prevent an adversary from obtaining your IP address, and to help prevent fingerprinting.
 
 Using a web browser to access email allows for malicious javascript to be utilized to capture your credentials along with your mail contents.
@@ -509,7 +509,7 @@ When installing applications, it may be best to clone a minimal template and ins
 This is a suggested option if you have the capability to space additional system resources.
 
 Unofficial templates can be found on the Qubes OS forum.
-There is always the ability to build your own template utilizng the [Qubes builder](https://www.qubes-os.org/doc/qubes-builder/) However, keep in mind that by using unofficial templates you are trusting more entities because now you have to trust the Qubes team and also the maintainers of the Unofficial templates, depending on your threat model using Unofficial templates might not be worth the security liability it carries.
+There is always the ability to build your own template utilizng the [Qubes builder](https://www.qubes-os.org/doc/qubes-builder/) _**However, keep in mind that by using unofficial templates you are trusting more entities because now you have to trust the Qubes team and also the maintainers of the Unofficial templates, depending on your threat model using Unofficial templates might not be worth the security risk it carries.**_
 
 <br>
 
