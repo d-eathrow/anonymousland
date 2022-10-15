@@ -293,7 +293,7 @@ If you need a temporary email, you are able to use:
 
 For a more permanent mail solution, you can use:
 
-- [Proton](https://proton.me) <button type="button" class="btn btn-xs btn-xs"><a href="https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion">Tor</a></button>
+- [ProtonMail](https://proton.me) <button type="button" class="btn btn-xs btn-xs"><a href="https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion">Tor</a></button>
 
 - [Tutanota](https://tutanota.com)
 
@@ -341,7 +341,7 @@ The actual threat model of your Linux system will vary per-person.
 Linux is _private by default_, meaning that your personal information is not being _harvested_ like traditional operating systems including Windows and MacOS.
 QubesOS is an exception as it is entirely based upon security.
 
-Those who are looking for some excitement or extremely into privacy, security and / or anonymity should look at [QubesOS](https://qubes-os.org) <button type="button" class="btn btn-xs btn-xs"><a href="http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/">Tor</a></button> and [Tails](https://tails.boum.org) if you haven't already.
+Those who are looking for some excitement or extremely into privacy, security and / or anonymity should look at [Qubes OS](https://qubes-os.org) <button type="button" class="btn btn-xs btn-xs"><a href="http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/">Tor</a></button> and [Tails](https://tails.boum.org) if you haven't already.
 
 <br>
 
@@ -408,7 +408,7 @@ After booting to your installation medium click the "verify" option.
 Afterwords, theres a few things we need to do.
 
 - Set a _strong_ encryption password.
-  This is super important! Make it strong
+  This is super important! Make it strong (a passphrase of at least six words generated with Diceware)
 - Ensure **root** is disabled
 - Set a strong user account password
 
@@ -426,7 +426,7 @@ We also want our default qubes along with the default system qubes.
 
 Visit the [Qubes notes](../qubes) page for other notes.
 
-#### Qube Basic Setup
+#### Qubes Basic Setup
 
 As for networking, if you have a VPN service such as ProtonVPN, you are able to utilize `qtunnel` and setup multiple VPNs.
 For each of our VPN qubes, we will need a `sys-firewall`.
@@ -466,7 +466,7 @@ The firewall can be useful for preventing data leaks & sniffing along with enfor
 
 #### Template Setup
 
-Templates are going to be the foundation of any QubesOS install.
+Templates are going to be the foundation of any Qubes OS install.
 As such, it should also be carefully configured.
 
 You should not install all of your applications on a single template qube, instead you should have different templates for each purpose.
@@ -511,7 +511,7 @@ When installing applications, it may be best to clone a minimal template and ins
 This is a suggested option if you have the capability to space additional system resources.
 
 Unofficial templates can be found on the Qubes OS forum.
-There is always the ability to build your own template utilizng the [Qubes builder](https://www.qubes-os.org/doc/qubes-builder/).
+There is always the ability to build your own template utilizng the [Qubes builder](https://www.qubes-os.org/doc/qubes-builder/) However, keep in mind that by using unofficial templates you are trusting more entities because now you have to trust the Qubes team and also the maintainers of the Unofficial templates, depending on your threat model using Unofficial templates might not be worth the security liability it carries.
 
 <br>
 
@@ -659,13 +659,6 @@ auth include yubikey
 
 <br>
 
-#### GUI-VM
-
-This is for advanced users.
-Read the [official documentation](https://qubes-os.org/guivm-configuration).
-
-<br>
-
 #### Backups
 
 Creating proper backups securely is critical for any setup, especially this one here.
@@ -700,7 +693,7 @@ Upon creating our aliases we will have several different approaches:
 
 We can generate an alias by thinking of a random word / phrase but this method could eventually compromise you if you keep choosing references from Star Trek.
 
-If you are using QubesOS, we are able to utilize compartmentalization heavily in this instance. We will start off by creating multiple qubes for our setup.
+If you are using Qubes OS, we are able to utilize compartmentalization heavily in this instance. We will start off by creating multiple qubes for our setup.
 
 - `alias-web`
 - `alias-email`
@@ -821,7 +814,7 @@ and select `Enable HTTPS-Only Mode in all windows`
 <br>
 
 Fingerprinting can be reduced by keeping extensions to a minimum.
-A respected browser extension for a wide variety of setups would be [UblockOrigin](https://github.com/gorhill/uBlock/).
+A respected browser extension for a wide variety of setups would be [Ublock Origin](https://github.com/gorhill/uBlock/).
 
 Suggested Setup:
 
@@ -845,19 +838,19 @@ Suggested Setup:
 
 <br>
 
-#### [Librewolf](https://librewolf.net)
+#### [LibreWolf](https://librewolf.net)
 
-A fork of Firefox, Librewolf aims to be _"A fork of Firefox, focused on privacy, security and freedom."_
+A fork of Firefox, LibreWolf aims to be _"A fork of Firefox, focused on privacy, security and freedom."_
 
-Librewolf contains many privacy features and additional hardening by default along with removing various "bloat" such as Pocket extension and Firefox Sync.
+LibreWolf contains many privacy features and additional hardening by default along with removing various "bloat" such as Pocket extension and Firefox Sync.
 A full list of features can be found [here](https://librewolf.net/docs/features/).
 
-Librewolf may suffer issues from potentially being behind on updates due to it being a fork.
+LibreWolf may suffer issues from potentially being behind on updates due to it being a fork.
 The official site states:
 
 _"LibreWolf is always based on the latest version of Firefox. Updates usually come within three days from each upstream stable release, at times even the same day. Unless problems arise, we always try to release often and in a timely manner. It should however be noted that LibreWolf does not have auto-update capabilities, and therefore it relies on package managers or users to apply them."_
 
-Librewolf is a good alternative to utilizing Arkenfox on Qubes as we cannot reasonably trust a human to consistently and manually check for updates on Arkenfox.
+LibreWolf is a good alternative to utilizing Arkenfox on Qubes as we cannot reasonably trust a human to consistently and manually check for updates on Arkenfox.
 
 <br>
 
@@ -897,16 +890,16 @@ The main differences between centralized and decentralized is that a single auth
 Here's a list of great messengers and services that you'll be able to use.
 
 - [Signal](https://signal.org) A great messenger for friends & family.
-  Requires a phone number as it acts as a replacement to SMS / MMS.
+  Requires a phone number as it acts as a replacement to SMS / MMS. 
 
 - [Session](https://getsession.org) Censorship-resistent messenger.
   A fork of Signal without the phone-number requirement.
-  Session has built-in onion-routing.
+  Session has built-in onion-routing. *(TODO: update this or consider delisting Session)*
 
 - [Matrix](https://matrix.org) Matrix provides a federated platform, which allows for anyone to host their own server, meaning that it is resistent to censorship as it does not rely on a single server.
 
 - [Briar](https://briarproject.org) A P2P messenger app which is designed for extreme threat models.
-  Allows for bluetooth communication along with routing communications over Tor network.
+  Allows for Bluetooth communication along with routing communications over Tor network.
 
 Choosing your secure messenger will depend on your use-case.
 For instance, if you want to protect your traditional SMS / MMS messages, [Signal](https://signal.org) will be the best option if you are looking for a simple replacement that uses your telephone number, allowing contacts to easily add you, which would make this "easy adoption" unlike something like Matrix.
@@ -926,7 +919,7 @@ For more information visit [JoinMatirx](https://joinmatrix.org).
 
 Your physical state is just as important as your online state.
 If you can be physically tracked and stalked, this could potentially lead to the compromise of your online being.
-For instance, if someone stalks your behavior and notices you leave your device unattended, this can lead to malicious activity taking place such as compromising firmware, installing a small bluetooth transmitter, accessing device information if the device is unencrypted, or even just outright taking the device.
+For instance, if someone stalks your behavior and notices you leave your device unattended, this can lead to malicious activity taking place such as compromising firmware, installing a small Bluetooth transmitter, accessing device information if the device is unencrypted, or even just outright taking the device.
 
 <br>
 
@@ -949,6 +942,8 @@ Some examples of this include:
 - Dominant hand
 - Medical conditions
 - Voice
+- Behaviour
+- and much more...
 
 At first glance, many of this seems like defining qualities, but they can be altered in a manner in which that can help prevent you from being identified.
 
@@ -961,7 +956,7 @@ The easiest method would be to put a coin inside your shoe.
 
 <br>
 
-### Heart Tate
+### Heart Rate
 
 Your heart rate is a unique identifier.
 Based on [this article](https://www.technologyreview.com/2019/06/27/238884/the-pentagon-has-a-laser-that-can-identify-people-from-a-distanceby-their-heartbeat/) your heart rate can be identified from up to 200 meters away.
@@ -982,7 +977,7 @@ Certain medications may do this as well. (or gloves. NOT LATEX GLOVES as these d
 
 ### Weight
 
-You can wear extra bulky clothing or a weighted vest underneath a sweatshirt
+You can wear extra bulky clothing or a weighted vest underneath a sweatshirt.
 
 <br>
 
@@ -1028,7 +1023,7 @@ Avoid taking main roads when going to a destination if possible.
 It is best to plan your route in advance and have several backup routes.
 
 A small tracker can be placed anywhere on your vehicle without your knowledge, to detect this you can switch your radio to "AM" and go from there.
-To protect against this, you can buy a signal jammer.
+To protect against this, you can buy a signal jammer **(this might not be legal within your jurisdiction, please check your laws before proceeding).**
 It is advisable to remove any electronic equipment on your vehicle.
 
 For additional protection, you may:
@@ -1057,7 +1052,7 @@ You can be tracked physically with a wide array of technologies including but no
 
     - [Real Time Object Tracking System using Thermal Camera](https://medium.com/analytics-vidhya/real-time-object-tracking-system-using-thermal-camera-b4d077a20f16)
 - Facial recognition
-    - [wearable face projector](https://inv.bp.projectsegfau.lt/watch?v=_PoudPCevN0)
+    - [Wearable face projector](https://inv.bp.projectsegfau.lt/watch?v=_PoudPCevN0)
 
 <br>
 
