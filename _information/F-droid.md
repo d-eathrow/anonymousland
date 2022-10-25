@@ -18,6 +18,10 @@ Website: [https://f-droid.org](https://f-droid.org)
 
 - [AnonAddy](https://f-droid.org/packages/host.stjin.anonaddy/)
 
+- [Element](https://f-droid.org/en/packages/im.vector.app/) 
+
+- [SchildiChat](https://f-droid.org/en/packages/de.spiritcroc.riotx/)
+
 - [Briar](https://f-droid.org/packages/org.briarproject.briar.android/)
 
 - [SimpleLogin](https://f-droid.org/packages/io.simplelogin.android.fdroid/)
