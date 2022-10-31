@@ -21,7 +21,7 @@ description: A fun happy place.
 <br>
 <br>
 
-  <button type="button" class="btn btn-lg btn-default"><a href="./changelog"><i class="fa fa-clipboard" aria-hidden="true"></i> Changelog v1.0.5</a></button>
+  <button type="button" class="btn btn-lg btn-default"><a href="./changelog"><i class="fa fa-clipboard" aria-hidden="true"></i> Changelog v1.0.6</a></button>
 
 <br>
 <br>
@@ -41,7 +41,6 @@ description: A fun happy place.
 
   <button type="button" class="btn btn-md btn-default"><a href="./information"><i class="fa fa-list" aria-hidden="true"></i> Collections</a></button>
 
-
 <br>
 <br>
 <br>
@@ -55,12 +54,9 @@ description: A fun happy place.
 
   <button type="button" class="btn btn-md btn-default"><a href="https://cinny.anonymousland.org"> Cinny</a></button>
 
-
   <button type="button" class="btn btn-md btn-default"><a href="https://element.anonymousland.org"> Element</a></button>
  
   <button type="button" class="btn btn-md btn-default"><a href="https://hydrogen.anonymousland.org"> Hydrogen</a></button>
-
-  <button type="button" class="btn btn-md btn-default"><a href="https://forum.anonymousland.org"><i class="fa fa-commenting" aria-hidden="true"></i> Forums</a></button>
 
 <br>
 <br>

@@ -5,6 +5,29 @@ permalink: /changelog
 ---
 
 ---
+
+# v1.06
+
+- Updated styling on ``/guide``
+
+- Donation button on ``/index``
+
+- Additional content on ``/fdroid``
+
+- dependabot & megalinter
+
+- Typographical error fixed throughout
+
+- CC0 License
+
+- Rename ``/guide`` to ``anonymity-guide.md``
+
+- New customizations and templates section on ``/qubes``
+
+- Various updates to ``/services``
+
+- Remove Forum links
+
 # v1.05
 
 - New GrapheneOS page on ``/graphene``

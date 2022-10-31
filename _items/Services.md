@@ -56,7 +56,7 @@ As nature of this website, privacy and security must be our main priority, the f
 
 - Synapse is hosted with [1984](https://1984.hosting/GDPR/)
 
-- `user_ips_max_age` is currently set to `7d`
+- `user_ips_max_age` is currently set to `1h`
 
 - `bcrypt_rounds` is set to `15`
 
@@ -119,5 +119,4 @@ Password Policy:
 ## __Additional Services__
 
 - [Cinny](https://cinny.anonymousland.org)
-- [Forum](https://forum.anonymousland.org)
 - [Hydrogen](https://hydrogen.anonymousland.org)
