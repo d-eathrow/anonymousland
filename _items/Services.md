@@ -56,7 +56,9 @@ As nature of this website, privacy and security must be our main priority, the f
 
 - Synapse is hosted with [1984](https://1984.hosting/GDPR/)
 
-- `user_ips_max_age` is currently set to `1h`
+- `user_ips_max_age` is set to `0s` (disabled)
+
+- nginx is configured to strip and remove every IP address it encounters before passing the request to Synapse.
 
 - `bcrypt_rounds` is set to `16`
 
