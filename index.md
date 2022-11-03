@@ -26,10 +26,11 @@ description: A fun happy place.
 <br>
 <br>
 
-  <button type="button" class="btn btn-md btn-default"><a href="https://codeberg.org/deathrow/anonymousland"> <i class="fa fa-github" aria-hidden="true"></i> Repository</a></button>
+  <button type="button" class="btn btn-md btn-default"><a href="https://git.anonymousland.org/anonymousland/anonymousland"> <i class="fa fa-github" aria-hidden="true"></i> Main Repository</a></button>
+
+  <button type="button" class="btn btn-md btn-default"><a href="https://codeberg.org/deathrow/anonymousland"> <i class="fa fa-github" aria-hidden="true"></i> Codeberg mirror</a></button>
   
-  <button type="button" class="btn btn-md btn-default"><a href="https://github.com/d-eathrow/anonymousland"> <i class="fa fa-github" aria-hidden="true">
-    </i> GitHub mirror</a></button>
+  <button type="button" class="btn btn-md btn-default"><a href="https://github.com/anonymland/anonymousland"> <i class="fa fa-github" aria-hidden="true"></i> GitHub mirror</a></button>
 
 <br>
 <br>
