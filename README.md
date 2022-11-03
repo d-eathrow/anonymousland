@@ -1,1 +1,1 @@
-Contribute at https://codeberg.org/deathrow/anonymousland
+Contribute at https://git.anonymousland.org/anonymousland/anonymousland
