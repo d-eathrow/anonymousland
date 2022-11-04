@@ -1,0 +1,13 @@
+kind: pipeline
+name: Jekyll build
+type: docker
+
+
+steps:
+
+- name: build
+  image: ruby
+  commands:
+  - gem install bundler
+  - bundle install
+  - bundle exec jekyll build
