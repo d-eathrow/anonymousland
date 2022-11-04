@@ -112,7 +112,6 @@ Password Policy:
       </div>
       <div class="panel-body">
         Due to how the Matrix protocol functions, metadata including your Profile picture, username, display name and device list will be sent to other homeservers if you are in a federated room.
-        An IP address is automatically assigned with each client, signing out will remove your IP from the client and from the database as well.
       </div>
     </div>
 
@@ -122,3 +121,6 @@ Password Policy:
 
 - [Cinny](https://cinny.anonymousland.org)
 - [Hydrogen](https://hydrogen.anonymousland.org)
+- [Gitea](https://git.anonymousland.org)
+- [Drone CI](https://drone.anonymousland.org) (integrated with Gitea)
+- [Dimension](https://dimension.anonymousland.org)
