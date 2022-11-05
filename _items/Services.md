@@ -30,9 +30,8 @@ Your account *can* be suspended if you take part in any sort of malicious activi
 
 As nature of this website, privacy and security must be our main priority, the following is currently in effect:
 
-- nginx logging is disabled on all servers.
-  - (no IPs are being logged)
-     - The following nginx headers are set to zero:
+- nginx logging is disabled on all servers and no IPs are being logged.
+     - The following nginx headers are set to disable IP logging:
        - `proxy_set_header X-Forwarded-For 0.0.0.0;`
        - `proxy_set_header X-Real-IP 0.0.0.0;`
        - `proxy_set_header X-Forwarded-Host 0.0.0.0;`
