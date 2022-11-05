@@ -33,9 +33,9 @@ As nature of this website, privacy and security must be our main priority, the f
 - nginx logging is disabled on all servers.
   - (no IPs are being logged)
      - The following nginx headers are set to zero:
-     `proxy_set_header X-Forwarded-For 0.0.0.0;`
-     `proxy_set_header X-Real-IP 0.0.0.0;`
-     `proxy_set_header X-Forwarded-Host 0.0.0.0;`
+       - `proxy_set_header X-Forwarded-For 0.0.0.0;`
+       - `proxy_set_header X-Real-IP 0.0.0.0;`
+       - `proxy_set_header X-Forwarded-Host 0.0.0.0;`
 
 <br>
 
