@@ -31,6 +31,11 @@ Your account *can* be suspended if you take part in any sort of malicious activi
 As nature of this website, privacy and security must be our main priority, the following is currently in effect:
 
 - nginx logging is disabled on all servers.
+  - (no IPs are being logged)
+     - The following nginx headers are set to zero:
+     `proxy_set_header X-Forwarded-For 0.0.0.0;`
+     `proxy_set_header X-Real-IP 0.0.0.0;`
+     `proxy_set_header X-Forwarded-Host 0.0.0.0;`
 
 <br>
 
@@ -57,8 +62,6 @@ As nature of this website, privacy and security must be our main priority, the f
 - Synapse is hosted with [1984](https://1984.hosting/GDPR/)
 
 - `user_ips_max_age` is set to `0s` (disabled)
-
-- nginx is configured to strip and remove every IP address it encounters before passing the request to Synapse.
 
 - `bcrypt_rounds` is set to `16`
 
