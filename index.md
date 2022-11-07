@@ -17,7 +17,7 @@ description: A fun happy place.
 ---
 
 <div style="text-align:center">
-  <button type="button" class="btn btn-lg btn-default"><a href="./donate"><i class="fa fa-clipboard" aria-hidden="true"></i> Donate</a></button>
+  <button type="button" class="btn btn-md btn-large"><a href="./donate"> Donate</a></button>
 <br>
 <br>
 
