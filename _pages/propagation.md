@@ -28,4 +28,6 @@ permalink: /propagate
 
 ## Other
 
+- [SaveTor](https://savetor.network/)
+
 - [Snowflake](https://snowflake.torproject.org/)
