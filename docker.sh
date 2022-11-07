@@ -1,8 +1,9 @@
 #!/bin/bash
 
-export JEKYLL_VERSION=3.8
-
 docker run --rm \
+  --name=site \
+  --network=site \
   --volume="$PWD:/srv/jekyll:Z" \
-  -it jekyll/jekyll:$JEKYLL_VERSION \
-  jekyll build
+  --volume="$PWD/vendor/bundle:/usr/local/bundle:Z" \
+  -it jekyll/jekyll \
+  jekyll serve
