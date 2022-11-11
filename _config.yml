@@ -1,5 +1,6 @@
 repository: d-eathrow/anonymousland
-theme: jekyll-theme-potato-hacker
+remote_theme: luxedo/jekyll-theme-potato-hacker
+#theme: jekyll-theme-potato-hacker
 theme_base: "dark"
 theme_switch: off
 blog: on

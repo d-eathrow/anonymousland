@@ -5,3 +5,4 @@ gem 'jekyll'
 gem "jekyll-theme-potato-hacker"
 gem 'jekyll-feed'
 gem 'jekyll-seo-tag'
+gem 'jekyll-remote-theme'
