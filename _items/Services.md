@@ -9,7 +9,7 @@ permalink: /services
 <i>“There are too many of us, he thought. There are billions of us and that's too many. Nobody knows anyone. Strangers come and violate you. Strangers come and cut your heart out. Strangers come and take your blood. Good God, who were those men? I never saw them before in my life!” </i>
 </div>
 
-### __Services__
+## __Services__
 
 These services are publicly available and free to use. 
 
@@ -20,25 +20,28 @@ The hosting providers [1984](https://1984.is) and [Njalla](https://njal.la) are 
 You can check the status of our Matrix Homeserver and all off our other services on our [status page](https://status.anonymousland.org/status/services).
 <br>
 
-### __Terms of Service (ToS)__
+## __Terms of Service (ToS)__
 
 These services are not intended to spread spam or malicious content, or sharing / distributing / hosting of malicious content.
 
 Your account *can* be suspended if you take part in any sort of malicious activity or questionable content including but not limited to targeted harassment, raids, phishing, DOXxing or violating laws of __Sweden__ and __Iceland__.
 
-### __Privacy & Security policy__
+## __Privacy & Security policy__
 
 As nature of this website, privacy and security must be our main priority, the following is currently in effect:
 
 - nginx logging is disabled on all servers and no IPs are being logged.
-     - The following nginx headers are set to disable IP logging:
-       - `proxy_set_header X-Forwarded-For 0.0.0.0;`
-       - `proxy_set_header X-Real-IP 0.0.0.0;`
-       - `proxy_set_header X-Forwarded-Host 0.0.0.0;`
+- The following nginx headers are set to disable IP logging:
+
+```
+proxy_set_header X-Forwarded-For 0.0.0.0;
+proxy_set_header X-Real-IP 0.0.0.0;
+proxy_set_header X-Forwarded-Host 0.0.0.0;
+```
 
 <br>
 
-#### Matrix
+### Matrix
 
 - Registration is open, if abuse takes place, registration will turn to an invite-only system.
 
@@ -49,8 +52,6 @@ As nature of this website, privacy and security must be our main priority, the f
 - Moderation is done via ``mjolnir``, let us keep this ban list to a minimum.
 
 - Ratelimiting actions is currently set as default on Matrix, and can be easily re-enabled if needed, do not ruin this for others.
-
-- We are currently not using a CAPTCHA for registration or requiring an Email, CAPTCHA will be enabled if abuse happens!
 
 - Metrics are disabled.
 
@@ -68,7 +69,7 @@ As nature of this website, privacy and security must be our main priority, the f
 
 <br>
 
-### __Policies__
+## __Policies__
 
 Your data and information will **NEVER** be sold or shared to another party. 
 
@@ -82,29 +83,23 @@ Additional services are hosted with [Njalla](https://njal.la/about/).
 
 <br>
 
-#### __Matrix__
+### __Matrix__
 
 The Matrix homeserver is located at
 
 `https://matrix.anonymousland.org`
 
-We also have our self-hosted Element instance located at
+Registration is done via the [registration page](https://matrix.anonymousland.org/register)
 
-`https://element.anonymousland.org`
+Incidents: `1`
 
-Incidents: ``1``
+###  __Clients__
 
-Password Policy:
+- [Cinny](https://cinny.anonymousland.org) <button type="button" class="btn btn-xs btn-xs"><a href="http://eoeh5ggqrjh7xlvcnydznsi4l53bvtue5rejs5relab3sdcsgrdvbiqd.onion/">Tor</a></button>
+- [Element](https://element.anonymousland.org) <button type="button" class="btn btn-xs btn-xs"><a href="http://ghs2cajvtd3zereksquw6gxgjyiuczwduri6bunvz5budvxpgr6mvwyd.onion/">Tor</a></button>
 
-- 15 characters
+- [Schild](https://schild.anonymousland.org)
 
-- Require at least 1 digit
-
-- Require at least 1 symbol
-
-- At least 1 lowercase character
-
-- At least 1 uppercase character
 
 <br>
 
@@ -119,10 +114,18 @@ Password Policy:
 
 <br>
 
+### __Matrix Onion Service__
+
+We currently host a *beta* onion service available at:
+
+`http://7pdtdadfcjvntnbip764d5sc35d2s7hhdkbbie5hy7njovea4534vxqd.onion/`
+
+Corresponding onion Element instance:
+
+`http://ps3364wgpvq46iumfm7wcewr3qxymtnd2fo753gvngzbumir7wyrlvad.onion/`
 ## __Additional Services__
 
-- [Cinny](https://cinny.anonymousland.org)
-- [Hydrogen](https://hydrogen.anonymousland.org)
-- [Gitea](https://git.anonymousland.org)
-- [Drone CI](https://drone.anonymousland.org) (integrated with Gitea)
 - [Dimension](https://dimension.anonymousland.org)
+- [Drone CI](https://drone.anonymousland.org)
+- [Gitea](https://git.anonymousland.org)
+- [OTS](https://ots.anonymousland.org)
