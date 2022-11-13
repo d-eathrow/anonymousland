@@ -5,6 +5,5 @@ docker run --rm \
   --network=site \
   --volume="$PWD:/srv/jekyll:Z" \
   --volume="$PWD/vendor/bundle:/usr/local/bundle:Z" \
-  --detach \
   -it jekyll/jekyll \
-   jekyll serve
+   gem update

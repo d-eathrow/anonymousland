@@ -6,6 +6,20 @@ permalink: /changelog
 
 ---
 
+# v1.07
+
+- Fixed various typographical errors throughout the site
+
+- Closed the forums
+
+- Updated ``/services`` page to include removal of IP addresses on Synapse
+
+- Moved repository to self-hosted Git instance
+
+- Updated Git instances on ``/index``
+
+- Added donation button on ``/index``
+
 # v1.06
 
 - Updated styling on ``/guide``
