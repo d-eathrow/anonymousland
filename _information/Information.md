@@ -33,6 +33,8 @@ A collection of links, articles, resources and more. [<i class="fa fa-rss" aria-
 
 For news
 
+- [US Military Bought Mass Monitoring Team](https://www.vice.com/en/article/y3pnkw/us-military-bought-mass-monitoring-augury-team-cymru-browsing-email-data)
+
 - [China AI image generator](https://arstechnica.com/information-technology/2022/09/chinas-leading-ai-image-generator-nixes-political-content-surprising-no-one/)
 
 - [China targeting human rights](https://www.technologyreview.com/2022/08/16/1057894/hackers-linked-to-china-have-been-targeting-human-rights-groups-for-years/)
