@@ -20,6 +20,20 @@ permalink: /changelog
 
 - Added donation button on ``/index``
 
+- Updated home page
+
+- Fixed Tor buttons
+
+- Added onion addresses for various services
+
+- New beta onion Matrix server
+
+- New OTS service
+
+- New schild service
+
+- New service on ``/propagation``
+
 # v1.06
 
 - Updated styling on ``/guide``
