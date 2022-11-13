@@ -211,6 +211,8 @@ rm /var/tmp/template-upgrade-cache.img
 
 ### Links & Resources
 
+- [qpowerkill](https://github.com/NobodySpecial256/qpowerkill)
+
 - [Qubes for security auditing](https://forum.qubes-os.org/t/qubes-for-organizational-security-auditing-talk-notes/199)
 
 - [Qubes-lite with KVM and Wayland](https://roscidus.com/blog/blog/2021/03/07/qubes-lite-with-kvm-and-wayland/)
