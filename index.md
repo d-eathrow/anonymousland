@@ -14,6 +14,12 @@ description: A fun happy place.
 <br>
 </div>
 
+<div style="text-align:center">
+<div class="alert alert-info" role="alert">
+  <strong>Sign up for our <a href="https://element.anonymousland.org"> Matrix Server</a>, or check out our <a href="http://ps3364wgpvq46iumfm7wcewr3qxymtnd2fo753gvngzbumir7wyrlvad.onion/"> Onion Matrix Server</a></strong>
+</div>
+</div>
+
 ---
 
 <div style="text-align:center">
@@ -26,14 +32,7 @@ description: A fun happy place.
 <br>
 <br>
 
-  <button type="button" class="btn btn-md btn-default"><a href="https://git.anonymousland.org/anonymousland/anonymousland"> <i class="fa fa-github" aria-hidden="true"></i> Main Repository</a></button>
-
-  <button type="button" class="btn btn-md btn-default"><a href="https://codeberg.org/deathrow/anonymousland"> <i class="fa fa-github" aria-hidden="true"></i> Codeberg mirror</a></button>
-  
-  <button type="button" class="btn btn-md btn-default"><a href="https://github.com/anonymland/anonymousland"> <i class="fa fa-github" aria-hidden="true"></i> GitHub mirror</a></button>
-
-<br>
-<br>
+  <button type="button" class="btn btn-md btn-default"><a href="https://git.anonymousland.org/anonymousland/anonymousland"> <i class="fa fa-github" aria-hidden="true"></i> Source Code</a></button>
 
   <button type="button" class="btn btn-md btn-default"><a href="./rss"><i class="fa fa-rss-square" aria-hidden="true"></i> RSS</a></button>
 
@@ -44,12 +43,10 @@ description: A fun happy place.
 
 <br>
 <br>
-<br>
 
   <button type="button" class="btn btn-lg btn-default"><a href="https://status.anonymousland.org"> Status Page</a></button>
 
   <button type="button" class="btn btn-lg btn-default"><a href="./services"> Services Page</a></button>
-<br>
 <br>
 <br>
 
@@ -57,7 +54,7 @@ description: A fun happy place.
 
   <button type="button" class="btn btn-md btn-default"><a href="https://element.anonymousland.org"> Element</a></button>
  
-  <button type="button" class="btn btn-md btn-default"><a href="https://hydrogen.anonymousland.org"> Hydrogen</a></button>
+  <button type="button" class="btn btn-md btn-default"><a href="https://git.anonymousland.org"> Git</a></button>
 
 <br>
 <br>
