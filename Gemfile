@@ -4,7 +4,7 @@ gem 'jekyll'
 gem "jekyll-theme-potato-hacker"
 gem 'jekyll-feed'
 gem 'jekyll-seo-tag'
-gem "bundler", "2.3.24"
+gem "bundler"
 gem "kramdown-parser-gfm"
 gemspec
 gem "webrick", "~> 1.7"
