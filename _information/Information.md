@@ -60,7 +60,7 @@ Articles and stories related to technology, security or privacy
 
 A place for related various communities & media
 
-- [PrivacyGuides](https://privacyguides.org) <button type="button" class="btn btn-xs btn-xs"><a href="http://eter4u55b667kuo72ntpm7ut54sa2mxmr22iqgzns4jw7boeox3qgyid.onion">Tor</a></button>
+- [PrivacyGuides](https://privacyguides.org) <button type="button" class="btn btn-default btn-xs"><a href="http://eter4u55b667kuo72ntpm7ut54sa2mxmr22iqgzns4jw7boeox3qgyid.onion">Tor</a></button>
 
 - [Privsec](https://privsec.dev)
 

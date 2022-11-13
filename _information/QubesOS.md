@@ -10,7 +10,7 @@ A collection of Qubes OS-related information.
 </div>
 <br>
 
-Website: [https://qubes-os.org](https://qubes-os.org) <button type="button" class="btn btn-xs btn-xs"><a href="http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/">Tor</a></button>
+Website: [https://qubes-os.org](https://qubes-os.org) <button type="button" class="btn btn-default btn-xs"><a href="http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/">Tor</a></button>
 
 <br>
 
@@ -254,6 +254,6 @@ rm /var/tmp/template-upgrade-cache.img
 
 #### Wiki
 
-- [Hardened-Kernel](https://www.kicksecure.com/wiki/Hardened-kernel) <button type="button" class="btn btn-xs btn-xs"><a href="http://www.w5j6stm77zs6652pgsij4awcjeel3eco7kvipheu6mtr623eyyehj4yd.onion/wiki/Hardened-kernel">Tor</a></button>
+- [Hardened-Kernel](https://www.kicksecure.com/wiki/Hardened-kernel) <button type="button" class="btn btn-default btn-xs"><a href="http://www.w5j6stm77zs6652pgsij4awcjeel3eco7kvipheu6mtr623eyyehj4yd.onion/wiki/Hardened-kernel">Tor</a></button>
 
-- [VM Fingerprinting](https://www.whonix.org/wiki/VM_Fingerprinting) <button type="button" class="btn btn-xs btn-xs"><a href="http://www.w5j6stm77zs6652pgsij4awcjeel3eco7kvipheu6mtr623eyyehj4yd.onion/wiki/VM_Fingerprinting">Tor</a></button>
+- [VM Fingerprinting](https://www.whonix.org/wiki/VM_Fingerprinting) <button type="button" class="btn btn-default btn-xs"><a href="http://www.w5j6stm77zs6652pgsij4awcjeel3eco7kvipheu6mtr623eyyehj4yd.onion/wiki/VM_Fingerprinting">Tor</a></button>

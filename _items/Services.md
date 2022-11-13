@@ -95,8 +95,8 @@ Incidents: `1`
 
 ###  __Clients__
 
-- [Cinny](https://cinny.anonymousland.org) <button type="button" class="btn btn-xs btn-xs"><a href="http://eoeh5ggqrjh7xlvcnydznsi4l53bvtue5rejs5relab3sdcsgrdvbiqd.onion/">Tor</a></button>
-- [Element](https://element.anonymousland.org) <button type="button" class="btn btn-xs btn-xs"><a href="http://ghs2cajvtd3zereksquw6gxgjyiuczwduri6bunvz5budvxpgr6mvwyd.onion/">Tor</a></button>
+- [Cinny](https://cinny.anonymousland.org) <button type="button" class="btn btn-default btn-xs"><a href="http://eoeh5ggqrjh7xlvcnydznsi4l53bvtue5rejs5relab3sdcsgrdvbiqd.onion/">Tor</a></button>
+- [Element](https://element.anonymousland.org) <button type="button" class="btn btn-default btn-xs"><a href="http://ghs2cajvtd3zereksquw6gxgjyiuczwduri6bunvz5budvxpgr6mvwyd.onion/">Tor</a></button>
 
 - [Schild](https://schild.anonymousland.org)
 

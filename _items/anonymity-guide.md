@@ -293,7 +293,7 @@ If you need a temporary email, you are able to use:
 
 For a more permanent mail solution, you can use:
 
-- [ProtonMail](https://proton.me) <button type="button" class="btn btn-xs btn-xs"><a href="https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion">Tor</a></button>
+- [ProtonMail](https://proton.me) <button type="button" class="btn btn-default btn-xs"><a href="https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion">Tor</a></button>
 
 - [Tutanota](https://tutanota.com)
 
@@ -341,7 +341,7 @@ The actual threat model of your Linux system will vary per-person.
 Linux is _private by default_, meaning that your personal information is not being _harvested_ like traditional operating systems including Windows and MacOS.
 QubesOS is an exception as it is entirely based upon security.
 
-Those who are looking for some excitement or extremely into privacy, security and / or anonymity should look at [Qubes OS](https://qubes-os.org) <button type="button" class="btn btn-xs btn-xs"><a href="http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/">Tor</a></button> and [Tails](https://tails.boum.org) if you haven't already.
+Those who are looking for some excitement or extremely into privacy, security and / or anonymity should look at [Qubes OS](https://qubes-os.org) <button type="button" class="btn btn-default btn-xs"><a href="http://qubesosfasa4zl44o4tws22di6kepyzfeqv3tg4e3ztknltfxqrymdad.onion/">Tor</a></button> and [Tails](https://tails.boum.org) if you haven't already.
 
 <br>
 
@@ -748,7 +748,7 @@ To make a list of browsers we should avoid can be exhaustive, so instead here is
 
 <br>
 
-#### [Brave](https://brave.com) <button type="button" class="btn btn-xs btn-xs"><a href="https://brave4u7jddbv7cyviptqjc7jusxh72uik7zt6adtckl5f4nwy2v72qd.onion/">Tor</a></button>
+#### [Brave](https://brave.com) <button type="button" class="btn btn-default btn-xs"><a href="https://brave4u7jddbv7cyviptqjc7jusxh72uik7zt6adtckl5f4nwy2v72qd.onion/">Tor</a></button>
 
 Brave is based upon Chromium and includes significant enabled-by-default [privacy protections](https://brave.com/privacy-features/) by default unlike a lot of other browsers.
 Certain built-in functions such as IPFS and crypto may want to be avoided.
