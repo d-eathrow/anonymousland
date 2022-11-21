@@ -39,6 +39,7 @@ For news
 
 - [China targeting human rights](https://www.technologyreview.com/2022/08/16/1057894/hackers-linked-to-china-have-been-targeting-human-rights-groups-for-years/)
 
+- [A Leak Details Apple’s Secret Dirt on a Trusted Security Startup](https://www.wired.com/story/corellium-nso-group-darkmatter-apple-lawsuit/)
 
 <br>
 
