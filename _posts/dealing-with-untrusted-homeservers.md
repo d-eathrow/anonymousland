@@ -1,3 +1,11 @@
+---
+layout: post
+title: "Dealing with untrusted Matrix homeservers"
+date: 2022-24-11
+categories: blog
+layout: post
+---
+
 # Dealing with untrusted homeservers
 
 Matrix homeservers are currently very trusted, for that reason it is important to know what are the consequences of an evil homeserver administrator.
@@ -38,4 +46,4 @@ In this situation, if your HS Admin took over your account, they could only achi
 
 ## Some extra tips
 
-Other things you can do are selecting homeservers carefully, it it suggested to choose a big and large homeserver with Administrators which you don't know, this should make you a lesser target.
+Other things you can do are selecting homeservers carefully, it is suggested to choose a big and large homeserver with Administrators which you don't know, this should make you a lesser target.
