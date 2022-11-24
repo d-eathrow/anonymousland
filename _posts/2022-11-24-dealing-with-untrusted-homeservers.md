@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Dealing with untrusted Matrix homeservers"
-date: 2022-24-11
+date: 2022-11-24
 categories: blog
 layout: post
 ---
