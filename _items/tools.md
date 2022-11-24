@@ -188,6 +188,8 @@ This is extremely useful especially if you are worried about your email being le
 
 - [SimpleLogin](https://simplelogin.io/)
 - [AnonAddy](https://anonaddy.com/)
+- [Firefox Relay](https://relay.firefox.com/)
+- [Duckduckgo Mail](https://duckduckgo.com/email/)
 
 <br>
 
@@ -237,7 +239,7 @@ Password managers are a great way to both securely and remember all of your pass
 Your passwords are saved in an encrypted database, which you only need to remember 1 password while generating secure passwords for all of your accounts.
 
 - [KeePassXC](https://keepassxc.org)
-- [Bitwarden](https://bitwarden.com/) *(Introduces convenience as it is a hosted service)*
+- [Bitwarden](https://bitwarden.com/)
 
 <br>
 
@@ -247,7 +249,7 @@ Your search engine knows a lot about you.
 This information is often times sold to 3rd parties and given away to government agencies.
 They often show biased search results. Choose a better one here.
 
-- [DuckDuckGo](https://duckduckgo.com) <button type="button" class="btn btn-default btn-xs"><a href="https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/">Tor</a></button>  <button type="button" class="btn btn-xs btn-warning"><a href="https://help.duckduckgo.com/duckduckgo-help-pages/community/open-source/">Partially Closed-Source</a></button> *(May be removed in the future for major controversy.)*
+- [DuckDuckGo](https://duckduckgo.com) <button type="button" class="btn btn-default btn-xs"><a href="https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/">Tor</a></button>  <button type="button" class="btn btn-xs btn-warning"><a href="https://help.duckduckgo.com/duckduckgo-help-pages/community/open-source/">Partially Closed-Source</a>
 - [SearX](https://searx.space) <button type="button" class="btn btn-default btn-xs"><a href="searxspbitokayvkhzhsnljde7rqmn7rvoga6e4waeub3h7ug3nghoad.onion">Tor</a></button>
 
 - [Brave Search](https://search.brave.com) <button type="button" class="btn btn-default btn-xs"><a href="https://search.brave4u7jddbv7cyviptqjc7jusxh72uik7zt6adtckl5f4nwy2v72qd.onion/">Tor</a></button>
