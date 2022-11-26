@@ -68,10 +68,10 @@ description: A fun happy place.
 ## Site Layout
 
 - [Anonymousland](https://anonymousland.org)
+  - [Blog](./blog)
   - [Changelog](./changelog)
   - [Donate](./donate)
   - [Guide](./guide)
-  - [Help](./help)
   - [Information](./information)
      - [GrapheneOS](./graphene)
      - [F-Droid](./f-droid)
