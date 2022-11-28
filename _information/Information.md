@@ -7,12 +7,9 @@ permalink: /information
 
 A collection of links, articles, resources and more. [<i class="fa fa-rss" aria-hidden="true"></i>](https://anonymousland.org/feed/information.xml)
 
-
-
 <br>
 
 #### Table of contents:
-
 
 -\>> [Main Collection](#main-collection) <br>
   - -\> *[News](#news)* <br>
@@ -41,9 +38,7 @@ For news
 
 - [China targeting human rights](https://www.technologyreview.com/2022/08/16/1057894/hackers-linked-to-china-have-been-targeting-human-rights-groups-for-years/)
 
-
 <br>
-
 
 ## Articles
 
