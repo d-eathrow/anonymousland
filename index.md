@@ -34,12 +34,12 @@ description: A fun happy place.
 
   <button type="button" class="btn btn-md btn-default"><a href="https://git.anonymousland.org/anonymousland/anonymousland"> <i class="fa fa-github" aria-hidden="true"></i> Source Code</a></button>
 
-  <button type="button" class="btn btn-md btn-default"><a href="./rss"><i class="fa fa-rss-square" aria-hidden="true"></i> RSS</a></button>
+  <button type="button" class="btn btn-md btn-default"><a href="./guide"><i class="fa fa-rss-square" aria-hidden="true"></i> Guide</a></button>
 
 <br>
 <br>
 
-  <button type="button" class="btn btn-md btn-default"><a href="./information"><i class="fa fa-list" aria-hidden="true"></i> Collections</a></button>
+  <button type="button" class="btn btn-md btn-default"><a href="./collections"><i class="fa fa-list" aria-hidden="true"></i> Collections</a></button>
 
 <br>
 <br>
@@ -50,9 +50,9 @@ description: A fun happy place.
 <br>
 <br>
 
-  <button type="button" class="btn btn-md btn-default"><a href="https://cinny.anonymousland.org"> Cinny</a></button>
+  <button type="button" class="btn btn-md btn-default"><a href="https://element.anonymousland.org"> Matrix</a></button>
 
-  <button type="button" class="btn btn-md btn-default"><a href="https://element.anonymousland.org"> Element</a></button>
+  <button type="button" class="btn btn-md btn-default"><a href="https://mastodon.anonymousland.org"> Mastodon</a></button>
  
   <button type="button" class="btn btn-md btn-default"><a href="https://git.anonymousland.org"> Git</a></button>
 
@@ -70,13 +70,14 @@ description: A fun happy place.
 - [Anonymousland](https://anonymousland.org)
   - [Blog](./blog)
   - [Changelog](./changelog)
-  - [Donate](./donate)
-  - [Guide](./guide)
-  - [Information](./information)
+  - [Collections](./collections)
+     - [Information](./information)
      - [GrapheneOS](./graphene)
      - [F-Droid](./f-droid)
      - [Matrix](./matrix)
      - [Qubes OS](./qubes)
+  - [Donate](./donate)
+  - [Guide](./guide)
   - [Propagation](./propagate)
   - [RSS](./rss)
   - [Tools](./tools)

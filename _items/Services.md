@@ -123,9 +123,31 @@ We currently host a *beta* onion service available at:
 Corresponding onion Element instance:
 
 `http://ps3364wgpvq46iumfm7wcewr3qxymtnd2fo753gvngzbumir7wyrlvad.onion/`
+
+<br>
+
+### __Mastodon__
+
+Mastodon instance is located at:
+
+`https://mastodon.anonymousland.org`
+
+and requires an email address for sign-up.
+
+<br>
+
+### __Git__
+
+Gitea instance is located at:
+
+`http://git.anonymousland.org`
+
+and requires an email address for sign-up.
+
+<br>
+
 ## __Additional Services__
 
 - [Dimension](https://dimension.anonymousland.org)
-- [Drone CI](https://drone.anonymousland.org)
-- [Gitea](https://git.anonymousland.org)
 - [OTS](https://ots.anonymousland.org)
+- [Paste](https://paste.anonymousland.org)
