@@ -39,6 +39,21 @@ _Disclaimer: This is for education / research._
 
 <br>
 
+<div style="text-align:center">
+<div class="alert alert-danger" role="alert">
+  <strong>
+  You are expected to do your own research.
+  "Nothing" is full-proof.
+  If you fail, it is your fault.
+  If you fail because of others, it is your fault for trusting others.
+  Do not trust anything you read.
+  Verify it for your self.
+  </strong>
+</div>
+</div>
+
+<br>
+
 #### Table of contents:
 
 -\>> [Important Concepts](#important-concepts) <br>
