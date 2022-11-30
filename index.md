@@ -35,7 +35,7 @@ description: A fun happy place.
 
   <button type="button" class="btn btn-md btn-default"><a href="https://git.anonymousland.org/anonymousland/anonymousland"> <i class="fa fa-github" aria-hidden="true"></i> Source Code</a></button>
 
-  <button type="button" class="btn btn-md btn-default"><a href="./guide"><i class="fa fa-rss-square" aria-hidden="true"></i> Guide</a></button>
+  <button type="button" class="btn btn-md btn-default"><a href="./guide"><i class="fa fa-suitcase" aria-hidden="true"></i> Guide</a></button>
 
 <br>
 <br>
