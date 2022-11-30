@@ -62,8 +62,10 @@ _Disclaimer: This is for education / research._
 
 -\>> [Creating our Aliases](#creating-our-aliases) <br>
 -\>> [Browsers](#browsers) <br>
-  - -\>> _[Desktop](#desktop-1)_ <br>
 
+- -\>> _[Desktop](#desktop-1)_ <br>
+
+-\>> [Mobile](#mobile) <br>
 -\>> [Physical](#physical) <br>
 -\>> [Secure Communications](#secure-communications) <br>
 -\>> [Secure Hardware](#secure-hardware) <br>
@@ -424,7 +426,7 @@ We also want our default qubes along with the default system qubes.
 
 #### Qubes Basic Setup
 
-*Visit the [Qubes notes](../qubes) page for more information.*
+_Visit the [Qubes notes](../qubes) page for more information._
 
 As for networking, if you have a VPN service such as ProtonVPN, you are able to utilize `qtunnel` and setup multiple VPNs.
 For each of our VPN qubes, we will need a `sys-firewall`.
@@ -870,6 +872,43 @@ There are a variety of tools to test your different browser configurations in a 
 
 ---
 
+## **Mobile**
+
+Default un-modified mobile devices are **NOT** private.
+Your mobile device likely contains the most sensitive information. Pictures, texts, location, and more.
+We'll need to work heavily on reducing this fingerprint.
+Anything you do on your phone is likely not private.
+Apps have unnecessary permissions to contacts, messages, files, location and more.
+This is an extremely terrifying thing, as any app could have the potential to view sensitive information.
+Most apps require very minimal permissions to function.
+The idea is minimalism.
+"Calculator" does not need access to text messages, nor does it need to ping servers.
+
+Any device with a SIM card installed is not anonymous.
+The location of the device is known by the cell provider.
+
+To be truly "anonymous" with a mobile device, you must not have an installed SIM card.
+It is not advisable to try to be "anonymous" on a mobile device.
+
+To be as private as possible, it is advisable to install [GrapheneOS](https://grapheneos.org).
+GrapheneOS is a hardened version of Android running on the *secure* Google Pixel.
+GrapheneOS will not have any sort of Google analytics.
+This would likely be the best choice to run on an Android phone if you are seeking maximum security, privacy, and perhaps "anonymity". 
+
+You will still not be anonymous even if you are utilizing GrapheneOS with a SIM card.
+The cell service provider **WILL** know your location.
+
+For additional information, view the [GrapheneOS Section](./graphene).
+
+With GrapheneOS, you can utilize the profiles function to create separate identities with each profile.
+We can use Orbot to route traffic over Tor on a per-profile basis.
+
+*Note: UDP is not supported by Tor*
+
+<br>
+
+---
+
 ## **Secure Communications**
 
 Having a secure operating system is only 1 part that we need.
@@ -885,14 +924,14 @@ Decentralized: Multiple servers, not a single authority meaning it's much more c
 
 The main differences between centralized and decentralized is that a single authority cannot easily block a decentralized network as there is not a single server unlike centralized.Decentralized services are _sometimes_ prone to leaking metadata and may cause issues when federated.
 
-Here's a list of great messengers and services that you'll be able to use.
+Here's a list of "great" messengers and services that you'll be able to use.
 
-- [Signal](https://signal.org) A great messenger for friends & family.
-  Requires a phone number as it acts as a replacement to SMS / MMS. 
+- [Signal](https://signal.org) A messenger for friends & family.
+  Requires a phone number as it acts as a replacement to SMS / MMS.
 
 - [Session](https://getsession.org) Censorship-resistent messenger.
   A fork of Signal without the phone-number requirement.
-  Session has built-in onion-routing. *(TODO: update this or consider delisting Session)*
+  Session has built-in onion-routing.
 
 - [Matrix](https://matrix.org) Matrix provides a federated platform, which allows for anyone to host their own server, meaning that it is resistent to censorship as it does not rely on a single server.
 
@@ -948,6 +987,7 @@ At first glance, many of this seems like defining qualities, but they can be alt
 <br>
 
 ### Walking Style
+
 Your walking style is a unique identifier, and can be used to track you.
 To change this, you are able to do a variety of things to change your normal behavior / pattern.
 The easiest method would be to put a coin inside your shoe.
@@ -1030,8 +1070,8 @@ For additional protection, you may:
 - Remove / replace vehicle badges and emblems
 - Remove the vehicle license plate, replace with a fake one, or severely damage or cover the plate to beyond recognition (dirt / debris or license plate physically wearing off)
 - Remove all signs of VIN or any other unique identifiers
- 
- Read more [here](https://www.eff.org/pages/automated-license-plate-readers-alpr) reguarding license plate readers.
+
+Read more [here](https://www.eff.org/pages/automated-license-plate-readers-alpr) regarding license plate readers.
 
 <br>
 
@@ -1046,11 +1086,13 @@ You can be tracked physically with a wide array of technologies including but no
 - Security cameras
 - Someone physically watching you
 - Heat signature
-    - [Thermal Imaging Surveillance](https://theyarewatching.org/technology/thermal-imaging-surveillance)
 
-    - [Real Time Object Tracking System using Thermal Camera](https://medium.com/analytics-vidhya/real-time-object-tracking-system-using-thermal-camera-b4d077a20f16)
+  - [Thermal Imaging Surveillance](https://theyarewatching.org/technology/thermal-imaging-surveillance)
+
+  - [Real Time Object Tracking System using Thermal Camera](https://medium.com/analytics-vidhya/real-time-object-tracking-system-using-thermal-camera-b4d077a20f16)
+
 - Facial recognition
-    - [Wearable face projector](https://inv.bp.projectsegfau.lt/watch?v=_PoudPCevN0)
+  - [Wearable face projector](https://inv.bp.projectsegfau.lt/watch?v=_PoudPCevN0)
 
 <br>
 
@@ -1067,12 +1109,12 @@ Another option you may choose to do, is to have your name intentionally misspell
 Doing such is another was to plausibly deny using a fake name.
 
 For various instances, you may be required to give a license number.
-Unless the service *explicitly states* this number has to be yours, you are able to use a generated number.
+Unless the service _explicitly states_ this number has to be yours, you are able to use a generated number.
 
 For example:
 
 You walk into the cinema and they demand you give a drivers license number.
-You say "really...? okay.... can I give **A** *insert location* number?
+You say "really...? okay.... can I give **A** _insert location_ number?
 If this individual says "yes", then you can do such.
 Realistically, you should refuse and take it from there.
 
