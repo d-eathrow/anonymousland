@@ -6,6 +6,22 @@ permalink: /changelog
 
 ---
 
+# v1.08
+
+- New Paste service
+
+- New Mastodon instance
+
+- New blog post
+
+- Updated buttons on ``/index`` to display Mastodon and Synapse
+
+- Added new services to ``/tools``
+
+- Added Mobile section to ``/guide``
+
+- Updated services on ``/services``
+
 # v1.07
 
 - Fixed various typographical errors throughout the site

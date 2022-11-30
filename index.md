@@ -24,10 +24,11 @@ description: A fun happy place.
 
 <div style="text-align:center">
   <button type="button" class="btn btn-lg btn-default"><a href="./donate"> Donate</a></button>
+
 <br>
 <br>
 
-  <button type="button" class="btn btn-lg btn-default"><a href="./changelog"><i class="fa fa-clipboard" aria-hidden="true"></i> Changelog v1.0.7</a></button>
+  <button type="button" class="btn btn-lg btn-default"><a href="./changelog"><i class="fa fa-clipboard" aria-hidden="true"></i> Changelog v1.0.8</a></button>
 
 <br>
 <br>
@@ -47,6 +48,7 @@ description: A fun happy place.
   <button type="button" class="btn btn-lg btn-default"><a href="https://status.anonymousland.org"> Status Page</a></button>
 
   <button type="button" class="btn btn-lg btn-default"><a href="./services"> Services Page</a></button>
+
 <br>
 <br>
 
@@ -63,7 +65,6 @@ description: A fun happy place.
 
 <br>
 <br>
-
 
 ## Site Layout
 
