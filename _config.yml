@@ -1,4 +1,4 @@
-repository: d-eathrow/anonymousland
+repository: anonymousland/anonymousland
 theme: jekyll-theme-potato-hacker
 theme_base: "dark"
 theme_switch: off
@@ -29,7 +29,6 @@ feed:
     - changelog
     - information
     - items
-
 excerpt_separator: "<!--more-->"
 markdown: kramdown
 highlighter: rouge
