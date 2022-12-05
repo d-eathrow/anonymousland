@@ -53,6 +53,7 @@ Articles and stories related to technology, security or privacy
 - [Who is collecting data from your car](https://themarkup.org/the-breakdown/2022/07/27/who-is-collecting-data-from-your-car)
 
 - [Hacking Police Body Cameras](https://www.wired.com/video/watch/hacking-police-body-cameras)
+
 <br>
 
 ## Communities
@@ -64,6 +65,8 @@ A place for related various communities & media
 - [Privsec](https://privsec.dev)
 
 - [Privacy.do](https://privacy.do)
+
+<br>
 
 ## Products
 
@@ -99,6 +102,8 @@ For research-based articles
 - [Memetic Warfare](https://www.academia.edu/43534914/Memetic_Warfare_The_Future_of_War)
 
 - [Mega.nz Encryption](https://mega-awry.io/)
+
+<br>
 
 ## Random
 

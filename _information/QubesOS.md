@@ -268,6 +268,7 @@ echo "/usr/lib/libhardened_malloc.so/libhardened_malloc.so" | sudo tee /etc/ld.s
 <br>
 
 #### Customizations
+
 - [Wallpapers](https://forum.qubes-os.org/t/qubes-os-wallpapers/2819)
 
 - [KDE](https://forum.qubes-os.org/t/kde-changing-the-way-you-use-qubes/4730)
