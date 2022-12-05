@@ -278,6 +278,8 @@ echo "/usr/lib/libhardened_malloc.so/libhardened_malloc.so" | sudo tee /etc/ld.s
 
 #### Guides
 
+- [Fom’s giant list of Qubes OS workarounds, tweaks and shenanigans](https://forum.qubes-os.org/t/fom-s-giant-list-of-qubes-os-workarounds-tweaks-and-shenanigans/15162)
+
 - [Fully ephemeral dispvms](https://forum.qubes-os.org/t/fully-ephemeral-dispvms/12030)
 
 - [Opening all files in disposable qube](https://forum.qubes-os.org/t/opening-all-files-in-disposable-qube/4674)
