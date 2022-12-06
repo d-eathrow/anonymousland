@@ -81,6 +81,9 @@ _Disclaimer: This is for education / research._
 - -\>> _[Desktop](#desktop-1)_ <br>
 
 -\>> [Mobile](#mobile) <br>
+
+- -\>> _[External Applications](#external-applications)_ <br>
+
 -\>> [Physical](#physical) <br>
 -\>> [Secure Communications](#secure-communications) <br>
 -\>> [Secure Hardware](#secure-hardware) <br>
@@ -919,6 +922,15 @@ With GrapheneOS, you can utilize the profiles function to create separate identi
 We can use Orbot to route traffic over Tor on a per-profile basis.
 
 *Note: UDP is not supported by Tor*
+
+
+<br>
+
+### External Applications
+
+Assuming you are using Android, APKs are used to install applications.
+These can be dangerous as installing a malicious application can be detrimental to your system.
+It would likely be best to install various APKs from a source you can reasonably trust, or you can build your own and verify the signatures.
 
 <br>
 
