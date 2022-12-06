@@ -28,10 +28,7 @@ Your account *can* be suspended if you take part in any sort of malicious activi
 
 ## __Privacy & Security policy__
 
-As nature of this website, privacy and security must be our main priority, the following is currently in effect:
-
-- nginx logging is disabled on all servers and no IPs are being logged.
-- The following nginx headers are set to disable IP logging:
+The following nginx headers are set on Synapse:
 
 ```
 proxy_set_header X-Forwarded-For 0.0.0.0;
