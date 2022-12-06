@@ -1,7 +1,7 @@
 ---
 layout: default1
 description: Just... a guide
-title: Anonymity Guide
+title: Guide
 permalink: /guide
 priority: 1
 ---
