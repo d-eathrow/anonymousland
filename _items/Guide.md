@@ -921,6 +921,7 @@ For additional information, view the [GrapheneOS Section](./graphene).
 
 With GrapheneOS, you can utilize the profiles function to create separate identities with each profile.
 We can use Orbot to route traffic over Tor on a per-profile basis.
+You could utilize an application such as [Shelter](https://gitea.angry.im/PeterCxy/Shelter) to provide a "work profile".
 
 *Note: UDP is not supported by Tor*
 
