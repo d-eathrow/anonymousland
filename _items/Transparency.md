@@ -8,7 +8,7 @@ permalink: /transparency
 <p><i>“We do not merely destroy our enemies; we change them"</i></p>
 </div>
 
-## Transparency
+## Servers
 
 Total Cost: €139/month
 
