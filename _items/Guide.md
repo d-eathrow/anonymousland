@@ -83,6 +83,7 @@ _Disclaimer: This is for education / research._
 -\>> [Mobile](#mobile) <br>
 
 - -\>> _[External Applications](#external-applications)_ <br>
+- -\>> _[Tor](#tor-1)_ <br>
 
 -\>> [Physical](#physical) <br>
 -\>> [Secure Communications](#secure-communications) <br>
@@ -931,6 +932,16 @@ We can use Orbot to route traffic over Tor on a per-profile basis.
 Assuming you are using Android, APKs are used to install applications.
 These can be dangerous as installing a malicious application can be detrimental to your system.
 It would likely be best to install various APKs from a source you can reasonably trust, or you can build your own and verify the signatures.
+
+<br>
+
+### Tor
+
+You can utilize Tor on a mobile device by installing [Orbot](https://github.com/guardianproject/orbot).
+Orbot allows you to route your entire device over Tor or allow proxying other applications.
+[Tor Android](https://github.com/guardianproject/tor-android) is also available.
+
+If your device has the ability to create multiple profiles, you can create a "Tor-only" profile, in which the entire profile is routed over Orbot and you are utilizing Tor Android.
 
 <br>
 
