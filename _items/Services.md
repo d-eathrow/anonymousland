@@ -18,6 +18,7 @@ Services are hosted in __Sweden__ and / or __Iceland__.
 The hosting providers [1984](https://1984.is) and [Njalla](https://njal.la) are in use.
 
 You can check the status of our Matrix Homeserver and all of our other services on our [status page](https://status.anonymousland.org/status/services).
+
 <br>
 
 ## __Terms of Service (ToS)__
@@ -25,6 +26,8 @@ You can check the status of our Matrix Homeserver and all of our other services 
 These services are not intended to spread spam or malicious content, or sharing / distributing / hosting of malicious content.
 
 Your account *can* be suspended if you take part in any sort of malicious activity or questionable content including but not limited to targeted harassment, raids, phishing, DOXxing or violating laws of __Sweden__ and / or __Iceland__.
+
+<br>
 
 ## __Privacy & Security policy__
 
