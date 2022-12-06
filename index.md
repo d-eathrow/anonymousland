@@ -82,5 +82,6 @@ description: A fun happy place.
   - [Propagation](./propagate)
   - [RSS](./rss)
   - [Tools](./tools)
+  - [Transparency](./transparency)
   - [Services](./services)
   - [Snowflake](./snowflake)
