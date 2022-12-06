@@ -16,18 +16,44 @@ Website: [https://qubes-os.org](https://qubes-os.org) <button type="button" clas
 
 #### Table of contents:
 
-
+-\>> [Best Practices](#best-practices) <br>
 -\>> [Template Setup](#template-setup) <br>
   - -\> *[Debian](#debian)* <br>
      - -\> *[Security](#debian-security)* <br>
   - -\> *[Fedora](#fedora)* <br>
   - -\> *[Upgrading Fedora](#upgrading-fedora)* <br>
+  - -\> *[Whonix](#whonix)* <br>
 
 -\>> [Links & Resources](#links--resources) <br>
   - -\> *[Customizations](#customizations)* <br>
   - -\> *[Guides](#guides)* <br>
   - -\> *[Templates](#templates)* <br>
   - -\> *[Wiki](#wiki)* <br>
+
+<br>
+
+### Best Practices
+
+- All repositories should be routed over Tor and [onionized](https://anonymousland.org/#onionizing-repositories)
+
+- Each application should be installed in its own separate minimal template Qube (provided your system has applicable resources for such)
+
+- `sys-usb` should be configured on a laptop
+
+- Avoid using `sleep` on a Qubes system
+
+-  Read all of the Qubes documentation
+
+- Frequently visit the Qubes forums
+
+- Consider creating a shutdown script / shortcut
+
+- Consider if you would benefit by creating backups of your Qubes system
+
+- Update frequently
+
+- Harden Qubes if applicable (debian kicksecure, Fedora CORP hardened-malloc, etc.)
+
 
 <br>
 
@@ -205,6 +231,28 @@ sudo losetup -d $dev
 
 ```
 rm /var/tmp/template-upgrade-cache.img
+```
+
+<br>
+
+#### Whonix
+
+Whonix-GW and Whonix-WS should be upgraded via:
+
+```
+upgrade-nonroot
+```
+
+Installing LKRG:
+
+```
+sudo apt install --no-install-recommends lkrg-dkms
+```
+
+Enabling Hardened Malloc:
+
+```
+echo "/usr/lib/libhardened_malloc.so/libhardened_malloc.so" | sudo tee /etc/ld.so.preload
 ```
 
 <br>
