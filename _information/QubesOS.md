@@ -52,7 +52,7 @@ Website: [https://qubes-os.org](https://qubes-os.org) <button type="button" clas
 
 - Update frequently
 
-- Harden Qubes if applicable (debian kicksecure, Fedora CORP hardened-malloc, etc.)
+- Harden Qubes if applicable (Debian kicksecure, Fedora CORP hardened-malloc, etc.)
 
 
 <br>
