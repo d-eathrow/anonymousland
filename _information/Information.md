@@ -87,6 +87,8 @@ Do your own research).*
 
 A list of interesting projects
 
+- [Into the crypt](https://0xacab.org/optout/into-the-crypt) <button type="button" class="btn btn-default btn-xs"><a href="http://wmj5kiic7b6kjplpbvwadnht2nh2qnkbnqtcv3dyvpqtz7ssbssftxid.onion/optout/into-the-crypt">Tor</a></button>
+
 - [HDMI Firewall](https://git.cuvoodoo.info/kingkevin/board/src/branch/hdmi_firewall/README.md)
 
 - [DEDA](https://github.com/dfd-tud/deda)
@@ -109,7 +111,9 @@ For research-based articles
 
 For anything that does not meet the above category
 
-- [Prepper Handboook](https://wiki.jameskitt616.one/en/bugout-handbook)
+- [No to Spy Pixels](https://notospypixels.com/)
+
+- [Prepper Handbook](https://wiki.jameskitt616.one/en/bugout-handbook)
 
 - [Next Generation Data Storage](https://foliophotonics.com/)
 
