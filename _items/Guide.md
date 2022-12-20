@@ -298,8 +298,8 @@ This is a big deal.
 
 Often times you will find yourself needing an email address.
 Creating an anonymous email account will be necessary in some cases.
-It is best to absolutely avoid commercial services such as Gmail, Outlook and Icloud, these services are not anonymous or even private.
-Default (Gmail, Icloud, etc.) email providers can read your inbox, and will send your information on government requests.
+It is best to absolutely avoid commercial services such as Gmail, Outlook and iCloud, these services are not anonymous or even private.
+Default (Gmail, iCloud, etc.) email providers can read your inbox, and will send your information on government requests.
 For anonymity, it may be best to utilize Tor for email to help prevent an adversary from obtaining your IP address, and to help prevent fingerprinting.
 
 Using a web browser to access email allows for malicious javascript to be utilized to capture your credentials along with your mail contents.

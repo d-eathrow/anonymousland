@@ -42,7 +42,7 @@ Website: [https://qubes-os.org](https://qubes-os.org) <button type="button" clas
 
 - Avoid using `sleep` on a Qubes system
 
--  Read all of the Qubes documentation
+- Read all of the Qubes documentation
 
 - Frequently visit the Qubes forums
 
