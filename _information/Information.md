@@ -44,6 +44,8 @@ For news
 
 Articles and stories related to technology, security or privacy
 
+- [Roomba AI Data Privacy](https://www.technologyreview.com/2022/12/19/1065306/roomba-irobot-robot-vacuums-artificial-intelligence-training-data-privacy/)
+
 - [Your smartphone could recognize you by the way you hold it](https://www.newscientist.com/article/2334048-your-smartphone-could-recognise-you-just-by-the-way-you-hold-it/)
 
 - [Intel thinks AI knows what students think and feel](https://www.protocol.com/enterprise/emotion-ai-school-intel-edutech)

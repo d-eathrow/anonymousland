@@ -31,21 +31,11 @@ Your account *can* be suspended if you take part in any sort of malicious activi
 
 ## __Privacy & Security policy__
 
-The following nginx headers are set on Synapse:
-
-```
-proxy_set_header X-Forwarded-For 0.0.0.0;
-proxy_set_header X-Real-IP 0.0.0.0;
-proxy_set_header X-Forwarded-Host 0.0.0.0;
-```
-
 <br>
 
 ### Matrix
 
 - Registration is open, if abuse takes place, registration will turn to an invite-only system.
-
-- Registered users are automatically joined into the lounges, this is to help prevent abuse!
 
 - Guest access is currently enabled, and will be disabled if abuse takes place.
 
@@ -66,6 +56,14 @@ proxy_set_header X-Forwarded-Host 0.0.0.0;
 - `bcrypt_rounds` is set to `16`
 
 - `MSC2285` is enabled
+
+The following nginx headers are set:
+
+```
+proxy_set_header X-Forwarded-For 0.0.0.0;
+proxy_set_header X-Real-IP 0.0.0.0;
+proxy_set_header X-Forwarded-Host 0.0.0.0;
+```
 
 <br>
 
