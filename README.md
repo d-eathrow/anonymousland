@@ -10,4 +10,4 @@ Contribute at https://git.anonymousland.org/anonymousland/anonymousland
 
 ## Contact
 
-Click (here)[https://matrix.to/#/#lounge:anonymousland.org] to join our Matrix Chatroom and (here)[https://matrix.to/#/#anonymousland:anonymousland.org] to join our Matrix space.
+Click [here](https://matrix.to/#/#lounge:anonymousland.org) to join our Matrix Chatroom and [here](https://matrix.to/#/#anonymousland:anonymousland.org) to join our Matrix space.
