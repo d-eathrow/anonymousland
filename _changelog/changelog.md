@@ -6,6 +6,30 @@ permalink: /changelog
 
 ---
 
+# v1.09
+
+- Updated headers on ``/tools``
+
+- Added disclaimer to ``/guide``
+
+- Added Qubes best practices to ``/qubes``
+
+- Added Whonix section to ``/qubes``
+
+- New ``/transparency`` page
+
+- New guide listed on ``/qubes``
+
+- New content for the "Mobile" section on ``/guide``
+
+- Improved README
+
+- Revised ``/services`` page
+
+- Updated naming scheme for files
+
+- New articles added
+
 # v1.08
 
 - New Paste service

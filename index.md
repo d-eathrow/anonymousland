@@ -28,7 +28,7 @@ description: A fun happy place.
 <br>
 <br>
 
-  <button type="button" class="btn btn-lg btn-default"><a href="./changelog"><i class="fa fa-clipboard" aria-hidden="true"></i> Changelog v1.0.8</a></button>
+  <button type="button" class="btn btn-lg btn-default"><a href="./changelog"><i class="fa fa-clipboard" aria-hidden="true"></i> Changelog v1.0.9</a></button>
 
 <br>
 <br>
